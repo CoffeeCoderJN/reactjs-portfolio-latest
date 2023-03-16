@@ -100,7 +100,7 @@ const Portfolio = () => {
         whileInView={{ opacity: 1 }}
         className="relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
       >
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-track-blue-900 scrollbar-thumb-orange-500">
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-track-blue-900 scrollbar-thumb-orange-500 scrollbar-thin">
           {projects.map(
             ({ id, image, title, github, demo, description }, i) => (
               <div
