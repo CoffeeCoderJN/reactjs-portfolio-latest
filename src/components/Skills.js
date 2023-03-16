@@ -80,6 +80,7 @@ const Serivces = () => {
 
   return (
     <Section
+      id="skills"
       title="Skills"
       subtitle="I can work in all the Skills mentioned below."
     >

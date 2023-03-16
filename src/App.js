@@ -14,24 +14,26 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <div className={darkMode && "dark"}>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+    <div className="scrollbar scrollbar-track-blue-700 scrollbar-thumb-orange-500">
+      <div className={darkMode && "dark"}>
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
-      <main className="bg-white dark:bg-gray-900 to-gray-900 dark:text-white">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0.1, 0.2, 0.4, 0.8, 1] }}
-          transition={{ duration: 0.2 }}
-        >
-          <Hero />
-        </motion.div>
-        <About />
-        <Skills />
-        <Portfolio />
-        {/* <Testimonials /> */}
-        <Contact />
-        <Footer />
-      </main>
+        <main className="bg-white dark:bg-gray-900 to-gray-900 dark:text-white">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0.1, 0.2, 0.4, 0.8, 1] }}
+            transition={{ duration: 0.2 }}
+          >
+            <Hero />
+          </motion.div>
+          <About />
+          <Skills />
+          <Portfolio />
+          {/* <Testimonials /> */}
+          <Contact />
+          <Footer />
+        </main>
+      </div>
     </div>
   );
 }

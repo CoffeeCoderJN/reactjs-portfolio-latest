@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <Section title="About Me" subtitle="Full Stack Developer">
+    <Section id="about" title="About Me" subtitle="Full Stack Developer">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col min-h-fit text-center md:text-left md:flex-row max-w-7xl px-10 mx-auto items-center md:pt-16 md:pb-16"
+        className="flex flex-col min-h-fit text-center md:text-left md:flex-row max-w-7xl px-10 mx-auto items-center md:pt-16 md:pb-16 md:mx-36 xl:mx-48"
       >
         <motion.img
           src={MukulImg}
@@ -19,7 +19,7 @@ const About = () => {
           whileInView={{ x: 0, opacity: 1 }}
           className="mb-20 md:mb-0 flex-shrink-0 rounded-full w-56 h-56 object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[350px]"
         />
-        <div className="space-y-10 px-0 md:px-10">
+        <div className="space-y-10 px-0 md:px-10 xl:px-20 ">
           <h4 className="text-2xl font-light">Here's a Little Background.</h4>
           <p className="text-base font-extralight">
             Hi, I am Mukul Rajendra Dharashivkar and everyone calls me Mukul. I

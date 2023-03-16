@@ -21,6 +21,8 @@ const Portfolio = () => {
       github:
         "https://github.com/themukuldharashivkar/personal-mukul-blog-website",
       demo: "https://themukuldharashivkar-blog.onrender.com/",
+      description:
+        "This is my personal blog website. I have used HTML and Bootstrap CSS for this project. I have used Flask for backend. I have used heroku for hosting.",
     },
     {
       id: 2,
@@ -28,6 +30,8 @@ const Portfolio = () => {
       title: "Movie Flix",
       github: "https://github.com/themukuldharashivkar/Movie-Flix",
       demo: "https://github.com/themukuldharashivkar/Movie-Flix",
+      description:
+        "Movie Recommender Web App made using Python Streamlit Framework. Machine Learning project. Used bag-of-the-words model to recommend movies. ",
     },
     {
       id: 3,
@@ -35,6 +39,8 @@ const Portfolio = () => {
       title: "Tindog",
       github: "https://github.com/themukuldharashivkar/Tindog-Website",
       demo: "https://tindog-website-chi.vercel.app/",
+      description:
+        "Tinder for Dogs. This is a website made using HTML, CSS and Bootstrap. I have used Bootstrap for making this website responsive.",
     },
     {
       id: 4,
@@ -42,6 +48,8 @@ const Portfolio = () => {
       title: "ToDo List",
       github: "https://github.com/themukuldharashivkar/ToDo-Website",
       demo: "https://github.com/themukuldharashivkar/ToDo-Website",
+      description:
+        "Todo List web app made using HTML and Bootstrap, used Flask Web Framework for the backend",
     },
     {
       id: 5,
@@ -49,6 +57,8 @@ const Portfolio = () => {
       title: "Top 10 Movies",
       github: "https://github.com/themukuldharashivkar/Top-10-Movie-Website",
       demo: "https://movies-list.onrender.com/",
+      description:
+        "Top 10 Movies web app made using Flask Web Framework for the backend.",
     },
     {
       id: 6,
@@ -56,6 +66,7 @@ const Portfolio = () => {
       title: "Expense Tracker",
       github: "https://github.com/themukuldharashivkar/Expense-Tracker-ReactJS",
       demo: "https://expense-tracker-react-9mffr44hp-themukuldharashivkar.vercel.app/",
+      description: "Simple expense tracker Web App made using ReactJS",
     },
     {
       id: 7,
@@ -64,6 +75,8 @@ const Portfolio = () => {
       github:
         "https://github.com/themukuldharashivkar/Drum-Set-Website-using-JavaScript",
       demo: "https://super-gecko-c5a330.netlify.app",
+      description:
+        "Just a simple drum set website made using HTML, CSS and Vanilla JavaScript",
     },
     {
       id: 8,
@@ -72,46 +85,64 @@ const Portfolio = () => {
       github:
         "https://github.com/themukuldharashivkar/Simon-Game-using-JavaScript-and-jQuery",
       demo: "https://simon-game-jquery-md.netlify.app/",
+      description: "Simon Game made using HTML, CSS and Vanilla Bootstrap",
     },
   ];
   return (
     <Section
+      id="portfolio"
       title="Portfolio"
       subtitle="These are all the projects that i have worked on."
     >
       <motion.div
-        initial={{ x: 200, opacity: 0 }}
+        initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        className="grid gap-8 lg:gap-14 lg:grid-cols-2"
+        whileInView={{ opacity: 1 }}
+        className="relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
       >
-        {projects.map(({ id, image, title, github, demo }) => (
-          <div
-            key={id}
-            className="max-w-lg flex shadow-lg shadow-gray-300 dark:shadow-blue-500 rounded-2xl overflow-hidden hover:scale-105 duration-200"
-          >
-            <img src={image} alt={title} className="w-2/3" />
-            <div className="w-1/3 flex flex-col items-center justify-evenly p-1">
-              <h2>{title}</h2>
-              <a
-                className="text-2xl cursor-pointer duration-150 hover:scale-110 hover:text-blue-600"
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-track-blue-900 scrollbar-thumb-orange-500">
+          {projects.map(
+            ({ id, image, title, github, demo, description }, i) => (
+              <div
+                key={id}
+                className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-5 justify-center p-10"
               >
-                <FaGithub />
-              </a>
-              <a
-                className="text-2xl cursor-pointer duration-150 hover:scale-110 hover:text-blue-600"
-                href={demo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaExternalLinkSquareAlt />
-              </a>
-            </div>
-          </div>
-        ))}
+                <img
+                  className="h-32 md:h-64 xl:h-96 rounded-3xl hover:scale-110 duration-300"
+                  src={image}
+                  alt="project img"
+                />
+                <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+                  <h4 className="font-semibold text-2xl text-center">
+                    Project {i + 1} of {projects.length}: {title}
+                  </h4>
+                  <p className="text-lg font-extralight text-center md:text-left md:mx-14 xl:mx-48">
+                    {description}
+                  </p>
+                </div>
+
+                <div className="text-4xl inline-flex space-x-10">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" hover:text-blue-600 duration-300"
+                    href={github}
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600 duration-300"
+                    href={demo}
+                  >
+                    <FaExternalLinkSquareAlt />
+                  </a>
+                </div>
+              </div>
+            )
+          )}
+        </div>
       </motion.div>
     </Section>
   );

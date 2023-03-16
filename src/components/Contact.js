@@ -1,9 +1,26 @@
 import React from "react";
 import Section from "./common/Section";
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Contact = () => {
+  const SOCIAL = [
+    {
+      id: 1,
+      link: "https://www.linkedin.com/in/themukuldharashivkar",
+      icon: <FaLinkedin />,
+    },
+    {
+      id: 2,
+      link: "https://www.github.com/themukuldharashivkar",
+      icon: <FaGithub />,
+    },
+    { id: 3, link: "https://www.twitter.com/themukul_99", icon: <FaTwitter /> },
+    { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
+  ];
   return (
-    <Section title="Contact Me" subtitle="Hope to hear from you soon">
+    <Section id="contact" title="Contact Me" subtitle="Hope to hear from you soon">
       <div className="flex flex-col items-center justify-center gap-8 text-center">
         {/* <div>
           <img src={contact} alt="contact info" className="w-32 h-32"></img>
@@ -14,11 +31,11 @@ const Contact = () => {
             Feel free to contact me using your preferred medium.
           </p>
         </div>
-        {/* <div className="flex w-full items-center justify-evenly text-3xl">
+        <div className="flex w-full items-center justify-evenly text-3xl">
           {SOCIAL.map(({ id, link, icon }) => (
             <a href={link}  target="_blank" rel="noopener noreferrer" className="duration-200 ease-in-out hover:text-blue-600">{icon}</a>
           ))}
-        </div> */}
+        </div>
 
         {/* bottom form */}
         <div className="p-8 text-left w-full">
@@ -50,7 +67,9 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center">
-                    <button className="my-8 bg-gradient-to-r from-orange-500 to-blue-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-125 duration-200 font-semibold tracking-[3px]">Send Message</button>
+                    <button className="flex group my-8 bg-gradient-to-r from-orange-500 to-blue-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-125 duration-200 font-semibold tracking-[3px]">Send Message<span>
+            <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />
+          </span></button>
                 </div>
             </form>
         </div>

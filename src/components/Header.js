@@ -1,24 +1,49 @@
 import React from "react";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import { motion } from "framer-motion";
-import { AiOutlineMail } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = ({ darkMode, setDarkMode }) => {
+  const SOCIAL = [
+    {
+      id: 1,
+      link: "https://www.linkedin.com/in/themukuldharashivkar",
+      icon: <FaLinkedin />,
+    },
+    {
+      id: 2,
+      link: "https://www.github.com/themukuldharashivkar",
+      icon: <FaGithub />,
+    },
+    { id: 3, link: "https://www.twitter.com/themukul_99", icon: <FaTwitter /> },
+    { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
+  ];
   return (
     <header className="sticky bg-white text-gray-900 dark:bg-gray-900 dark:text-white z-50">
-      <nav className="flex md:mx-14 justify-between items-center p-5">
+      <nav className="flex md:mx-28 justify-between items-center p-5">
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="text-lg font-bold hover:scale-110 duration-150 text-blue-600 hover:text-orange-500">
-            <a
+          <div className="flex space-x-6 text-lg font-bold text-blue-600">
+            {/* <a
               className="font-extralight cursor-pointer z-0 uppercase"
               href="mailto:mukul.dharashivkar99@gmail.com"
             >
-              <AiOutlineMail className="inline-block text-2xl" /> Mail Me!
-            </a>
+              <MdEmail className="inline-flex text-2xl" /> Mail Me!
+            </a> */}
+            {SOCIAL.map(({ id, link, icon }) => (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-extralight cursor-pointer z-0 uppercase hover:scale-110 hover:text-orange-500 duration-150 text-2xl"
+              >
+                {icon}
+              </a>
+            ))}
           </div>
         </motion.div>
         <motion.div
