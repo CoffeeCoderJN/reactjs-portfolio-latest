@@ -37,6 +37,9 @@ const Hero = () => {
     >
       <BackgroundCircles />
       {/* {avatar and resume} */}
+      <h2 className="text-3xl pb-5 lg:text-4xl text-orange-500 uppercase font-bold z-0">
+        Mukul Dharashivkar
+      </h2>
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 0.6 }}
@@ -58,10 +61,6 @@ const Hero = () => {
           </span>
         </a>
       </motion.div>
-
-      <h2 className="text-3xl pt-5 lg:text-5xl text-orange-500 uppercase font-bold z-0">
-        Mukul Dharashivkar
-      </h2>
 
       <div className="py-3 text-xl lg:text-3xl font-semibold uppercase leading-[1] z-0">
         <span className="mr-4">I'm a</span>
