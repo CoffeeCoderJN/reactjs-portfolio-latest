@@ -99,7 +99,7 @@ const Portfolio = () => {
                 className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-5 justify-center p-5"
               >
                 <img
-                  className="h-56 md:h-64 xl:h-96 rounded-3xl hover:scale-105 duration-300"
+                  className="h-44 md:h-64 xl:h-96 rounded-3xl hover:scale-105 duration-300"
                   src={image}
                   alt="project img"
                 />
