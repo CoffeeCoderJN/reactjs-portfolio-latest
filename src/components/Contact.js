@@ -67,7 +67,7 @@ const Contact = () => {
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="p-8 text-left w-full mx-4"
+          className="p-8 text-left w-full"
         >
           <form
             action="https://getform.io/f/e05b6bc9-032c-4a2c-a5af-ff2107822d78"
