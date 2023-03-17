@@ -23,22 +23,32 @@ const Contact = () => {
   return (
     <Section id="contact" title="Contact Me" subtitle="Get in touch">
       <motion.div
-        initial={{ x: 200, opacity: 0 }}
+        initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        whileInView={{ opacity: 1 }}
         className="flex flex-col items-center justify-center gap-8 text-center"
       >
         {/* <div>
           <img src={contact} alt="contact info" className="w-32 h-32"></img>
         </div> */}
-        <div>
+        <motion.div
+          initial={{ x: 200, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
           <p className="max-w-xs md:max-w-lg font-extralight">
             I am open to talk regarding freelancing or full time opportunities.
             Feel free to contact me using your preferred medium.
           </p>
-        </div>
-        <div className="flex w-full items-center justify-evenly text-3xl">
+        </motion.div>
+        <motion.div
+          initial={{ x: 200, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="flex w-full items-center justify-evenly text-3xl"
+        >
           {SOCIAL.map(({ id, link, icon }) => (
             <a
               href={link}
@@ -49,10 +59,16 @@ const Contact = () => {
               {icon}
             </a>
           ))}
-        </div>
+        </motion.div>
 
         {/* bottom form */}
-        <div className="p-8 text-left w-full">
+        <motion.div
+          initial={{ x: 200, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="p-8 text-left w-full mx-4"
+        >
           <form
             action="https://getform.io/f/e05b6bc9-032c-4a2c-a5af-ff2107822d78"
             method="POST"
@@ -100,7 +116,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <button className="flex group my-8 bg-gradient-to-r from-orange-600 to-blue-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-125 duration-200 font-semibold tracking-[3px]">
+              <button className="flex group my-8 bg-gradient-to-r from-orange-600 to-blue-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[3px]">
                 Send Message
                 <span>
                   <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />
@@ -108,7 +124,7 @@ const Contact = () => {
               </button>
             </div>
           </form>
-        </div>
+        </motion.div>
       </motion.div>
     </Section>
   );

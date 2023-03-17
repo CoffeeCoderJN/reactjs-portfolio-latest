@@ -82,31 +82,32 @@ const Portfolio = () => {
     <Section
       id="portfolio"
       title="Portfolio"
-      subtitle="These are all the projects that i have worked on."
+      subtitle="Swipe/Scroll left to see all the projects."
     >
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, x: -200 }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1 }}
+        whileInView={{ opacity: 1, x:0 }}
+        viewport={{once:true}}
         className="relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center "
       >
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-track-blue-900 scrollbar-thumb-orange-500">
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-track-transparent scrollbar-thumb-orange-500">
           {projects.map(
             ({ id, image, title, github, demo, description }, i) => (
               <div
                 key={id}
-                className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-5 justify-center p-10"
+                className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-5 justify-center p-5"
               >
                 <img
-                  className="h-32 md:h-64 xl:h-96 rounded-3xl hover:scale-110 duration-300"
+                  className="h-56 md:h-64 xl:h-96 rounded-3xl hover:scale-105 duration-300"
                   src={image}
                   alt="project img"
                 />
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
                   <h4 className="font-semibold text-2xl text-center">
-                    Project {i + 1} of {projects.length}: {title}
+                    <span className="font-light">Project {i + 1} of {projects.length}:</span> <span className="text-blue-600">{title}</span>
                   </h4>
-                  <p className="text-lg font-extralight text-center md:text-left md:mx-14 xl:mx-48">
+                  <p className="text-base font-extralight text-center md:text-left md:mx-14 xl:mx-48">
                     {description}
                   </p>
                 </div>
@@ -115,7 +116,7 @@ const Portfolio = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" hover:text-blue-600 duration-300"
+                    className=" hover:text-blue-600 duration-300 hover:scale-125"
                     href={github}
                   >
                     <FaGithub />
@@ -123,7 +124,7 @@ const Portfolio = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-blue-600 duration-300"
+                    className="hover:text-blue-600 duration-300 hover:scale-125 pb-5 md:pb-10"
                     href={demo}
                   >
                     <FaExternalLinkSquareAlt />
