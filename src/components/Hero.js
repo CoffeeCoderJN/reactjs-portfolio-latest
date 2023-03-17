@@ -45,7 +45,7 @@ const Hero = () => {
         <img
           src={avatar}
           alt="avatar"
-          className="w-60 h-60 md:w-72 md:h-72 xl:w-80 xl:h-80 sm:pt-5 object-cover bg-gradient-to-b from-orange-500 to-orange-800 rounded-3xl pt-5"
+          className="w-60 h-60 md:w-72 md:h-72 xl:w-80 xl:h-80 object-cover bg-gradient-to-b from-orange-500 to-orange-800 rounded-3xl"
         />
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
