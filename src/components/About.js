@@ -10,7 +10,7 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-10 mx-auto items-center md:pt-16 md:pb-16 md:mx-36 xl:mx-48"
+        className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-10 mx-auto items-center md:pt-16 md:pb-16 md:mx-36 xl:mx-48  z-10"
       >
         <motion.img
           src={MukulImg}
