@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import { motion } from "framer-motion";
 
+
 // import Testimonials from "./components/Testimonials";
 
 function App() {
@@ -29,7 +30,6 @@ function App() {
           <About />
           <Skills />
           <Portfolio />
-          {/* <Testimonials /> */}
           <Contact />
           <Footer />
         </main>

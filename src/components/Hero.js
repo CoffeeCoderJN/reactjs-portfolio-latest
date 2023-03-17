@@ -30,7 +30,7 @@ const Hero = () => {
   });
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center p-5 text-center">
+    <section id="hero" className="min-h-screen flex flex-col justify-center items-center p-5 text-center">
       <BackgroundCircles />
       <h2 className="text-4xl lg:text-5xl text-orange-500 uppercase font-bold z-0">
         Mukul Dharashivkar
@@ -64,7 +64,7 @@ const Hero = () => {
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-orange-500 to-blue-700 hover:scale-125 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px]"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-orange-600 to-blue-700 hover:scale-125 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px]"
         >
           Resume{" "}
           <span>

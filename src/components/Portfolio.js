@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import p1 from "../assets/blog.jpg";
 import p2 from "../assets/movie.jpg";
 import p3 from "../assets/tindog.jpg";
-import p4 from "../assets/todo.jpg";
 import p5 from "../assets/top10.jpg";
 import p6 from "../assets/expense.png";
 import p7 from "../assets/drum.png";
@@ -44,15 +43,6 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      image: p4,
-      title: "ToDo List",
-      github: "https://github.com/themukuldharashivkar/ToDo-Website",
-      demo: "https://github.com/themukuldharashivkar/ToDo-Website",
-      description:
-        "Todo List web app made using HTML and Bootstrap, used Flask Web Framework for the backend",
-    },
-    {
-      id: 5,
       image: p5,
       title: "Top 10 Movies",
       github: "https://github.com/themukuldharashivkar/Top-10-Movie-Website",
@@ -61,7 +51,7 @@ const Portfolio = () => {
         "Top 10 Movies web app made using Flask Web Framework for the backend.",
     },
     {
-      id: 6,
+      id: 5,
       image: p6,
       title: "Expense Tracker",
       github: "https://github.com/themukuldharashivkar/Expense-Tracker-ReactJS",
@@ -69,7 +59,7 @@ const Portfolio = () => {
       description: "Simple expense tracker Web App made using ReactJS",
     },
     {
-      id: 7,
+      id: 6,
       image: p7,
       title: "Drum Set",
       github:
@@ -79,7 +69,7 @@ const Portfolio = () => {
         "Just a simple drum set website made using HTML, CSS and Vanilla JavaScript",
     },
     {
-      id: 8,
+      id: 7,
       image: p8,
       title: "Simon Game",
       github:
@@ -98,9 +88,9 @@ const Portfolio = () => {
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
-        className="relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
+        className="relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center "
       >
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-track-blue-900 scrollbar-thumb-orange-500 scrollbar-thin">
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-track-blue-900 scrollbar-thumb-orange-500">
           {projects.map(
             ({ id, image, title, github, demo, description }, i) => (
               <div
