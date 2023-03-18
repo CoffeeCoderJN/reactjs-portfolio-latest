@@ -79,7 +79,6 @@ const Hero = () => {
               2000,
             ]}
             speed={30}
-            className="text-blue-600"
             wrapper="span"
             repeat={Infinity}
           />
