@@ -115,7 +115,7 @@ const Hero = () => {
         viewport={{ once: true }}
         className="z-10"
       >
-        <p className="max-w-xl text-xl font-light z-0 uppercase pb-5">
+        <p className="max-w-xl text-xs md:text-xl font-light z-0 uppercase pb-5">
           <span className="text-blue-600 font-semibold">Innovating</span> Web
           Presence
         </p>
