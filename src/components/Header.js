@@ -21,7 +21,7 @@ const Header = ({ darkMode, setDarkMode }) => {
   ];
   return (
     <header className="sticky bg-transparent text-gray-900 dark:bg-transparent dark:text-white top-0 z-50">
-      <nav className="flex justify-around items-center backdrop-filter backdrop-blur-lg bg-opacity-30 p-5">
+      <nav className="flex md:justify-around items-center backdrop-filter backdrop-blur-lg bg-opacity-30 p-5 justify-between">
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
