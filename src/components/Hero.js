@@ -37,18 +37,20 @@ const Hero = () => {
     >
       <BackgroundCircles />
       {/* {avatar and resume} */}
-      <h2 className="text-3xl pb-5 lg:text-4xl text-orange-500 uppercase font-bold z-0">
+      <h2 className="text-3xl pb-5 lg:text-5xl text-orange-500 uppercase font-bold z-0">
         Mukul Dharashivkar
       </h2>
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 0.6 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }} className="z-0 p-5">
+        viewport={{ once: true }}
+        className="z-0 p-5"
+      >
         <img
           src={avatar}
           alt="avatar"
-          className="w-60 h-60 md:w-72 md:h-72 xl:w-80 xl:h-80 object-cover bg-gradient-to-b from-orange-500 to-orange-800 rounded-3xl"
+          className="w-60 h-60 md:w-72 md:h-72 xl:w-72 xl:h-72 object-cover bg-gradient-to-b from-orange-500 to-orange-800 rounded-3xl"
         />
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
@@ -85,7 +87,7 @@ const Hero = () => {
         site. I am a software engineer from India.
       </p> */}
       {/* SOCIAL ICONS */}
-      <motion.div
+      {/* <motion.div
         initial={{ x: -200, opacity: 0 }}
         transition={{ duration: 0.6 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -104,18 +106,20 @@ const Hero = () => {
             {navLink}
           </Link>
         ))}
+      </motion.div> */}
+
+      <motion.div
+        initial={{ x: -200, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        className="z-10"
+      >
+        <p className="max-w-xl text-xl font-light z-0 uppercase pb-5">
+          <span className="text-blue-600 font-semibold">Innovating</span> Web
+          Presence
+        </p>
       </motion.div>
-      {/* <div className="flex justify-evenly py-8 lg:py-10 text-xl font-light w-full md:w-1/3 z-0">
-        {SOCIAL.map(({ id, link, navLink }) => (
-          <a
-            href={link}
-            key={id}
-            className="cursor-pointer duration-300 hover:text-blue-600 hover:font-semibold  hover:scale-110"
-          >
-            {navLink}
-          </a>
-        ))}
-      </div> */}
 
       {/* {arrow down animation} */}
       <div className="mt-5 mb-0 down-arrow z-0">
