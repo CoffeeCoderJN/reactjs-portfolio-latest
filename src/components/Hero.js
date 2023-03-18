@@ -5,7 +5,7 @@ import avatar from "../assets/programmer.png";
 import { TypeAnimation } from "react-type-animation";
 import BackgroundCircles from "./BackgroundCircles.js";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 const Hero = () => {
   const SOCIAL = [
@@ -52,7 +52,7 @@ const Hero = () => {
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-orange-600 to-blue-700 hover:from-blue-700 hover:to-orange-600 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px]"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-orange-600 to-violet-700 hover:from-violet-700 hover:to-orange-600 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px]"
         >
           Resume{" "}
           <span>
@@ -66,12 +66,12 @@ const Hero = () => {
       </h2>
 
       <div className="py-3 text-2xl lg:text-5xl text-center font-semibold leading-[1] z-0">
-        <span className="mr-4">
+        <span className="">
           <TypeAnimation
             sequence={[
-              "Welcome 👋",
+              "Welcome👋",
               2000,
-              "I'm Mukul",
+              "The Name's Mukul",
               2000,
               "Guy-Who-Loves-Drawing.js",
               2000,
@@ -79,7 +79,7 @@ const Hero = () => {
               2000,
             ]}
             speed={30}
-            className="text-blue-600"
+            className="text-violet-600"
             wrapper="span"
             repeat={Infinity}
           />
@@ -105,7 +105,7 @@ const Hero = () => {
             smooth={true}
             offset={40}
             duration={1000}
-            className="cursor-pointer duration-300 hover:text-blue-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px] z-50"
+            className="cursor-pointer duration-300 hover:text-violet-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px] z-50"
           >
             {navLink}
           </Link>
@@ -120,7 +120,7 @@ const Hero = () => {
         className="z-10"
       >
         <p className="max-w-xl text-xs md:text-xl font-light z-0 uppercase pb-5">
-          <span className="text-blue-600 font-semibold">Innovating</span> Web
+          <span className="text-violet-600 font-semibold">Innovating</span> Web
           Experience
         </p>
       </motion.div>
