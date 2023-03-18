@@ -15,11 +15,11 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <div className="scrollbar scrollbar-track-blue-700 scrollbar-thumb-orange-500">
+    <div className="scrollbar scrollbar-track-blue-700 scrollbar-thumb-orange-500 h-screen">
       <div className={darkMode && "dark"}>
+        <main className="bg-white dark:bg-gray-900 to-gray-900 dark:text-white">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
-        <main className="bg-white dark:bg-gray-900 to-gray-900 dark:text-white">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: [0.1, 0.2, 0.4, 0.8, 1] }}

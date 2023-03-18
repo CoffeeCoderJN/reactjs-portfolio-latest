@@ -20,8 +20,8 @@ const Header = ({ darkMode, setDarkMode }) => {
     { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   ];
   return (
-    <header className="sticky bg-white text-gray-900 dark:bg-gray-900 dark:text-white z-50">
-      <nav className="flex md:mx-32 justify-between items-center p-5">
+    <header className="sticky bg-transparent text-gray-900 dark:bg-transparent dark:text-white top-0 z-50">
+      <nav className="flex justify-around items-center backdrop-filter backdrop-blur-lg bg-opacity-30 p-5">
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
