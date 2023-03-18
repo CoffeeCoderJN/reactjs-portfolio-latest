@@ -52,7 +52,7 @@ const Hero = () => {
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-orange-600 to-violet-700 hover:from-violet-700 hover:to-orange-600 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px]"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-orange-600 to-blue-700 hover:from-blue-700 hover:to-orange-600 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px]"
         >
           Resume{" "}
           <span>
@@ -61,7 +61,7 @@ const Hero = () => {
         </a>
       </motion.div>
 
-      <h2 className="text-sm lg:text-2xl text-orange-500 uppercase font-semibold z-0 tracking-[5px]">
+      <h2 className="text-sm md:text-xl text-orange-500 uppercase font-semibold z-0 tracking-[5px]">
         Full Stack Developer
       </h2>
 
@@ -79,7 +79,7 @@ const Hero = () => {
               2000,
             ]}
             speed={30}
-            className="text-violet-600"
+            className="text-blue-600"
             wrapper="span"
             repeat={Infinity}
           />
@@ -105,7 +105,7 @@ const Hero = () => {
             smooth={true}
             offset={40}
             duration={1000}
-            className="cursor-pointer duration-300 hover:text-violet-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px] z-50"
+            className="cursor-pointer duration-300 hover:text-blue-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px] z-50"
           >
             {navLink}
           </Link>
@@ -120,13 +120,13 @@ const Hero = () => {
         className="z-10"
       >
         <p className="max-w-xl text-xs md:text-xl font-light z-0 uppercase pb-5">
-          <span className="text-violet-600 font-semibold">Innovating</span> Web
+          <span className="text-blue-600 font-semibold">Innovating</span> Web
           Experience
         </p>
       </motion.div>
 
       {/* {arrow down animation} */}
-      <div className="mt-5 mb-0 down-arrow z-0">
+      <div className="mt-20 mb-0 down-arrow z-0">
         <FaArrowDown className="text-orange-500 text-3xl animate-bounce " />
       </div>
     </section>

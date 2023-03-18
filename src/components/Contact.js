@@ -54,7 +54,7 @@ const Contact = () => {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="duration-200 ease-in-out hover:scale-125 hover:text-violet-600"
+              className="duration-200 ease-in-out hover:scale-125 hover:text-blue-600"
             >
               {icon}
             </a>
@@ -116,7 +116,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <button className="flex group my-8 bg-gradient-to-r from-orange-600 to-violet-600 hover:from-violet-700 hover:to-orange-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[3px]">
+              <button className="flex group my-8 bg-gradient-to-r from-orange-600 to-blue-600 hover:from-blue-700 hover:to-orange-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[3px]">
                 Send Message
                 <span>
                   <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />

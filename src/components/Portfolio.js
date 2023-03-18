@@ -105,7 +105,7 @@ const Portfolio = () => {
                 />
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
                   <h4 className="font-semibold text-2xl text-center">
-                    <span className="font-light">Project {i + 1} of {projects.length}:</span> <span className="text-violet-600">{title}</span>
+                    <span className="font-light">Project {i + 1} of {projects.length}:</span> <span className="text-blue-600">{title}</span>
                   </h4>
                   <p className="text-base font-extralight text-center md:text-left md:mx-14 xl:mx-48">
                     {description}
@@ -116,7 +116,7 @@ const Portfolio = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" hover:text-violet-600 duration-300 hover:scale-125"
+                    className=" hover:text-blue-600 duration-300 hover:scale-125"
                     href={github}
                   >
                     <FaGithub />
@@ -124,7 +124,7 @@ const Portfolio = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-violet-600 duration-300 hover:scale-125 pb-5 md:pb-10"
+                    className="hover:text-blue-600 duration-300 hover:scale-125 pb-5 md:pb-10"
                     href={demo}
                   >
                     <FaExternalLinkSquareAlt />

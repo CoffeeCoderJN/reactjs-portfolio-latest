@@ -39,7 +39,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-extralight cursor-pointer z-0 uppercase hover:scale-125 hover:text-violet-600 duration-150 text-2xl"
+                className="font-extralight cursor-pointer z-0 uppercase hover:scale-125 hover:text-blue-600 duration-150 text-2xl"
               >
                 {icon}
               </a>
@@ -55,7 +55,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             {darkMode ? (
               <MdWbSunny className="text-2xl cursor-pointer text-orange-500 hover:scale-125 duration-200" />
             ) : (
-              <MdNightsStay className="text-2xl cursor-pointer text-violet-600 hover:scale-125 duration-200" />
+              <MdNightsStay className="text-2xl cursor-pointer text-blue-600 hover:scale-125 duration-200" />
             )}
           </div>
         </motion.div>
