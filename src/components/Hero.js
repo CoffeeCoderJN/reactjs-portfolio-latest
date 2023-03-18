@@ -64,7 +64,7 @@ const Hero = () => {
         </a>
       </motion.div>
 
-      <div className="py-3 text-xl lg:text-3xl font-semibold uppercase leading-[1] z-0">
+      <div className="py-3 text-xl lg:text-4xl font-semibold uppercase leading-[1] z-0">
         <span className="mr-4">I'm a</span>
         <TypeAnimation
           sequence={[
