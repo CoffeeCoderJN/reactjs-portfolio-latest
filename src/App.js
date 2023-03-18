@@ -15,7 +15,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <div className="scrollbar scrollbar-track-blue-700 scrollbar-thumb-orange-500 h-screen">
+    <div className="scrollbar scrollbar-track-blue-700 scrollbar-thumb-orange-500">
       <div className={darkMode && "dark"}>
         <main className="bg-white dark:bg-gray-900 to-gray-900 dark:text-white">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />

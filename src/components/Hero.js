@@ -99,7 +99,7 @@ const Hero = () => {
             smooth={true}
             offset={40}
             duration={1000}
-            className="cursor-pointer duration-300 hover:text-blue-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px]"
+            className="cursor-pointer duration-300 hover:text-blue-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px] z-50"
           >
             {navLink}
           </Link>
