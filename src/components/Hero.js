@@ -69,7 +69,9 @@ const Hero = () => {
         <span className="mr-4">
           <TypeAnimation
             sequence={[
-              "I am Mukul Dharashivkar",
+              "Welcome 👋",
+              2000,
+              "I'm Mukul",
               2000,
               "Guy-Who-Loves-Drawing.js",
               2000,
