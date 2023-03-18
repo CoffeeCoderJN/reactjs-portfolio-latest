@@ -88,7 +88,6 @@ const Serivces = () => {
         initial={{ x: 200, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{once: true}}
         className="grid gap-10 grid-cols-2 lg:grid-cols-4 md:grid-cols-3 md:pt-16 md:pb-16"
       >
         {services.map(({ id, image, title }) => (

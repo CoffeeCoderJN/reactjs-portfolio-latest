@@ -88,7 +88,6 @@ const Portfolio = () => {
         initial={{ opacity: 0, x: -200 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x:0 }}
-        viewport={{once:true}}
         className="relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center "
       >
         <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-track-transparent scrollbar-thumb-orange-500">
