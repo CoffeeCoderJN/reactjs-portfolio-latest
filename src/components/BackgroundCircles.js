@@ -11,7 +11,7 @@ const BackgroundCircles = (props) => {
         borderRadius: ["20%", "20%", "50%", "80%", "20%"],
       }}
       transition={{ duration: 3 }}
-      className="relative flex justify-center top-14 items-center -z-9"
+      className="relative flex justify-center items-center -z-9"
     >
       <div className="absolute border border-blue-700 opacity-60 rounded-full h-[200px] w-[200px] animate-ping mt-52" />
       <div className="absolute border border-blue-700 opacity-60 rounded-full h-[300px] w-[300px] mt-52" />

@@ -37,9 +37,6 @@ const Hero = () => {
     >
       <BackgroundCircles />
       {/* {avatar and resume} */}
-      <h2 className="text-3xl pb-5 lg:text-5xl text-orange-500 uppercase font-bold z-0">
-        Mukul Dharashivkar
-      </h2>
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 0.6 }}
@@ -50,7 +47,7 @@ const Hero = () => {
         <img
           src={avatar}
           alt="avatar"
-          className="w-60 h-60 md:w-72 md:h-72 xl:w-72 xl:h-72 object-cover bg-gradient-to-b from-orange-500 to-orange-800 rounded-3xl"
+          className="w-40 h-40 md:w-44 md:h-44 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-orange-500 to-orange-800 rounded-3xl"
         />
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
@@ -64,22 +61,27 @@ const Hero = () => {
         </a>
       </motion.div>
 
-      <div className="py-3 text-xl lg:text-4xl font-semibold uppercase leading-[1] z-0">
-        <span className="mr-4">I'm a</span>
-        <TypeAnimation
-          sequence={[
-            "Full Stack Developer.",
-            2000,
-            "Freelancer.",
-            2000,
-            "Computer Engineer.",
-            2000,
-          ]}
-          speed={30}
-          className="text-blue-600"
-          wrapper="span"
-          repeat={Infinity}
-        />
+      <h2 className="text-sm lg:text-2xl text-orange-500 uppercase font-semibold z-0 tracking-[5px]">
+        Full Stack Developer
+      </h2>
+
+      <div className="py-3 text-2xl lg:text-5xl text-center font-semibold leading-[1] z-0">
+        <span className="mr-4">
+          <TypeAnimation
+            sequence={[
+              "I am Mukul Dharashivkar",
+              2000,
+              "Guy-Who-Loves-Drawing.js",
+              2000,
+              "<ButLovesToCodeMore/>",
+              2000,
+            ]}
+            speed={30}
+            className="text-blue-600"
+            wrapper="span"
+            repeat={Infinity}
+          />
+        </span>
       </div>
 
       {/* <p className="max-w-xl font-extralight z-0">
@@ -117,7 +119,7 @@ const Hero = () => {
       >
         <p className="max-w-xl text-xs md:text-xl font-light z-0 uppercase pb-5">
           <span className="text-blue-600 font-semibold">Innovating</span> Web
-          Presence
+          Experience
         </p>
       </motion.div>
 
