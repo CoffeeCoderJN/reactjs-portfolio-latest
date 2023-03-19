@@ -61,7 +61,7 @@ const Hero = () => {
         </a>
       </motion.div>
 
-      <h2 className="text-xs md:text-xl text-orange-500 uppercase font-semibold z-0 tracking-[5px]">
+      <h2 className="text-xs md:text-xl text-orange-500 uppercase font-semibold z-0">
         Full Stack Developer
       </h2>
 
