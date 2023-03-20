@@ -4,6 +4,7 @@ import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const Contact = () => {
   const SOCIAL = [
@@ -18,10 +19,11 @@ const Contact = () => {
       icon: <FaGithub />,
     },
     { id: 3, link: "https://www.twitter.com/themukul_99", icon: <FaTwitter /> },
-    { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
+    { id: 4, link: "https://wa.me/918446567366", icon: <RiWhatsappFill /> },
+    { id: 5, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   ];
   return (
-    <Section id="contact" title="Contact Me" subtitle="Get in touch">
+    <Section id="contact" title="Contact Me" subtitle="Get in touch with me">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
@@ -115,7 +117,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <button className="flex group my-8 bg-gradient-to-r from-orange-600 to-blue-600 hover:from-blue-700 hover:to-orange-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[3px]">
+              <button className="flex group my-8 bg-gradient-to-r from-orange-600 to-blue-600 hover:from-blue-700 hover:to-orange-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[3px] hover:text-black">
                 Send Message
                 <span>
                   <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />

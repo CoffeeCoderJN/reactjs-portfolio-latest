@@ -3,6 +3,7 @@ import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const Header = ({ darkMode, setDarkMode }) => {
   const SOCIAL = [
@@ -17,7 +18,8 @@ const Header = ({ darkMode, setDarkMode }) => {
       icon: <FaGithub />,
     },
     { id: 3, link: "https://www.twitter.com/themukul_99", icon: <FaTwitter /> },
-    { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
+    { id: 4, link: "https://wa.me/918446567366", icon: <RiWhatsappFill /> },
+    { id: 5, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   ];
   return (
     <header className="sticky bg-transparent text-gray-900 dark:bg-transparent dark:text-white top-0 z-50">
