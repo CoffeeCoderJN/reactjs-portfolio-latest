@@ -4,24 +4,9 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import avatar from "../assets/programmer.png";
 import { TypeAnimation } from "react-type-animation";
 import BackgroundCircles from "./BackgroundCircles.js";
-import { Link } from "react-scroll";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
-  const SOCIAL = [
-    {
-      id: 1,
-      link: "about",
-      navLink: "About",
-    },
-    { id: 2, link: "skills", navLink: "Skills" },
-    {
-      id: 3,
-      link: "portfolio",
-      navLink: "Portfolio",
-    },
-    { id: 4, link: "contact", navLink: "Contact" },
-  ];
 
   window.addEventListener("scroll", function () {
     const downArrow = this.document.querySelector(".down-arrow");
