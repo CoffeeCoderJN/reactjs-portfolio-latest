@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="h-screen">
       <div className={darkMode && "dark"}>
-        <main className="bg-white dark:bg-gray-900 to-gray-900 dark:text-white">
+        <main className="bg-white dark:bg-zinc-900 to-zinc-900 dark:text-white">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
           <motion.div

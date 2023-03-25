@@ -56,7 +56,7 @@ const Contact = () => {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="duration-200 ease-in-out hover:scale-125 hover:text-blue-600"
+              className="duration-200 ease-in-out hover:scale-125 hover:text-violet-600"
             >
               {icon}
             </a>
@@ -68,6 +68,7 @@ const Contact = () => {
           initial={{ x: 200, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
+          viewport={{once:true}}
           className="p-8 text-left w-full"
         >
           <form
@@ -82,7 +83,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
-                  className="rounded-lg p-3 flex focus:outline-none bg-gray-200 dark:bg-gray-800 dark:text-white"
+                  className="rounded-lg p-3 flex focus:outline-none bg-gray-200 dark:bg-zinc-800 dark:text-white"
                 />
               </div>
               <div className="flex flex-col">
@@ -92,7 +93,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="phone"
-                  className="rounded-lg p-3 flex focus:outline-none bg-gray-200 dark:bg-gray-800 dark:text-white"
+                  className="rounded-lg p-3 flex focus:outline-none bg-gray-200 dark:bg-zinc-800 dark:text-white"
                 />
               </div>
               <div className="flex flex-col">
@@ -102,7 +103,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="email"
-                  className="rounded-lg p-3 flex focus:outline-none bg-gray-200 dark:bg-gray-800 dark:text-white"
+                  className="rounded-lg p-3 flex focus:outline-none bg-gray-200 dark:bg-zinc-800 dark:text-white"
                 />
               </div>
               <div className="flex flex-col">
@@ -112,12 +113,12 @@ const Contact = () => {
                 <textarea
                   name="message"
                   rows="10"
-                  className="rounded-lg p-3 flex focus:outline-none bg-gray-200 dark:bg-gray-800 dark:text-white resize-none"
+                  className="rounded-lg p-3 flex focus:outline-none bg-gray-200 dark:bg-zinc-800 dark:text-white resize-none"
                 ></textarea>
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <button className="flex group my-8 bg-gradient-to-r from-orange-600 to-blue-600 hover:from-blue-700 hover:to-orange-600 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[3px] hover:text-black">
+              <button className="flex group my-8 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[3px] hover:text-black">
                 Send Message
                 <span>
                   <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />

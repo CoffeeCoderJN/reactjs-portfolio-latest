@@ -29,7 +29,7 @@ const Header = ({ darkMode, setDarkMode }) => {
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex space-x-6 text-lg font-bold">
+          <div className="flex space-x-4 text-lg font-bold">
             {/* <a
               className="font-extralight cursor-pointer z-0 uppercase"
               href="mailto:mukul.dharashivkar99@gmail.com"
@@ -41,7 +41,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-extralight cursor-pointer z-0 uppercase hover:scale-125 hover:text-blue-600 duration-150 text-2xl"
+                className="font-extralight cursor-pointer z-0 uppercase hover:scale-125 hover:text-violet-600 duration-150 text-2xl"
               >
                 {icon}
               </a>
@@ -55,9 +55,9 @@ const Header = ({ darkMode, setDarkMode }) => {
         >
           <div onClick={() => setDarkMode(!darkMode)}>
             {darkMode ? (
-              <MdWbSunny className="text-2xl cursor-pointer text-orange-500 hover:scale-125 duration-200" />
+              <MdWbSunny className="text-2xl cursor-pointer text-amber-500 hover:scale-125 duration-200" />
             ) : (
-              <MdNightsStay className="text-2xl cursor-pointer text-blue-600 hover:scale-125 duration-200" />
+              <MdNightsStay className="text-2xl cursor-pointer text-violet-600 hover:scale-125 duration-200" />
             )}
           </div>
         </motion.div>

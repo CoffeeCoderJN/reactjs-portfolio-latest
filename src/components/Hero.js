@@ -32,12 +32,12 @@ const Hero = () => {
         <img
           src={avatar}
           alt="avatar"
-          className="w-40 h-40 md:w-44 md:h-44 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-orange-500 to-orange-800 rounded-3xl"
+          className="w-40 h-40 md:w-44 md:h-44 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl"
         />
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-orange-600 to-blue-700 hover:from-blue-700 hover:to-orange-600 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px] hover:text-black"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px] hover:text-black "
         >
           Resume{" "}
           <span>
@@ -46,11 +46,11 @@ const Hero = () => {
         </a>
       </motion.div>
 
-      <h2 className="text-xs md:text-xl text-orange-500 uppercase font-semibold z-0">
+      <h2 className="text-xs pt-3 md:text-xl text-amber-500 uppercase font-bold z-0">
         Full Stack Developer
       </h2>
 
-      <div className="py-3 text-2xl lg:text-5xl text-center font-semibold leading-[1] z-0">
+      <div className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-semibold leading-[1] z-0">
         <span className="">
           <TypeAnimation
             sequence={[
@@ -89,7 +89,7 @@ const Hero = () => {
             smooth={true}
             offset={40}
             duration={1000}
-            className="cursor-pointer duration-300 hover:text-blue-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px] z-50"
+            className="cursor-pointer duration-300 hover:text-violet-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px] z-50"
           >
             {navLink}
           </Link>
@@ -103,15 +103,15 @@ const Hero = () => {
         viewport={{ once: true }}
         className="z-10"
       >
-        <p className="max-w-xl text-xs md:text-xl font-light z-0 uppercase pb-5">
-          <span className="text-blue-600 font-semibold">Innovating</span> Web
+        <p className="max-w-xl text-xs md:text-xl font-semibold z-0 uppercase pb-5">
+          <span className="text-violet-600 font-semibold">Innovating</span> Web
           Experience
         </p>
       </motion.div>
 
       {/* {arrow down animation} */}
       <div className="mt-20 mb-0 down-arrow z-0">
-        <FaArrowDown className="text-orange-500 text-3xl animate-bounce " />
+        <FaArrowDown className="text-amber-500 text-3xl animate-bounce " />
       </div>
     </section>
   );
