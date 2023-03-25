@@ -50,7 +50,7 @@ const Hero = () => {
         Full Stack Developer
       </h2>
 
-      <div className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-semibold leading-[1] z-0">
+      <div className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0">
         <span className="">
           <TypeAnimation
             sequence={[
