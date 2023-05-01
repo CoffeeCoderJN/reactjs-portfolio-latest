@@ -38,6 +38,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             </a> */}
             {SOCIAL.map(({ id, link, icon }) => (
               <a
+                key={id}
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"

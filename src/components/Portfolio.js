@@ -3,19 +3,37 @@ import Section from "./common/Section";
 import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-import p1 from "../assets/blog.jpg";
-import p2 from "../assets/movie.jpg";
-import p3 from "../assets/tindog.jpg";
-import p5 from "../assets/top10.jpg";
-import p6 from "../assets/expense.png";
-import p7 from "../assets/drum.png";
-import p8 from "../assets/simon.png";
+import p1 from "../assets/youtube.png";
+import p2 from "../assets/weather.png";
+import p3 from "../assets/blog.jpg";
+import p4 from "../assets/movie.jpg";
+import p5 from "../assets/expense.png";
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
       image: p1,
+      title: "UTube",
+      github:
+        "https://github.com/themukuldharashivkar/YouTube-Clone-ReactJS",
+      demo: "https://you-tube-clone-react-js.vercel.app/",
+      description:
+        "YouTube web app clone made using ReactJS. Used YouTube v3 Rapid API to fetch videos.",
+    },
+    {
+      id: 2,
+      image: p2,
+      title: "Daily Weather App",
+      github:
+        "https://github.com/themukuldharashivkar/weather-app-nextjs",
+      demo: "https://weather-app-nextjs-blue.vercel.app/",
+      description:
+        "Weather App powered by OpenWeatherMap API. Made using NextJS 13.",
+    },
+    {
+      id: 3,
+      image: p3,
       title: "Personal Blog",
       github:
         "https://github.com/themukuldharashivkar/personal-mukul-blog-website",
@@ -24,8 +42,8 @@ const Portfolio = () => {
         "This is my personal blog website. I have used HTML and Bootstrap CSS for this project. I have used Flask for backend. I have used heroku for hosting.",
     },
     {
-      id: 2,
-      image: p2,
+      id: 4,
+      image: p4,
       title: "Movie Flix",
       github: "https://github.com/themukuldharashivkar/Movie-Flix",
       demo: "https://github.com/themukuldharashivkar/Movie-Flix",
@@ -33,49 +51,12 @@ const Portfolio = () => {
         "Movie Recommender Web App made using Python Streamlit Framework. Machine Learning project. Used bag-of-the-words model to recommend movies. ",
     },
     {
-      id: 3,
-      image: p3,
-      title: "Tindog",
-      github: "https://github.com/themukuldharashivkar/Tindog-Website",
-      demo: "https://tindog-website-chi.vercel.app/",
-      description:
-        "Tinder for Dogs. This is a website made using HTML, CSS and Bootstrap. I have used Bootstrap for making this website responsive.",
-    },
-    {
-      id: 4,
-      image: p5,
-      title: "Top 10 Movies",
-      github: "https://github.com/themukuldharashivkar/Top-10-Movie-Website",
-      demo: "https://movies-list.onrender.com/",
-      description:
-        "Top 10 Movies web app made using Flask Web Framework for the backend.",
-    },
-    {
       id: 5,
-      image: p6,
+      image: p5,
       title: "Expense Tracker",
       github: "https://github.com/themukuldharashivkar/Expense-Tracker-ReactJS",
       demo: "https://expense-tracker-react-9mffr44hp-themukuldharashivkar.vercel.app/",
       description: "Simple expense tracker Web App made using ReactJS",
-    },
-    {
-      id: 6,
-      image: p7,
-      title: "Drum Set",
-      github:
-        "https://github.com/themukuldharashivkar/Drum-Set-Website-using-JavaScript",
-      demo: "https://super-gecko-c5a330.netlify.app",
-      description:
-        "Just a simple drum set website made using HTML, CSS and Vanilla JavaScript",
-    },
-    {
-      id: 7,
-      image: p8,
-      title: "Simon Game",
-      github:
-        "https://github.com/themukuldharashivkar/Simon-Game-using-JavaScript-and-jQuery",
-      demo: "https://simon-game-jquery-md.netlify.app/",
-      description: "Simon Game made using HTML, CSS and Vanilla Bootstrap",
     },
   ];
   return (
@@ -87,16 +68,16 @@ const Portfolio = () => {
       <motion.div
         initial={{ opacity: 0, x: -200 }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x:0 }}
-        viewport={{once:true}}
-        className="relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center "
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
       >
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-track-transparent scrollbar-thumb-amber-500">
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-center snap-mandatory scrollbar-thin scrollbar-track-transparent scrollbar-thumb-amber-500">
           {projects.map(
             ({ id, image, title, github, demo, description }, i) => (
               <div
                 key={id}
-                className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-5 justify-center p-5"
+                className="w-screen flex-shrink-0 snap-center flex flex-col items-center space-y-5 justify-center p-5 ease-in-out"
               >
                 <img
                   className="h-36 md:h-64 xl:h-96 rounded-3xl hover:scale-105 duration-300"

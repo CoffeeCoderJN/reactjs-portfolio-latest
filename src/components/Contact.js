@@ -53,6 +53,7 @@ const Contact = () => {
         >
           {SOCIAL.map(({ id, link, icon }) => (
             <a
+              key={id}
               href={link}
               target="_blank"
               rel="noopener noreferrer"

@@ -37,7 +37,7 @@ const Hero = () => {
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px] hover:text-black "
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px] hover:text-black"
         >
           Resume{" "}
           <span>
