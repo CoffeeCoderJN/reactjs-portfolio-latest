@@ -94,7 +94,7 @@ const Serivces = () => {
         {services.map(({ id, image, title }) => (
           <div
             key={id}
-            className="flex flex-col items-center justify-center p-5 shadow-gray-400/50 shadow-lg dark:shadow-violet-500/70 rounded-full object-cover w-24 h-24 md:w-32 md:h-32 duration-300 ease-in-out hover:scale-110 dark:bg-violet-900/5"
+            className="flex flex-col items-center justify-center p-5 shadow-gray-400/50 shadow-lg dark:shadow-violet-500/70 rounded-full md:rounded-3xl object-cover w-24 h-24 md:w-32 md:h-32 duration-300 ease-in-out hover:scale-110 dark:bg-violet-900/5"
           >
             <img
               src={image}

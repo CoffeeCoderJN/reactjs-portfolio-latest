@@ -62,7 +62,7 @@ const Portfolio = () => {
   return (
     <Section
       id="portfolio"
-      title="Portfolio"
+      title="Projects"
       subtitle="Swipe/Scroll left to see all the projects."
     >
       <motion.div
