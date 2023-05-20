@@ -59,7 +59,7 @@ const Projects = () => {
       >
         {projects.map((project, i) => {
           return (
-            <div className="flex flex-col border border-transparent rounded-3xl bg-black/5 dark:bg-black/20 duration-300 ease-in-out hover:scale-105 shadow-lg shadow-gray-400/30 dark:shadow-black/40" key={i}>
+            <div className="flex flex-col border border-transparent rounded-3xl bg-black/5 dark:bg-black/30 duration-300 ease-in-out hover:scale-105 shadow-lg shadow-gray-400/30 dark:shadow-black/40" key={i}>
               <div className="relative p-5" key={i}>
                 <img
                   src={project.img}
