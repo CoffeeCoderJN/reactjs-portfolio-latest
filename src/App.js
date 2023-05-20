@@ -4,9 +4,10 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Portfolio from "./components/Portfolio";
+// import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import { motion } from "framer-motion";
+import Projects from "./components/Projects";
 
 
 // import Testimonials from "./components/Testimonials";
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className="h-screen">
       <div className={darkMode && "dark"}>
-        <main className="bg-white dark:bg-zinc-900 to-zinc-900 dark:text-white">
+        <main className="bg-white dark:bg-zinc-900 to-zinc-900 dark:text-white duration-500 ease-in-out">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
           <motion.div
@@ -29,7 +30,8 @@ function App() {
           </motion.div>
           <About />
           <Skills />
-          <Portfolio />
+          {/* <Portfolio /> */}
+          <Projects />
           <Contact />
           <Footer />
         </main>

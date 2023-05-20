@@ -54,11 +54,11 @@ const Header = ({ darkMode, setDarkMode }) => {
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div onClick={() => setDarkMode(!darkMode)}>
+          <div onClick={() => setDarkMode(!darkMode)} className="dark:bg-black/30 bg-black/10 p-2 rounded-xl hover:scale-110 duration-200 shadow-sm shadow-gray-400/30 dark:shadow-black/40">
             {darkMode ? (
-              <MdWbSunny className="text-2xl cursor-pointer text-amber-500 hover:scale-125 duration-200" />
+              <MdWbSunny className="text-2xl cursor-pointer text-amber-500" />
             ) : (
-              <MdNightsStay className="text-2xl cursor-pointer text-violet-600 hover:scale-125 duration-200" />
+              <MdNightsStay className="text-2xl cursor-pointer text-violet-600" />
             )}
           </div>
         </motion.div>
