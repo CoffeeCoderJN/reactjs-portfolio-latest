@@ -85,48 +85,48 @@ const Contact = () => {
             >
               <div className="gap-4 w-full">
                 <div className="flex flex-col">
-                  <label className="capitalize text-sm py-2 font-extralight">
+                  <label className="capitalize text-sm py-2 font-light">
                     name
                   </label>
                   <input
                     type="text"
                     name="name"
-                    className="rounded-lg p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
+                    className="rounded-2xl p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="capitalize text-sm py-2 font-extralight">
+                  <label className="capitalize text-sm py-2 font-light">
                     phone
                   </label>
                   <input
                     type="text"
                     name="phone"
-                    className="rounded-lg p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
+                    className="rounded-2xl p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="capitalize text-sm py-2 font-extralight">
+                  <label className="capitalize text-sm py-2 font-light">
                     email
                   </label>
                   <input
                     type="text"
                     name="email"
-                    className="rounded-lg p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
+                    className="rounded-2xl p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="capitalize text-sm py-2 font-extralight">
+                  <label className="capitalize text-sm py-2 font-light">
                     message
                   </label>
                   <textarea
                     name="message"
                     rows="10"
-                    className="rounded-lg p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white resize-none"
+                    className="rounded-2xl p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white resize-none"
                   ></textarea>
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <button className="flex group my-8 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-6 py-3 uppercase rounded-md cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[3px] hover:text-black">
+                <button className="flex group my-8 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-6 py-3 uppercase rounded-xl cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40">
                   Send Message
                   <span>
                     <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />

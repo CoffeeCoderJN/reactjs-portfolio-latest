@@ -32,12 +32,12 @@ const Hero = () => {
         <img
           src={avatar}
           alt="avatar"
-          className="w-40 h-40 md:w-44 md:h-44 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl"
+          className="w-40 h-40 md:w-44 md:h-44 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40"
         />
         <a
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 hover:scale-110 duration-300 text-white py-2 rounded-lg z-0 uppercase font-semibold tracking-[3px] hover:text-black"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 hover:scale-110 duration-300 text-white py-2 rounded-xl z-0 uppercase font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40"
         >
           Resume{" "}
           <span>
