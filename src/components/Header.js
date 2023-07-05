@@ -1,9 +1,6 @@
 import React from "react";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import { motion } from "framer-motion";
-import { MdEmail } from "react-icons/md";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
-import { RiWhatsappFill } from "react-icons/ri";
 
 const Header = ({ darkMode, setDarkMode }) => {
   // const SOCIAL = [
@@ -43,7 +40,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             ))}
           </div> */}
           <div>
-            <h1 className="font-yesteryear text-3xl text-violet-600 dark:text-amber-500">mukul</h1>
+            <h1 className="font-yesteryear text-3xl text-violet-600 dark:text-amber-500">Mukul</h1>
           </div>
         </motion.div>
         <motion.div

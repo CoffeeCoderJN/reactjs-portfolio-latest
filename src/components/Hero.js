@@ -84,9 +84,9 @@ const Hero = () => {
       </motion.div>
 
       {/* {arrow down animation} */}
-      {/* <div className="mt-20 mb-0 down-arrow z-0">
+      <div className="mt-20 mb-0 down-arrow z-0">
         <FaArrowDown className="text-amber-500 text-3xl animate-bounce " />
-      </div> */}
+      </div>
     </section>
   );
 };

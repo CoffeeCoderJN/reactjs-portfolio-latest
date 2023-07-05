@@ -4,7 +4,6 @@ import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
-import { RiWhatsappFill } from "react-icons/ri";
 
 const Contact = () => {
   const SOCIAL = [
@@ -22,12 +21,12 @@ const Contact = () => {
     { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   ];
   return (
-    <Section id="contact" title="Contact" subtitle="Get in touch with me">
+    <Section id="contact" title="Let's Connect" subtitle="Get in touch with me">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
-        className="bg-black/5 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40"
+        className="bg-black/5 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40 border dark:border-white/5 border-black/5 m-10"
       >
         <motion.div
           initial={{ opacity: 0 }}
@@ -44,7 +43,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <p className="max-w-xs md:max-w-lg font-extralight">
+            <p className="max-w-xs md:max-w-lg font-extralight text-xs md:text-sm">
               I am open to talk regarding freelancing or full time
               opportunities. Feel free to contact me using your preferred
               medium.
@@ -90,7 +89,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="name"
-                    className="rounded-2xl p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
+                    className="rounded-xl p-3 flex focus:outline-none bg-white dark:bg-[#050505] dark:text-white border border-black/10 dark:border-white/10"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -100,7 +99,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="phone"
-                    className="rounded-2xl p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
+                    className="rounded-xl p-3 flex focus:outline-none bg-white dark:bg-[#050505] dark:text-white border border-black/10 dark:border-white/10"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -110,7 +109,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="email"
-                    className="rounded-2xl p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white"
+                    className="rounded-xl p-3 flex focus:outline-none bg-white dark:bg-[#050505] dark:text-white border border-black/10 dark:border-white/10"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -120,7 +119,7 @@ const Contact = () => {
                   <textarea
                     name="message"
                     rows="10"
-                    className="rounded-2xl p-3 flex focus:outline-none bg-gray-300 dark:bg-zinc-800 dark:text-white resize-none"
+                    className="rounded-2xl p-3 flex focus:outline-none bg-white dark:bg-[#050505] dark:text-white resize-none border border-black/10 dark:border-white/10"
                   ></textarea>
                 </div>
               </div>

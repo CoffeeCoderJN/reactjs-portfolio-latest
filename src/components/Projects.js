@@ -6,7 +6,8 @@ import movie from "../assets/movie.jpg";
 // import expense from "../assets/expense.png";
 import Section from "./common/Section";
 
-import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { BiLinkAlt } from "react-icons/bi";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -49,17 +50,24 @@ const Projects = () => {
   ];
 
   return (
-    <Section id="about" title="Projects" subtitle="These are some of my best projects.">
+    <Section
+      id="about"
+      title="Projects"
+      subtitle="These are some of my best projects."
+    >
       <motion.div
         initial={{ opacity: 0, x: -200 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        className="projects container pt-5 mx-auto px-2 md:px-12 lg:px-64 grid md:grid-cols-2 gap-10"
+        className="projects container pt-5 mx-auto px-2 md:px-12 lg:px-56 grid md:grid-cols-2 gap-10"
       >
         {projects.map((project, i) => {
           return (
-            <div className="flex flex-col rounded-3xl bg-black/10 dark:bg-[#101111] duration-300 ease-in-out shadow-lg shadow-gray-400/30 dark:shadow-black ml-10 mr-10 md:m-0 border dark:border-white/5 border-black/5" key={i}>
+            <div
+              className="flex flex-col rounded-3xl bg-black/10 dark:bg-[#101111] duration-300 ease-in-out shadow-lg shadow-gray-400/30 dark:shadow-black ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
+              key={i}
+            >
               <div className="relative p-5" key={i}>
                 <img
                   src={project.img}
@@ -68,30 +76,38 @@ const Projects = () => {
                 />
               </div>
 
-              <p className="py-5 text-center text-2xl font-semibold px-2 text-white bg-violet-900 dark:bg-amber-600">
+              <p className="py-5 text-center text-2xl font-semibold px-2 text-black dark:text-white bg-white dark:bg-black">
                 {project.title}
               </p>
 
-              <p className="text-sm font-extralight text-center px-2 pb-5 text-black dark:text-white pt-5">
+              <p className="text-sm font-extralight text-center px-2 text-black dark:text-white pt-5">
                 {project.desc}
               </p>
 
-              <div className="mx-auto pb-10 inline-flex space-x-10 text-2xl md:text-4xl">
+              <hr className="h-px my-5 bg-black/20 border-0 dark:bg-black"></hr>
+
+              <div className="mx-auto pb-5 flex flex-row space-x-5 text-2xl md:text-4xl">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.live}
-                  className="hover:text-violet-600 duration-300 hover:scale-125"
+                  className="hover:text-violet-600 duration-300 hover:scale-105"
                 >
-                  <FaExternalLinkSquareAlt />
+                  <div className="flex flex-row gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg">
+                    <p className="text-sm lg:text-lg">Link</p>
+                    <BiLinkAlt className="text-sm lg:text-xl m-1" />
+                  </div>
                 </a>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.code}
-                  className="hover:text-violet-600 duration-300 hover:scale-125"
+                  className="hover:text-violet-600 duration-300 hover:scale-105"
                 >
-                  <FaGithub />
+                  <div className="flex flex-row gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg">
+                    <p className="text-sm lg:text-lg">Github</p>
+                    <FaGithub className="text-sm lg:text-xl m-1" />
+                  </div>
                 </a>
               </div>
             </div>
