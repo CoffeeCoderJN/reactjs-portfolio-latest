@@ -19,8 +19,7 @@ const Contact = () => {
       icon: <FaGithub />,
     },
     { id: 3, link: "https://www.twitter.com/themukul_99", icon: <FaTwitter /> },
-    { id: 4, link: "https://wa.me/918446567366", icon: <RiWhatsappFill /> },
-    { id: 5, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
+    { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   ];
   return (
     <Section id="contact" title="Contact" subtitle="Get in touch with me">
@@ -28,13 +27,13 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
-        className="bg-black/5 dark:bg-[#101111] m-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black"
+        className="bg-black/5 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40"
       >
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1 }}
-          className="flex flex-col items-center justify-center gap-8 text-center p-8"
+          className="flex flex-col items-center justify-center gap-8 text-center"
         >
           {/* <div>
           <img src={contact} alt="contact info" className="w-32 h-32"></img>
@@ -77,7 +76,7 @@ const Contact = () => {
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="p-8 text-left w-full"
+            className="p-3 text-left w-full"
           >
             <form
               action="https://getform.io/f/e05b6bc9-032c-4a2c-a5af-ff2107822d78"
@@ -126,7 +125,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <button className="flex group my-8 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-6 py-3 uppercase rounded-xl cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40">
+                <button className="flex group mt-10 mb-0 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-6 py-3 uppercase rounded-xl cursor-pointer hover:scale-110 duration-200 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40 ">
                   Send Message
                   <span>
                     <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />

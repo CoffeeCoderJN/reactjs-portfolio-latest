@@ -70,32 +70,6 @@ const Hero = () => {
         </span>
       </div>
 
-      {/* <p className="max-w-xl font-extralight z-0">
-        Hello <span className="animate-pulse text-4xl">👋</span>, welcome to my
-        site. I am a software engineer from India.
-      </p> */}
-      {/* SOCIAL ICONS */}
-      {/* <motion.div
-        initial={{ x: -200, opacity: 0 }}
-        transition={{ duration: 0.6 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        className="flex justify-evenly py-8 text-xs md:text-lg font-light w-full md:w-1/2 xl:w-1/3 z-0 ease-in-out"
-      >
-        {SOCIAL.map(({ id, link, navLink }) => (
-          <Link
-            to={link}
-            key={id}
-            smooth={true}
-            offset={40}
-            duration={1000}
-            className="cursor-pointer duration-300 hover:text-violet-600 font-extralight hover:font-semibold  hover:scale-125 uppercase tracking-[2px] z-50"
-          >
-            {navLink}
-          </Link>
-        ))}
-      </motion.div> */}
-
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         transition={{ duration: 1 }}
@@ -110,9 +84,9 @@ const Hero = () => {
       </motion.div>
 
       {/* {arrow down animation} */}
-      <div className="mt-20 mb-0 down-arrow z-0">
+      {/* <div className="mt-20 mb-0 down-arrow z-0">
         <FaArrowDown className="text-amber-500 text-3xl animate-bounce " />
-      </div>
+      </div> */}
     </section>
   );
 };
