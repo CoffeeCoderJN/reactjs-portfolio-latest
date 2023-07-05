@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'yesteryear': ['Yesteryear', 'cursive'],
+      },
+    },
   },
   plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
 }

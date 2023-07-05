@@ -28,13 +28,13 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
-        className="bg-black/5 dark:bg-[#101111] m-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black"
+        className="bg-black/5 dark:bg-black/40 p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40"
       >
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1 }}
-          className="flex flex-col items-center justify-center gap-8 text-center p-8"
+          className="flex flex-col items-center justify-center gap-8 text-center"
         >
           {/* <div>
           <img src={contact} alt="contact info" className="w-32 h-32"></img>
