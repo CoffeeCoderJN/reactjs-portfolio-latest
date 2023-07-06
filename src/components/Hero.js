@@ -30,7 +30,7 @@ const Hero = () => {
       >
         <motion.img
           initial={{ scale: 0 }}
-          animate={{ rotate: 360, scale: 1 }}
+          animate={{ scale: 1 }}
           transition={{
             type: "spring",
             stiffness: 150,
