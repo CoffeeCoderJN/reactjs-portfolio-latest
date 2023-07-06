@@ -24,7 +24,7 @@ const Contact = () => {
     <Section id="contact" title="Let's Connect" subtitle="Get in touch with me">
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
         whileInView={{ opacity: 1 }}
         className="bg-black/5 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40 border dark:border-white/5 border-black/5 m-10"
       >

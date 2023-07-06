@@ -40,7 +40,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             ))}
           </div> */}
           <div>
-            <h1 className="font-yesteryear text-3xl text-violet-600 dark:text-amber-500">Mukul</h1>
+            <h1 className="font-yesteryear text-3xl text-violet-600 dark:text-amber-500 underline ">Mukul</h1>
           </div>
         </motion.div>
         <motion.div

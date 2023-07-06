@@ -55,16 +55,14 @@ const Projects = () => {
       title="Projects"
       subtitle="These are some of my best projects."
     >
-      <motion.div
-        initial={{ opacity: 0, x: -200 }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        className="projects container pt-5 mx-auto px-2 md:px-12 lg:px-56 grid md:grid-cols-2 gap-10"
-      >
+      <div className="projects container pt-5 mx-auto px-2 md:px-12 lg:px-56 grid md:grid-cols-2 gap-10">
         {projects.map((project, i) => {
           return (
-            <div
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               className="flex flex-col rounded-3xl bg-black/10 dark:bg-[#101111] duration-300 ease-in-out shadow-lg shadow-gray-400/30 dark:shadow-black ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
               key={i}
             >
@@ -114,10 +112,10 @@ const Projects = () => {
                   </div>
                 </motion.a>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </motion.div>
+      </div>
     </Section>
   );
 };
