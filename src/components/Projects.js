@@ -87,28 +87,32 @@ const Projects = () => {
               <hr className="h-px my-5 bg-black/20 border-0 dark:bg-black"></hr>
 
               <div className="mx-auto pb-5 flex flex-row space-x-5 text-2xl md:text-4xl">
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.live}
-                  className="hover:text-violet-600 duration-300 hover:scale-105"
+                  className="hover:text-violet-600"
                 >
                   <div className="flex flex-row gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg">
                     <p className="text-sm lg:text-lg">Link</p>
                     <BiLinkAlt className="text-sm lg:text-xl m-1" />
                   </div>
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.code}
-                  className="hover:text-violet-600 duration-300 hover:scale-105"
+                  className="hover:text-violet-600"
                 >
                   <div className="flex flex-row gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg">
                     <p className="text-sm lg:text-lg">Github</p>
                     <FaGithub className="text-sm lg:text-xl m-1" />
                   </div>
-                </a>
+                </motion.a>
               </div>
             </div>
           );

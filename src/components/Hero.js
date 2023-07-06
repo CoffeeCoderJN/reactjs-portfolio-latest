@@ -7,7 +7,6 @@ import BackgroundCircles from "./BackgroundCircles.js";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-
   window.addEventListener("scroll", function () {
     const downArrow = this.document.querySelector(".down-arrow");
 
@@ -29,21 +28,33 @@ const Hero = () => {
         viewport={{ once: true }}
         className="z-0 p-5"
       >
-        <img
+        <motion.img
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 150,
+            damping: 20,
+            duration: 6,
+          }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           src={avatar}
           alt="avatar"
           className="w-40 h-40 md:w-44 md:h-44 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40"
         />
-        <a
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 hover:scale-110 duration-300 text-white py-2 rounded-xl z-0 uppercase font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white py-2 rounded-xl z-0 uppercase font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40"
         >
           Resume{" "}
           <span>
             <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />
           </span>
-        </a>
+        </motion.a>
       </motion.div>
 
       <h2 className="text-xs pt-3 md:text-xl text-amber-500 uppercase font-bold z-0">
