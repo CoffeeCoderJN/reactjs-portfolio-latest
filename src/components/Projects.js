@@ -63,7 +63,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="flex flex-col rounded-3xl bg-black/10 dark:bg-[#101111] duration-300 ease-in-out shadow-lg shadow-gray-400/30 dark:shadow-black ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
+              className="flex flex-col rounded-3xl bg-black/10 dark:bg-[#101111] shadow-lg shadow-gray-400/30 dark:shadow-black ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
               key={i}
             >
               <div className="relative p-5" key={i}>
