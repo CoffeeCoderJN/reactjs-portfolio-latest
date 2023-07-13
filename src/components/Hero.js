@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center p-5 text-center"
+      className="min-h-screen flex flex-col justify-center items-center p-5 text-center pt-36"
     >
       <BackgroundCircles />
       {/* {avatar and resume} */}

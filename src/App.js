@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 
 import PreLoader from "./components/PreLoader";
 
+
 // import Testimonials from "./components/Testimonials";
 
 function App() {
