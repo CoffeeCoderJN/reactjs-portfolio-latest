@@ -2,7 +2,8 @@ import React from "react";
 import youtube from "../assets/youtube.png";
 import weather from "../assets/weather.png";
 import blog from "../assets/blog.jpg";
-import movie from "../assets/movie.jpg";
+// import movie from "../assets/movie.jpg";
+import freepics from "../assets/freepics.png";
 // import expense from "../assets/expense.png";
 import Section from "./common/Section";
 
@@ -12,6 +13,13 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
+    {
+      img: freepics,
+      title: "FreePics",
+      desc: "Royalty free image and media sharing website. React JS, Tailwind CSS, Sanity CMS v3",
+      live: "https://github.com/themukuldharashivkar/Pixabay2.0",
+      code: "https://github.com/themukuldharashivkar/Pixabay2.0",
+    },
     {
       img: youtube,
       title: "UTube",
@@ -33,13 +41,13 @@ const Projects = () => {
       live: "https://themukuldharashivkar-blog.onrender.com/",
       code: "https://github.com/themukuldharashivkar/personal-mukul-blog-website",
     },
-    {
-      img: movie,
-      title: "Movie Flix",
-      desc: "Movie Recommender Web App made using Python Streamlit Framework. Machine Learning project. Used bag-of-the-words model to recommend movies. ",
-      live: "https://github.com/themukuldharashivkar/Movie-Flix",
-      code: "https://github.com/themukuldharashivkar/Movie-Flix",
-    },
+    // {
+    //   img: movie,
+    //   title: "Movie Flix",
+    //   desc: "Movie Recommender Web App made using Python Streamlit Framework. Machine Learning project. Used bag-of-the-words model to recommend movies. ",
+    //   live: "https://github.com/themukuldharashivkar/Movie-Flix",
+    //   code: "https://github.com/themukuldharashivkar/Movie-Flix",
+    // },
     // {
     //   img: expense,
     //   title: "Expense Tracker",
