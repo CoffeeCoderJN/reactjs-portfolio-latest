@@ -1,62 +1,11 @@
 import React from "react";
-import youtube from "../assets/youtube.png";
-import weather from "../assets/weather.png";
-import blog from "../assets/blog.jpg";
-// import movie from "../assets/movie.jpg";
-import freepics from "../assets/freepics.png";
-// import expense from "../assets/expense.png";
 import Section from "./common/Section";
-
+import { projects } from "./data/projectData";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkAlt } from "react-icons/bi";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const projects = [
-    {
-      img: freepics,
-      title: "FreePics",
-      desc: "Royalty free image and media sharing website. React JS, Tailwind CSS, Sanity CMS v3",
-      live: "https://github.com/themukuldharashivkar/Pixabay2.0",
-      code: "https://github.com/themukuldharashivkar/Pixabay2.0",
-    },
-    {
-      img: youtube,
-      title: "UTube",
-      desc: "YouTube web app clone made using ReactJS. Used YouTube v3 Rapid API to fetch videos.",
-      live: "https://you-tube-clone-react-js.vercel.app/",
-      code: "https://github.com/themukuldharashivkar/YouTube-Clone-ReactJS",
-    },
-    {
-      img: weather,
-      title: "Daily Weather App",
-      desc: "Weather App powered by OpenWeatherMap API. Made using NextJS 13.",
-      live: "https://weather-app-nextjs-blue.vercel.app/",
-      code: "https://github.com/themukuldharashivkar/weather-app-nextjs",
-    },
-    {
-      img: blog,
-      title: "Personal Blog",
-      desc: "This is my personal blog website. I have used HTML and Bootstrap CSS for this project. I have used Flask for backend. I have used heroku for hosting.",
-      live: "https://themukuldharashivkar-blog.onrender.com/",
-      code: "https://github.com/themukuldharashivkar/personal-mukul-blog-website",
-    },
-    // {
-    //   img: movie,
-    //   title: "Movie Flix",
-    //   desc: "Movie Recommender Web App made using Python Streamlit Framework. Machine Learning project. Used bag-of-the-words model to recommend movies. ",
-    //   live: "https://github.com/themukuldharashivkar/Movie-Flix",
-    //   code: "https://github.com/themukuldharashivkar/Movie-Flix",
-    // },
-    // {
-    //   img: expense,
-    //   title: "Expense Tracker",
-    //   desc: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
-    //   live: "https://expense-tracker-react-9mffr44hp-themukuldharashivkar.vercel.app/",
-    //   code: "https://github.com/themukuldharashivkar/Expense-Tracker-ReactJS",
-    // },
-  ];
-
   return (
     <Section
       id="about"
@@ -64,7 +13,7 @@ const Projects = () => {
       subtitle="These are some of my best projects."
     >
       <div className="projects container pt-5 mx-auto px-2 md:px-12 lg:px-56 grid md:grid-cols-2 gap-10">
-        {projects.map((project, i) => {
+        {projects.slice(0, 4).map((project, i) => {
           return (
             <motion.div
               initial={{ opacity: 0, x: -200 }}
@@ -86,24 +35,32 @@ const Projects = () => {
                 {project.title}
               </p>
 
-              <p className="text-sm font-extralight text-center px-2 text-black dark:text-white pt-5">
+              <p className="text-sm font-light text-center px-2 text-black dark:text-white pt-5">
                 {project.desc}
               </p>
 
+              <div className="flex items-center justify-center space-x-3 pt-5">
+                {project.skills.map((skill, i) => (
+                  <div className="bg-white dark:bg-black p-2 rounded-lg " key={i}>
+                    <img className="w-4 h-4 md:w-5 md:h-5 lg:w-10 lg:h-10 object-contain" src={skill} alt="" />
+                  </div>
+                ))}
+              </div>
+
               <hr className="h-px my-5 bg-black/20 border-0 dark:bg-black"></hr>
 
-              <div className="mx-auto pb-5 flex flex-row space-x-5 text-2xl md:text-4xl">
+              <div className="mx-auto pb-5 flex space-x-2 md:space-x-5 text-2xl md:text-4xl">
                 <motion.a
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.live}
-                  className="hover:text-violet-600"
+                  className="hover:text-indigo-600"
                 >
-                  <div className="flex flex-row gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg">
-                    <p className="text-sm lg:text-lg">Link</p>
-                    <BiLinkAlt className="text-sm lg:text-xl m-1" />
+                  <div className="flex gap-1 bg-white dark:bg-black px-6 py-2 rounded-lg items-center justify-center">
+                    <p className="text-xs md:text-sm lg:text-lg">Link</p>
+                    <BiLinkAlt className="text-sm lg:text-xl " />
                   </div>
                 </motion.a>
                 <motion.a
@@ -112,11 +69,11 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.code}
-                  className="hover:text-violet-600"
+                  className="hover:text-indigo-600"
                 >
-                  <div className="flex flex-row gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg">
-                    <p className="text-sm lg:text-lg">Github</p>
-                    <FaGithub className="text-sm lg:text-xl m-1" />
+                  <div className="flex gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg items-center justify-center">
+                    <p className="text-xs md:text-sm lg:text-lg">Github</p>
+                    <FaGithub className="text-sm lg:text-xl " />
                   </div>
                 </motion.a>
               </div>

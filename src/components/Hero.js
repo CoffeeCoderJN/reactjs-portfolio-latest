@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { BsFillCaretDownFill } from "react-icons/bs";
 import avatar from "../assets/programmer.png";
 import { TypeAnimation } from "react-type-animation";
 import BackgroundCircles from "./BackgroundCircles.js";
@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center p-5 text-center pt-36"
+      className="min-h-screen flex flex-col justify-center items-center p-5 text-center"
     >
       <BackgroundCircles />
       {/* {avatar and resume} */}
@@ -48,12 +48,12 @@ const Hero = () => {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white py-2 rounded-xl z-0 uppercase font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white py-2 rounded-xl z-0 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40"
         >
-          Resume{" "}
           <span>
-            <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />
+            <BsFillCaretDownFill className="text-xl group-hover:text-black z-0 font-semibold" />
           </span>
+          <p className="text-sm md:text-lg mx-2 font-light">Download CV</p>
         </motion.a>
       </motion.div>
 
@@ -89,7 +89,7 @@ const Hero = () => {
         className="z-10"
       >
         <p className="max-w-xl text-xs md:text-xl font-semibold z-0 uppercase pb-5">
-          <span className="text-violet-600 font-semibold">Innovating</span> Web
+          <span className="text-indigo-600 font-semibold">Innovating</span> Web
           Experience
         </p>
       </motion.div>

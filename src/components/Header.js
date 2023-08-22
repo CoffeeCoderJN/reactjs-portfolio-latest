@@ -1,5 +1,5 @@
 import React from "react";
-import { MdNightsStay, MdWbSunny } from "react-icons/md";
+import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Header = ({ darkMode, setDarkMode }) => {
@@ -19,7 +19,7 @@ const Header = ({ darkMode, setDarkMode }) => {
   //   { id: 5, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   // ];
   return (
-    <header className="fixed inset-x-0 bg-transparent text-gray-900 dark:bg-transparent dark:text-white top-0 z-50">
+    <header className="sticky bg-transparent text-gray-900 dark:bg-transparent dark:text-white top-0 z-40">
       <nav className="flex md:justify-around items-center backdrop-filter backdrop-blur-lg bg-opacity-30 p-5 justify-between">
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0.5 }}
@@ -33,14 +33,16 @@ const Header = ({ darkMode, setDarkMode }) => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-extralight cursor-pointer z-0 uppercase hover:scale-125 hover:text-violet-600 duration-150 text-2xl"
+                className="font-extralight cursor-pointer z-0 uppercase hover:scale-125 hover:text-indigo-600 duration-150 text-2xl"
               >
                 {icon}
               </a>
             ))}
           </div> */}
-          <div>
-            <h1 className="font-yesteryear text-3xl text-violet-600 dark:text-amber-500 underline ">Mukul</h1>
+          <div className="">
+            <h1 className="font-yesteryear text-3xl text-indigo-600 dark:text-amber-500 underline ">
+              Mukul
+            </h1>
           </div>
         </motion.div>
         <motion.div
@@ -48,13 +50,18 @@ const Header = ({ darkMode, setDarkMode }) => {
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div onClick={() => setDarkMode(!darkMode)} className="dark:bg-[#101111] bg-black/10 p-2 rounded-xl hover:scale-110 duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            onClick={() => setDarkMode(!darkMode)}
+            className="dark:bg-[#101111] bg-gray-100 p-2 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 group"
+          >
             {darkMode ? (
-              <MdWbSunny className="text-2xl cursor-pointer text-amber-500" />
+              <FiSun className="text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
             ) : (
-              <MdNightsStay className="text-2xl cursor-pointer text-violet-600" />
+              <FiMoon className="text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
             )}
-          </div>
+          </motion.div>
         </motion.div>
       </nav>
     </header>

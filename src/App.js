@@ -1,17 +1,13 @@
 import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import AppFooter from "./components/AppFooter";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import { motion } from "framer-motion";
 import Projects from "./components/Projects";
-
 import PreLoader from "./components/PreLoader";
-
-
-// import Testimonials from "./components/Testimonials";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -32,7 +28,7 @@ function App() {
         {loading ? (
           <PreLoader loading={loading} />
         ) : (
-          <main className="bg-white dark:bg-[#050505] to-bg-[#050505] dark:text-white duration-1000 ease-in-out">
+          <main className="bg-white dark:bg-[#050505] to-bg-[#050505] dark:text-white duration-700 ease-in-out">
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
             <motion.div
@@ -46,7 +42,7 @@ function App() {
             <Skills />
             <Projects />
             <Contact />
-            <Footer />
+            <AppFooter />
           </main>
         )}
       </div>
