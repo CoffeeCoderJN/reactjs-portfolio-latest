@@ -23,7 +23,7 @@ export const projects = [
     desc: "Fashion and Lifestyle Ecommerce Website, implemented features like cart, checkout, payment gateway, etc.",
     live: "https://github.com/themukuldharashivkar/Pixabay2.0",
     code: "https://github.com/themukuldharashivkar/Pixabay2.0",
-    skills: [react, java, spring, redux, css, mysql],
+    skills: [react, spring, redux, css, mysql],
   },
   {
     id: 1,
