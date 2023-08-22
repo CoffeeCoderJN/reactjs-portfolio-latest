@@ -21,7 +21,7 @@ const Contact = () => {
     { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   ];
   return (
-    <Section id="contact" title="Let's Connect" subtitle="Get in touch with me">
+    <Section id="contact" title="Contact" subtitle="Get in touch with me">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 2 }}
