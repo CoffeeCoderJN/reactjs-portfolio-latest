@@ -30,7 +30,7 @@ export const projects = [
     img: freepics,
     title: "FreePics",
     desc: "Royalty free image and media sharing website. React JS, Tailwind CSS, Sanity CMS v3",
-    live: "https://github.com/themukuldharashivkar/Pixabay2.0",
+    live: "https://yt-pixabayclone-6d274.web.app",
     code: "https://github.com/themukuldharashivkar/Pixabay2.0",
     skills: [react, css, redux],
   },
