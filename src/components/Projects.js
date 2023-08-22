@@ -10,7 +10,7 @@ const Projects = () => {
     <Section
       id="about"
       title="Projects"
-      subtitle="Projects that I have worked on recently."
+      subtitle="Recent projects upon which I have worked on."
     >
       <div className="projects container pt-5 mx-auto md:px-12 lg:px-56 grid md:grid-cols-2 gap-10">
         {projects.slice(0, 4).map((project, i) => {
