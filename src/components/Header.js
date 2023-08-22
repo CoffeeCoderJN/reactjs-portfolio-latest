@@ -1,7 +1,6 @@
 import React from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
-import brand from "../assets/brand.png";
 
 const Header = ({ darkMode, setDarkMode }) => {
   // const SOCIAL = [
@@ -41,7 +40,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             ))}
           </div> */}
           <div className="">
-            <h1 className="font-yesteryear text-3xl text-amber-500 underline">
+            <h1 className="font-yesteryear text-4xl text-amber-500 underline">
               Mukul
             </h1>
           </div>

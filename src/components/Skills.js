@@ -81,7 +81,7 @@ const Serivces = () => {
   return (
     <Section
       id="skills"
-      title="Skills"
+      title="expertise"
       subtitle="I can work in all the Skills mentioned below."
     >
       <motion.div

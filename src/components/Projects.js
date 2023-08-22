@@ -41,8 +41,8 @@ const Projects = () => {
 
               <div className="flex items-center justify-center space-x-3 pt-5">
                 {project.skills.map((skill, i) => (
-                  <div className="bg-white dark:bg-black p-2 rounded-lg " key={i}>
-                    <img className="w-4 h-4 md:w-5 md:h-5 lg:w-10 lg:h-10 object-contain" src={skill} alt="" />
+                  <div className="bg-white dark:bg-black p-2 rounded-lg border border-neutral-200 dark:border-neutral-900" key={i}>
+                    <img className="w-7 h-7 md:w-7 md:h-7 lg:w-10 lg:h-10 object-contain" src={skill} alt="" />
                   </div>
                 ))}
               </div>
@@ -58,8 +58,8 @@ const Projects = () => {
                   href={project.live}
                   className="hover:text-indigo-600"
                 >
-                  <div className="flex gap-1 bg-white dark:bg-black px-6 py-2 rounded-lg items-center justify-center">
-                    <p className="text-xs md:text-sm lg:text-lg">Link</p>
+                  <div className="flex gap-1 bg-white dark:bg-black px-4 py-2 rounded-lg items-center justify-center">
+                    <p className="text-xs md:text-sm lg:text-lg">Demo</p>
                     <BiLinkAlt className="text-sm lg:text-xl " />
                   </div>
                 </motion.a>
