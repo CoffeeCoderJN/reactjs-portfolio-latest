@@ -28,7 +28,7 @@ function App() {
         {loading ? (
           <PreLoader loading={loading} />
         ) : (
-          <main className="bg-white dark:bg-[#050505] to-bg-[#050505] dark:text-white duration-700 ease-in-out">
+          <main className="bg-white dark:bg-neutral-900 to-bg-[#050505] dark:text-white duration-700 ease-in-out">
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
             <motion.div

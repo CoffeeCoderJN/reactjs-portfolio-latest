@@ -4,7 +4,6 @@ import blog from "../../assets/blog.jpg";
 import freepics from "../../assets/freepics.png";
 import ecommerce from "../../assets/ecommerce.png";
 
-import java from "../../assets/java.png";
 import spring from "../../assets/spring.png";
 import react from "../../assets/react.png";
 import javascript from "../../assets/js.png";

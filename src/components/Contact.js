@@ -1,13 +1,9 @@
 import React from "react";
 import Section from "./common/Section";
 import { MdEmail } from "react-icons/md";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import {
-  FiGithub,
-  FiTwitter,
-  FiLinkedin,
-} from "react-icons/fi";
+import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 import { motion } from "framer-motion";
+import {FiSend } from "react-icons/fi";
 
 const Contact = () => {
   const SOCIAL = [
@@ -30,7 +26,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         transition={{ duration: 2 }}
         whileInView={{ opacity: 1 }}
-        className="bg-black/5 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40 border dark:border-white/5 border-black/5 m-10"
+        className="bg-gray-100 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5 m-10"
       >
         <motion.div
           initial={{ opacity: 0 }}
@@ -68,7 +64,7 @@ const Contact = () => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="dark:bg-[#000000] hover:bg-indigo-400 dark:hover:bg-[#131313] cursor-pointer rounded-xl bg-gray-200 shadow-sm p-4 border  dark:border-white/5 border-black/5 text-xl sm:text-2xl md:text-3xl hover:text-indigo-600"
+                className="dark:bg-[#000000] hover:bg-neutral-300 dark:hover:bg-[#131313] cursor-pointer rounded-xl bg-gray-200 shadow-sm p-4 border  dark:border-white/5 border-black/5 text-xl sm:text-2xl md:text-3xl hover:text-indigo-600"
               >
                 {icon}
               </motion.a>
@@ -130,16 +126,14 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <motion.button
+                <motion.a
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  className="flex group mt-10 mb-0 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-6 py-3 rounded-lg cursor-pointer font-normal tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40"
+                  className="flex items-center justify-center group mt-10 mb-0 bg-gradient-to-r border-2 border-amber-500 bg-transparent hover:border-transparent hover:from-amber-600 hover:to-amber-500 px-10 py-3 rounded-lg cursor-pointer font-normal tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40"
                 >
-                  Send Message
-                  {/* <span>
-                    <MdOutlineKeyboardArrowRight className="text-2xl group-hover:rotate-180 duration-500 mx-1 group-hover:text-black z-0" />
-                  </span> */}
-                </motion.button>
+                  Send
+                  <FiSend className="ml-2" />
+                </motion.a>
               </div>
             </form>
           </motion.div>

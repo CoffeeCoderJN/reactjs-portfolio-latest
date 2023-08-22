@@ -10,9 +10,9 @@ const Projects = () => {
     <Section
       id="about"
       title="Projects"
-      subtitle="These are some of my best projects."
+      subtitle="Projects that I have worked on recently."
     >
-      <div className="projects container pt-5 mx-auto px-2 md:px-12 lg:px-56 grid md:grid-cols-2 gap-10">
+      <div className="projects container pt-5 mx-auto md:px-12 lg:px-56 grid md:grid-cols-2 gap-10">
         {projects.slice(0, 4).map((project, i) => {
           return (
             <motion.div
@@ -20,7 +20,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="flex flex-col rounded-3xl bg-black/10 dark:bg-[#101111] shadow-lg shadow-gray-400/30 dark:shadow-black ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
+              className="flex flex-col rounded-3xl bg-gray-100 dark:bg-[#101111] shadow-lg shadow-gray-400/30 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
               key={i}
             >
               <div className="relative p-5" key={i}>

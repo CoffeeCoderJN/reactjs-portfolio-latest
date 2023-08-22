@@ -41,14 +41,14 @@ const Hero = () => {
           viewport={{ once: true }}
           src={avatar}
           alt="avatar"
-          className="w-40 h-40 md:w-44 md:h-44 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/40"
+          className="w-48 h-48 md:w-52 md:h-52 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         />
         <motion.a
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white py-2 rounded-xl z-0 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r border-2 hover:border-transparent border-amber-600 bg-transparent transition-colors hover:from-amber-600 hover:to-amber-500 py-2 rounded-xl z-0 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         >
           <span>
             <BsFillCaretDownFill className="text-xl group-hover:text-black z-0 font-semibold" />
@@ -57,7 +57,7 @@ const Hero = () => {
         </motion.a>
       </motion.div>
 
-      <h2 className="text-xs pt-3 md:text-xl text-amber-500 uppercase font-bold z-0">
+      <h2 className="text-sm pt-3 md:text-xl text-amber-500 uppercase font-bold z-0">
         Full Stack Developer
       </h2>
 
@@ -88,7 +88,7 @@ const Hero = () => {
         viewport={{ once: true }}
         className="z-10"
       >
-        <p className="max-w-xl text-xs md:text-xl font-semibold z-0 uppercase pb-5">
+        <p className="max-w-xl text-sm md:text-xl font-semibold z-0 uppercase pb-5">
           <span className="text-indigo-600 font-semibold">Innovating</span> Web
           Experience
         </p>

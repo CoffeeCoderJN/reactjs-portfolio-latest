@@ -38,7 +38,7 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-10 mx-auto items-center md:pt-16 md:pb-16 md:mx-36 xl:mx-48  z-10"
+        className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-4 mx-auto items-center md:pt-16 md:pb-16 md:mx-32 z-10"
       >
         <motion.img
           src={MukulImg}
@@ -46,7 +46,7 @@ const About = () => {
           transition={{ duration: 1.2 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-56 h-56 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/40" 
+          className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/30" 
         />
         <motion.div
           initial={{ x: 200, opacity: 0 }}
@@ -56,7 +56,7 @@ const About = () => {
           className="space-y-10 px-0 md:px-10 xl:pt-0 xl:px-20 md:pt-10"
         >
           <h4 className="text-2xl font-light">Here's a Little Background.</h4>
-          <div className="bg-gray-100 dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black border dark:border-white/5 border-black/5 ">
+          <div className="bg-gray-100 dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5 ">
             <p className="text-base font-light">
               Hi, I am Mukul Rajendra Dharashivkar and everyone calls me Mukul.
               I am a Full Stack Web Developer. I am proficient in ReactJS,
@@ -78,7 +78,7 @@ const About = () => {
               <div
                 key={id}
                 className="flex flex-col items-center justify-center p-5 rounded-3xl dark:bg-[#101111] 
-                bg-gray-100 shadow-lg shadow-gray-400/30 dark:shadow-black border dark:border-white/5 border-black/5"
+                bg-gray-100 shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5"
               >
                 <img
                   src={image}
