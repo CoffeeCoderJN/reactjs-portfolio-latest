@@ -17,7 +17,7 @@ const Projects = () => {
           return (
             <motion.div
               initial={{ opacity: 0, x: -200 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1.5 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="flex flex-col rounded-3xl bg-gray-100 dark:bg-[#101111] shadow-lg shadow-gray-400/30 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
