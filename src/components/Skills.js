@@ -82,7 +82,7 @@ const Serivces = () => {
     <Section
       id="skills"
       title="expertise"
-      subtitle="I can work in all the Skills mentioned below."
+      subtitle="I am proficient in performing tasks related to all of the listed skills below."
     >
       <motion.div
         initial={{ x: 200, opacity: 0 }}
