@@ -57,9 +57,9 @@ const Header = ({ darkMode, setDarkMode }) => {
             className="dark:bg-[#101111] bg-gray-100 p-1 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 group"
           >
             {darkMode ? (
-              <FiSun className="text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
+              <FiSun className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
             ) : (
-              <FiMoon className="text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
+              <FiMoon className="text-xl md:text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
             )}
           </motion.div>
         </motion.div>
