@@ -48,7 +48,7 @@ const Hero = () => {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r border-2 hover:border-transparent border-amber-600 bg-transparent transition-colors hover:from-amber-600 hover:to-amber-500 py-2 rounded-xl z-0 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/30"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r border-2 hover:border-transparent border-amber-500 bg-transparent transition-colors hover:from-amber-600 hover:to-amber-500 py-2 rounded-xl z-0 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         >
           <span>
             <BsFillCaretDownFill className="text-xl group-hover:text-black z-0 font-semibold" />
