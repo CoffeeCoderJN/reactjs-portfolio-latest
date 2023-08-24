@@ -40,7 +40,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             ))}
           </div> */}
           <div className="">
-            <h1 className="font-yesteryear md:text-4xl tezt-2xl text-amber-500 underline">
+            <h1 className="font-yesteryear md:text-4xl text-2xl text-amber-500 underline">
               Mukul
             </h1>
           </div>
