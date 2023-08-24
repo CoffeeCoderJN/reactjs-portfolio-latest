@@ -86,15 +86,15 @@ const Serivces = () => {
     >
       <motion.div
         initial={{ x: 200, opacity: 0 }}
-        transition={{ duration: 1.2 }}
+        transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{once:true}}
-        className="grid gap-10 grid-cols-2 lg:grid-cols-4 md:grid-cols-3 md:pt-16 md:pb-16"
+        className="grid gap-5 md:gap-10 grid-cols-2 lg:grid-cols-4 md:grid-cols-3 md:pt-16 md:pb-16"
       >
         {services.map(({ id, image, title }) => (
           <div
             key={id}
-            className="flex flex-col items-center justify-center p-5 shadow-lg shadow-gray-400/30 dark:shadow-black/30 rounded-3xl md:rounded-3xl object-cover w-24 h-24 md:w-32 md:h-32 duration-300 ease-in-out hover:scale-110 dark:bg-[#101111] bg-gray-100 border dark:border-white/5 border-black/5"
+            className="flex flex-col items-center justify-center p-5 shadow-lg shadow-gray-400/30 dark:shadow-black/30 rounded-3xl md:rounded-3xl object-cover w-32 h-32 md:w-32 md:h-32 duration-300 ease-in-out hover:scale-110 dark:bg-[#101111] bg-gray-100 border dark:border-white/5 border-black/5"
           >
             <img
               src={image}
