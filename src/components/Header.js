@@ -19,8 +19,8 @@ const Header = ({ darkMode, setDarkMode }) => {
   //   { id: 5, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   // ];
   return (
-    <header className="sticky bg-white/70 text-gray-900 dark:bg-neutral-900/70 dark:text-white top-0 z-40">
-      <nav className="flex md:justify-around items-center backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-3 md:py-5 justify-between duration-700 ease-in-out">
+    <header className="sticky bg-white/70 text-gray-900 dark:bg-neutral-900/70 dark:text-white top-0 z-40 duration-700 ease-in-out">
+      <nav className="flex md:justify-around items-center backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-3 md:py-3 justify-between">
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
