@@ -17,7 +17,7 @@ const Projects = () => {
           return (
             <motion.div
               initial={{ opacity: 0, x: -200 }}
-              transition={{ duration: 1.2 }}
+              transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="flex flex-col rounded-3xl bg-gray-100 dark:bg-[#101111] shadow-lg shadow-gray-400/30 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
@@ -39,15 +39,17 @@ const Projects = () => {
                 {project.desc}
               </p>
 
-              <div className="flex items-center justify-center space-x-3 pt-5">
+              <hr className="h-px my-5 bg-black/20 border-0 dark:bg-black" />
+
+              <div className="flex items-center justify-center space-x-3">
                 {project.skills.map((skill, i) => (
-                  <div className="bg-white dark:bg-black p-2 rounded-lg border border-neutral-200 dark:border-neutral-900" key={i}>
+                  <div className="bg-white dark:bg-black p-2 rounded-lg border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30" key={i}>
                     <img className="w-7 h-7 md:w-7 md:h-7 lg:w-10 lg:h-10 object-contain" src={skill} alt="" />
                   </div>
                 ))}
               </div>
 
-              <hr className="h-px my-5 bg-black/20 border-0 dark:bg-black"></hr>
+              <hr className="h-px my-5 bg-black/20 border-0 dark:bg-black" />
 
               <div className="mx-auto pb-5 flex space-x-2 md:space-x-5 text-2xl md:text-4xl">
                 <motion.a
@@ -58,7 +60,7 @@ const Projects = () => {
                   href={project.live}
                   className="hover:text-indigo-600"
                 >
-                  <div className="flex gap-1 bg-white dark:bg-black px-4 py-2 rounded-lg items-center justify-center">
+                  <div className="flex gap-1 bg-white dark:bg-black px-4 py-2 rounded-lg items-center justify-center border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30">
                     <p className="text-xs md:text-sm lg:text-lg">Demo</p>
                     <BiLinkAlt className="text-sm lg:text-xl " />
                   </div>
@@ -71,7 +73,7 @@ const Projects = () => {
                   href={project.code}
                   className="hover:text-indigo-600"
                 >
-                  <div className="flex gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg items-center justify-center">
+                  <div className="flex gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg items-center justify-center border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30">
                     <p className="text-xs md:text-sm lg:text-lg">Github</p>
                     <FaGithub className="text-sm lg:text-xl " />
                   </div>
