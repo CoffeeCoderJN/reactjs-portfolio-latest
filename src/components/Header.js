@@ -40,7 +40,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             ))}
           </div> */}
           <div className="">
-            <h1 className="font-yesteryear text-4xl text-amber-500 underline">
+            <h1 className="font-yesteryear md:text-4xl tezt-2xl text-amber-500 underline">
               Mukul
             </h1>
           </div>
@@ -54,7 +54,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             onClick={() => setDarkMode(!darkMode)}
-            className="dark:bg-[#101111] bg-gray-100 p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 group"
+            className="dark:bg-[#101111] bg-gray-100 p-1 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 group"
           >
             {darkMode ? (
               <FiSun className="text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
