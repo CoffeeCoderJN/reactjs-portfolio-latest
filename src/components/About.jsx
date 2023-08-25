@@ -60,7 +60,7 @@ const About = () => {
           transition={{ duration: 1.2 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="space-y-5 ml-0 md:ml-10 xl:pt-0 xl:ml-20 md:pt-10"
+          className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10"
         >
           <h4 className="text-2xl font-light">Here's a Little Background.</h4>
           <div className="bg-gray-200 dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10 ">

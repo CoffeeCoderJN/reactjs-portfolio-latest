@@ -3,7 +3,7 @@ import { QuoteIcon } from "../icon/Icons";
 function Quote() {
   return (
     <div className="flex duration-300">
-      <blockquote className="flex gap-2 pt-2 text-3xl text-slate-500 md:text-3xl lg:pt-5 lg:text-5xl dark:text-slate-400">
+      <blockquote className="flex gap-2 pt-2 text-2xl text-slate-500 md:text-3xl lg:pt-5 lg:text-5xl dark:text-slate-400">
         <QuoteIcon className="-mt-1 h-10 text-amber-500 md:-mt-3 md:h-16 lg:h-24 dark:text-amber-600" />
         <span className="flex flex-col">
           <span className="leading-[1.15] text-left">
