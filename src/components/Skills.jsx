@@ -29,7 +29,7 @@ const Serivces = () => {
     {
       id: 3,
       image: react,
-      title: "React JS",
+      title: "React.js",
     },
     {
       id: 4,
@@ -54,7 +54,7 @@ const Serivces = () => {
     {
       id: 8,
       image: nextjs,
-      title: "Next JS",
+      title: "Next.js",
     },
     {
       id: 9,
@@ -74,7 +74,7 @@ const Serivces = () => {
     {
       id: 12,
       image: redux,
-      title: "React Redux",
+      title: "React-Redux",
     },
   ];
 
@@ -89,19 +89,23 @@ const Serivces = () => {
         initial={{ x: 200, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
         className="grid gap-5 md:gap-10 grid-cols-2 lg:grid-cols-4 md:grid-cols-3 md:pt-8 md:pb-16"
       >
         {services.map(({ id, image, title }) => (
           <div
             key={id}
-            className="flex flex-col items-center justify-center p-5 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-3xl md:rounded-3xl object-cover w-32 h-32 md:w-32 md:h-32 duration-300 ease-in-out hover:scale-110 dark:bg-[#101111] bg-gray-200 border dark:border-white/5 border-black/10"
+            className="group relative flex flex-col items-center justify-center p-5 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-3xl md:rounded-3xl object-cover w-32 h-32 md:w-32 md:h-32 duration-300 ease-in-out dark:bg-[#101111] bg-gray-200 border dark:border-white/5 border-black/10"
           >
             <img
               src={image}
               alt={title}
-              className="w-36 h-36 md:h-44 md:w-44 object-contain"
+              className="w-36 h-36 md:h-44 md:w-44 object-contain group-hover:grayscale"
             />
+
+            <div className="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-neutral-500 opacity-0 group-hover:h-full group-hover:opacity-90 duration-300 rounded-3xl  backdrop-filter backdrop-blur-lg">
+              <p className="uppercase text-sm font-bold opacity-0 group-hover:opacity-100 text-white">{title}</p>
+            </div>
           </div>
         ))}
       </motion.div>

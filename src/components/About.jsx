@@ -8,6 +8,7 @@ import web from "../assets/ux.png";
 import backend from "../assets/backend.png";
 import freelancing from "../assets/freelancing.png";
 import Quote from "./quote/Quote";
+import { FeaturedCardSection } from "./card/FeaturedCardSection";
 
 const services = [
   {
@@ -34,37 +35,32 @@ const services = [
 
 const About = () => {
   return (
-    <Section id="about" title="Overview" subtitle="Full Stack Developer" className="bg-gradient-to-b from-[#e2e8f0]/50 to-white dark:from-[#0a0a0a]/30 dark:to-neutral-900">
+    <Section
+      id="about"
+      title="Overview"
+      subtitle="Full Stack Developer"
+      className="bg-gradient-to-b from-[#e2e8f0]/50 to-white dark:from-[#0a0a0a]/30 dark:to-neutral-900"
+    >
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-4 mx-auto items-center md:pt-0 md:pb-16 md:mx-32 z-10"
       >
-        <div className="flex flex-col items-center justify-center md:gap-10 pt-8">
-          <motion.img
-            src={MukulImg}
-            initial={{ x: -200, opacity: 0 }}
-            transition={{ duration: 0.8 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[350px] xl:h-[300px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
-          />
-          <motion.div
-            initial={{ x: -200, opacity: 0 }}
-            transition={{ duration: 1 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-          >
-            <Quote />
-          </motion.div>
-        </div>
+        <motion.img
+          src={MukulImg}
+          initial={{ x: -200, opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[350px] xl:h-[450px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
+        />
         <motion.div
           initial={{ x: 200, opacity: 0 }}
           transition={{ duration: 1.2 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="space-y-10 ml-0 md:ml-10 xl:pt-0 xl:ml-20 pt-12 md:pt-10"
+          className="space-y-5 ml-0 md:ml-10 xl:pt-0 xl:ml-20 md:pt-10"
         >
           <h4 className="text-2xl font-light">Here's a Little Background.</h4>
           <div className="bg-gray-200 dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10 ">
@@ -84,23 +80,45 @@ const About = () => {
             In my spare time I play cricket and read blogs.
           </p> */}
           <h4 className="text-2xl font-light">Here's what I do.</h4>
-          <div className="grid gap-10 grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+          <div className="grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
             {services.map(({ id, image, title }) => (
               <div
                 key={id}
-                className="flex flex-col items-center justify-center p-5 rounded-3xl dark:bg-[#101111] 
-                bg-gray-200 shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10"
+                className="flex flex-col items-center justify-center p-5 rounded-3xl dark:bg-[#101111] bg-gray-200 shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10" 
               >
-                <img
-                  src={image}
-                  alt={title}
-                  className="w-20 h-20 md:h-16 md:w-16 object-contain"
-                />
-                <h3 className="mt-5 text-xs">{title}</h3>
+                <div className="p-4 bg-gray-300 dark:bg-neutral-800 rounded-xl">
+                  <img
+                    src={image}
+                    alt={title}
+                    className="w-20 h-20 md:h-16 md:w-16 object-contain"
+                  />
+                </div>
+                <h3 className="lg:mt-5 text-xs pt-5 lg:pt-0">{title}</h3>
               </div>
             ))}
           </div>
         </motion.div>
+      </motion.div>
+
+      {/* Quote */}
+      <motion.div
+        initial={{ x: -200, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        className="pt-10 md:pt-5 lg:pt-0"
+      >
+        <Quote />
+      </motion.div>
+
+      {/* Featured Card Section */}
+      <motion.div
+        initial={{ x: 200, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+      >
+        <FeaturedCardSection />
       </motion.div>
     </Section>
   );
