@@ -3,7 +3,7 @@ import Section from "./common/Section";
 import { MdEmail } from "react-icons/md";
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 import { motion } from "framer-motion";
-import {FiSend } from "react-icons/fi";
+import { FiSend } from "react-icons/fi";
 
 const Contact = () => {
   const SOCIAL = [
@@ -21,12 +21,17 @@ const Contact = () => {
     { id: 4, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   ];
   return (
-    <Section id="contact" title="Contact" subtitle="Get in touch with me.">
+    <Section
+      id="contact"
+      title="Contact"
+      subtitle="Get in touch with me."
+      className="bg-gradient-to-b from-sky-900/5 to-white dark:from-neutral-800/40 dark:to-neutral-900"
+    >
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 2 }}
         whileInView={{ opacity: 1 }}
-        className="bg-gray-100 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5 m-10"
+        className="bg-gray-200 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5 m-10"
       >
         <motion.div
           initial={{ opacity: 0 }}
@@ -64,7 +69,7 @@ const Contact = () => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="dark:bg-[#000000] hover:bg-neutral-300 dark:hover:bg-[#131313] cursor-pointer rounded-xl bg-gray-200 shadow-sm p-4 border  dark:border-white/5 border-black/5 text-xl sm:text-2xl md:text-3xl hover:text-indigo-600"
+                className="dark:bg-[#000000] hover:bg-gray-100 dark:hover:bg-[#131313] cursor-pointer rounded-xl bg-gray-300 shadow-sm p-4 border  dark:border-white/5 border-black/5 text-xl sm:text-2xl md:text-3xl hover:text-indigo-600"
               >
                 {icon}
               </motion.a>

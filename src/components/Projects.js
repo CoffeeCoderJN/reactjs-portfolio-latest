@@ -11,6 +11,7 @@ const Projects = () => {
       id="about"
       title="Projects"
       subtitle="Recent projects upon which I have worked on."
+      className="bg-gradient-to-b from-[#e2e8f0]/50 to-white dark:from-neutral-800/50 dark:to-neutral-900"
     >
       <div className="projects container pt-5 mx-auto md:px-12 lg:px-56 grid md:grid-cols-2 gap-10">
         {projects.slice(0, 4).map((project, i) => {
@@ -20,7 +21,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="flex flex-col rounded-3xl bg-gray-100 dark:bg-[#101111] shadow-lg shadow-gray-400/30 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/5"
+              className="flex flex-col rounded-3xl bg-gray-200 dark:bg-[#101111] shadow-lg shadow-gray-400/50 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/10"
               key={i}
             >
               <div className="relative p-5" key={i}>
@@ -43,8 +44,15 @@ const Projects = () => {
 
               <div className="flex items-center justify-center space-x-3">
                 {project.skills.map((skill, i) => (
-                  <div className="bg-white dark:bg-black p-2 rounded-lg border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30" key={i}>
-                    <img className="w-7 h-7 md:w-7 md:h-7 lg:w-10 lg:h-10 object-contain" src={skill} alt="" />
+                  <div
+                    className="bg-white dark:bg-black p-2 rounded-lg border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30"
+                    key={i}
+                  >
+                    <img
+                      className="w-7 h-7 md:w-7 md:h-7 lg:w-10 lg:h-10 object-contain"
+                      src={skill}
+                      alt=""
+                    />
                   </div>
                 ))}
               </div>

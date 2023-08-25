@@ -6,13 +6,15 @@ import { TypeAnimation } from "react-type-animation";
 import BackgroundCircles from "./BackgroundCircles.js";
 import { motion } from "framer-motion";
 
-const Hero = () => {
-  const [showBackgroundCircles, setShowBackgroundCircles] = useState(true);
+const animation = {
+  hide: { x: -32, opacity: 0 },
+  show: {
+    x: 0,
+    opacity: 1,
+  },
+};
 
-  setTimeout(() => {
-    setShowBackgroundCircles(false);
-  }, 4000);
-  
+const Hero = () => {
   window.addEventListener("scroll", function () {
     const downArrow = this.document.querySelector(".down-arrow");
 
@@ -24,8 +26,10 @@ const Hero = () => {
     <section
       id="hero"
       className="min-h-screen flex flex-col justify-center items-center p-5 text-center"
+      //  bg-gradient-to-b from-blue-100/50 to-white dark:from-gray-900/50 dark:to-neutral-900
     >
-      {showBackgroundCircles && <BackgroundCircles />}
+      <BackgroundCircles />
+      {/* {!showBackgroundCircles && <BackgroundSvg />} */}
       {/* {avatar and resume} */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -63,12 +67,22 @@ const Hero = () => {
         </motion.a>
       </motion.div>
 
-      <h2 className="text-sm pt-3 md:text-xl text-amber-500 uppercase font-bold z-0">
+      <motion.h2
+        initial={animation.hide}
+        animate={animation.show}
+        transition={{ delay: 0.5 }}
+        className="text-sm pt-3 md:text-xl text-amber-500 uppercase font-bold z-0"
+      >
         Full Stack Developer
-      </h2>
+      </motion.h2>
 
-      <div className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0">
-        <span className="">
+      <motion.div
+        initial={animation.hide}
+        animate={animation.show}
+        transition={{ delay: 0.5 }}
+        className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0"
+      >
+        <span className="text-slate-600 dark:text-slate-200">
           <TypeAnimation
             sequence={[
               "Welcome👋",
@@ -85,7 +99,7 @@ const Hero = () => {
             repeat={Infinity}
           />
         </span>
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ x: -200, opacity: 0 }}

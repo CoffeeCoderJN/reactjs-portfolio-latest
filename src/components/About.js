@@ -9,32 +9,32 @@ import backend from "../assets/backend.png";
 import freelancing from "../assets/freelancing.png";
 import Quote from "./quote/Quote";
 
-const About = () => {
-  const services = [
-    {
-      id: 1,
-      image: web,
-      title: "Frontend Developer",
-    },
-    {
-      id: 2,
-      image: backend,
-      title: "Backend Developer",
-    },
-    {
-      id: 3,
-      image: freelancing,
-      title: "Freelancing",
-    },
-    // {
-    //   id: 4,
-    //   image: research,
-    //   title: "ECommerce Website",
-    // },
-  ];
+const services = [
+  {
+    id: 1,
+    image: web,
+    title: "Frontend Developer",
+  },
+  {
+    id: 2,
+    image: backend,
+    title: "Backend Developer",
+  },
+  {
+    id: 3,
+    image: freelancing,
+    title: "Freelancing",
+  },
+  // {
+  //   id: 4,
+  //   image: research,
+  //   title: "ECommerce Website",
+  // },
+];
 
+const About = () => {
   return (
-    <Section id="about" title="Overview" subtitle="Full Stack Developer">
+    <Section id="about" title="Overview" subtitle="Full Stack Developer" className="bg-gradient-to-b from-[#e2e8f0]/50 to-white dark:from-[#0a0a0a]/30 dark:to-neutral-900">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -42,15 +42,22 @@ const About = () => {
         className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-4 mx-auto items-center md:pt-0 md:pb-16 md:mx-32 z-10"
       >
         <div className="flex flex-col items-center justify-center md:gap-10 pt-8">
-        <motion.img
-          src={MukulImg}
-          initial={{ x: -200, opacity: 0 }}
-          transition={{ duration: 1.2 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[350px] xl:h-[300px] shadow-lg shadow-gray-400/30 dark:shadow-black/30" 
-        />
-        <Quote />
+          <motion.img
+            src={MukulImg}
+            initial={{ x: -200, opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[350px] xl:h-[300px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
+          />
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            transition={{ duration: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <Quote />
+          </motion.div>
         </div>
         <motion.div
           initial={{ x: 200, opacity: 0 }}
@@ -60,7 +67,7 @@ const About = () => {
           className="space-y-10 ml-0 md:ml-10 xl:pt-0 xl:ml-20 pt-12 md:pt-10"
         >
           <h4 className="text-2xl font-light">Here's a Little Background.</h4>
-          <div className="bg-gray-100 dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5 ">
+          <div className="bg-gray-200 dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10 ">
             <p className="text-base font-light">
               Hi, I am Mukul Rajendra Dharashivkar and everyone calls me Mukul.
               I am a Full Stack Web Developer. I am proficient in ReactJS,
@@ -82,14 +89,14 @@ const About = () => {
               <div
                 key={id}
                 className="flex flex-col items-center justify-center p-5 rounded-3xl dark:bg-[#101111] 
-                bg-gray-100 shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5"
+                bg-gray-200 shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10"
               >
                 <img
                   src={image}
                   alt={title}
                   className="w-20 h-20 md:h-16 md:w-16 object-contain"
                 />
-                <h3 className="mt-5 text-sm">{title}</h3>
+                <h3 className="mt-5 text-xs">{title}</h3>
               </div>
             ))}
           </div>
