@@ -19,8 +19,8 @@ const Header = ({ darkMode, setDarkMode }) => {
   //   { id: 5, link: "mailto:mukul.dharashivkar99@gmail.com", icon: <MdEmail /> },
   // ];
   return (
-    <header className="sticky bg-transparent text-gray-900 dark:bg-transparent dark:text-white top-0 z-40">
-      <nav className="flex md:justify-around items-center backdrop-filter backdrop-blur-lg bg-opacity-30 p-5 justify-between">
+    <header className="sticky bg-white/70 text-gray-900 dark:bg-neutral-900/70 dark:text-white top-0 z-40 duration-700 ease-in-out">
+      <nav className="flex md:justify-around items-center backdrop-filter backdrop-blur-lg bg-opacity-30 px-5 py-3 md:py-3 justify-between border-neutral-100 border-b dark:border-neutral-800">
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -54,12 +54,12 @@ const Header = ({ darkMode, setDarkMode }) => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             onClick={() => setDarkMode(!darkMode)}
-            className="dark:bg-[#101111] bg-gray-100 p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 group"
+            className="dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 group"
           >
             {darkMode ? (
-              <FiSun className="text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
+              <FiSun className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
             ) : (
-              <FiMoon className="text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
+              <FiMoon className="text-xl md:text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
             )}
           </motion.div>
         </motion.div>
