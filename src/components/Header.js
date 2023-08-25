@@ -21,7 +21,7 @@ const Header = ({ darkMode, setDarkMode }) => {
           initial={{ x: 500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="flex gap-4 items-center"
+          className="flex gap-2 md:gap-4 items-center"
         >
           <a
             href="https://mukuldharashivkar-blog.vercel.app/"
