@@ -21,7 +21,14 @@ const Header = ({ darkMode, setDarkMode }) => {
           initial={{ x: 500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
+          className="flex gap-4 items-center"
         >
+          <a
+            href="https://mukuldharashivkar-blog.vercel.app/"
+            className="dark:bg-[#101111] bg-gray-100 px-5 py-1.5 md:py-2.5 rounded-3xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 hover:scale-110"
+          >
+            <span className="text-sm md:text-lg">Blog</span>
+          </a>
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
