@@ -23,29 +23,28 @@ function App() {
   }, []);
 
   return (
-    <div className="h-screen">
-      <div className={darkMode && "dark"}>
-        {loading ? (
-          <PreLoader loading={loading} />
-        ) : (
-          <main className="bg-white dark:bg-neutral-900 dark:text-white duration-700 ease-in-out">
-            <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+    <div className={`h-screen ${darkMode && "dark"}`}>
+      {loading ? (
+        <PreLoader loading={loading} />
+      ) : (
+        <main className="bg-white dark:bg-neutral-900 dark:text-white duration-700 ease-in-out">
+          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0.1, 0.2, 0.4, 0.8, 1] }}
-              transition={{ duration: 0.2 }}
-            >
-              <Hero />
-            </motion.div>
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-            <AppFooter />
-          </main>
-        )}
-      </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0.1, 0.2, 0.4, 0.8, 1] }}
+            transition={{ duration: 0.2 }}
+          >
+            <Hero />
+          </motion.div>
+          
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <AppFooter />
+        </main>
+      )}
     </div>
   );
 }

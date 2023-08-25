@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import web from "../assets/ux.png";
 import backend from "../assets/backend.png";
 import freelancing from "../assets/freelancing.png";
+import Quote from "./quote/Quote";
 
 const About = () => {
   const services = [
@@ -38,22 +39,25 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-4 mx-auto items-center md:pt-16 md:pb-16 md:mx-32 z-10"
+        className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-4 mx-auto items-center md:pt-0 md:pb-16 md:mx-32 z-10"
       >
+        <div className="flex flex-col items-center justify-center md:gap-10 pt-8">
         <motion.img
           src={MukulImg}
           initial={{ x: -200, opacity: 0 }}
           transition={{ duration: 1.2 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/30" 
+          className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[350px] xl:h-[300px] shadow-lg shadow-gray-400/30 dark:shadow-black/30" 
         />
+        <Quote />
+        </div>
         <motion.div
           initial={{ x: 200, opacity: 0 }}
           transition={{ duration: 1.2 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="space-y-10 px-0 md:px-10 xl:pt-0 xl:px-20 md:pt-10"
+          className="space-y-10 ml-0 md:ml-10 xl:pt-0 xl:ml-20 pt-12 md:pt-10"
         >
           <h4 className="text-2xl font-light">Here's a Little Background.</h4>
           <div className="bg-gray-100 dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5 ">

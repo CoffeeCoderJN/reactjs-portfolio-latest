@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
 import { BsFillCaretDownFill } from "react-icons/bs";
 import avatar from "../assets/programmer.png";
@@ -7,6 +7,12 @@ import BackgroundCircles from "./BackgroundCircles.js";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const [showBackgroundCircles, setShowBackgroundCircles] = useState(true);
+
+  setTimeout(() => {
+    setShowBackgroundCircles(false);
+  }, 4000);
+  
   window.addEventListener("scroll", function () {
     const downArrow = this.document.querySelector(".down-arrow");
 
@@ -19,7 +25,7 @@ const Hero = () => {
       id="hero"
       className="min-h-screen flex flex-col justify-center items-center p-5 text-center"
     >
-      <BackgroundCircles />
+      {showBackgroundCircles && <BackgroundCircles />}
       {/* {avatar and resume} */}
       <motion.div
         initial={{ opacity: 0 }}
