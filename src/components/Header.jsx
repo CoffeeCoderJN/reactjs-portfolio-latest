@@ -1,6 +1,7 @@
 import React from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
+// import { Link } from "react-scroll";
 
 const Header = ({ darkMode, setDarkMode }) => {
   return (
@@ -29,6 +30,15 @@ const Header = ({ darkMode, setDarkMode }) => {
           >
             <span className="text-sm md:text-lg">Blog</span>
           </a>
+          {/* <Link
+            to="contact"
+            smooth={true}
+            offset={-70}
+            duration={800}
+            className="dark:bg-[#101111] bg-gray-100 px-5 py-1.5 md:py-2.5 rounded-3xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 hover:scale-110"
+          >
+            Contact
+          </Link> */}
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}

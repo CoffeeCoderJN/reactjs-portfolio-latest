@@ -3,7 +3,7 @@ import { FaArrowDown } from "react-icons/fa";
 import { BsFillCaretDownFill } from "react-icons/bs";
 import avatar from "../assets/programmer.png";
 import { TypeAnimation } from "react-type-animation";
-import BackgroundCircles from "./BackgroundCircles.js";
+import BackgroundCircles from "./BackgroundCircles.jsx";
 import { motion } from "framer-motion";
 
 const animation = {
@@ -25,7 +25,8 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center p-5 text-center"
+      className="min-h-screen flex flex-col justify-center items-center p-5 text-center pt-32 z-40 overflow-y-hidden"
+      // pt-32
       //  bg-gradient-to-b from-blue-100/50 to-white dark:from-gray-900/50 dark:to-neutral-900
     >
       <BackgroundCircles />

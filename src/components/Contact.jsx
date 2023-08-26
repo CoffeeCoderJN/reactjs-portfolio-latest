@@ -25,13 +25,13 @@ const Contact = () => {
       id="contact"
       title="Contact"
       subtitle="Get in touch with me."
-      className="bg-gradient-to-b from-sky-900/5 to-white dark:from-neutral-800/40 dark:to-neutral-900"
+      // className="bg-gradient-to-b from-sky-900/5 to-white dark:from-neutral-800/40 dark:to-neutral-900"
     >
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 2 }}
         whileInView={{ opacity: 1 }}
-        className="bg-gray-200 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5 m-10"
+        className="bg-gray-100 dark:bg-[#101111] p-10 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 border dark:border-white/5 border-black/5 m-10"
       >
         <motion.div
           initial={{ opacity: 0 }}

@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import AppFooter from "./components/AppFooter";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills";
 import { motion } from "framer-motion";
 import Projects from "./components/Projects";
 import PreLoader from "./components/PreLoader";
+import HeaderNav from "./components/header/HeaderNav";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -23,12 +23,13 @@ function App() {
   }, []);
 
   return (
-    <div className={`h-screen ${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"}`}>
       {loading ? (
         <PreLoader loading={loading} />
       ) : (
         <main className="bg-white dark:bg-neutral-900 dark:text-white duration-700 ease-in-out">
-          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+          {/* <Header darkMode={darkMode} setDarkMode={setDarkMode} /> */}
+          <HeaderNav darkMode={darkMode} setDarkMode={setDarkMode} />
 
           <motion.div
             initial={{ opacity: 0 }}

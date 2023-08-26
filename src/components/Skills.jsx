@@ -14,8 +14,7 @@ import nextjs from "../assets/nextjs.png";
 import boot from "../assets/boot.png";
 import redux from "../assets/redux.png";
 
-const Serivces = () => {
-  const services = [
+const services = [
     {
       id: 1,
       image: java,
@@ -78,12 +77,15 @@ const Serivces = () => {
     },
   ];
 
+const Serivces = () => {
+  
+
   return (
     <Section
       id="skills"
       title="expertise"
       subtitle="I am proficient in performing tasks related to all of the listed skills below."
-      className="bg-gradient-to-b from-[#e2e8f0]/30 to-white dark:from-neutral-800/20 dark:to-neutral-900"
+      // className="bg-gradient-to-b from-[#e2e8f0]/30 to-white dark:from-neutral-800/20 dark:to-neutral-900"
     >
       <motion.div
         initial={{ x: 200, opacity: 0 }}

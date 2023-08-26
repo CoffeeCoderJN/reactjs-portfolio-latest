@@ -11,7 +11,7 @@ const Projects = () => {
       id="about"
       title="Projects"
       subtitle="Recent projects upon which I have worked on."
-      className="bg-gradient-to-b from-[#e2e8f0]/50 to-white dark:from-neutral-800/50 dark:to-neutral-900"
+      className="bg-gradient-to-b bg-[#e2e8f0]/30 dark:bg-neutral-800/30"
     >
       <div className="projects container pt-5 mx-auto md:px-12 lg:px-56 grid md:grid-cols-2 gap-10">
         {projects.slice(0, 4).map((project, i) => {
