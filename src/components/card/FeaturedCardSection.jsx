@@ -9,7 +9,7 @@ export function FeaturedCardSection() {
             icon={
               <div
                 className=
-                  'rounded-full bg-amber-400 p-3.5 dark:bg-amber-500'
+                  'rounded-xl bg-amber-400 p-3.5 dark:bg-amber-500'
               >
                 <SparklesIcon className='h-5 w-5 text-white' />
               </div>
@@ -21,7 +21,7 @@ export function FeaturedCardSection() {
             icon={
               <div
                 className=
-                  'rounded-full bg-amber-500 p-3.5 dark:bg-amber-600'
+                  'rounded-xl bg-amber-500 p-3.5 dark:bg-amber-600'
               >
                 <HeartIcon className='h-5 w-5 text-white' />
               </div>
@@ -33,7 +33,7 @@ export function FeaturedCardSection() {
             icon={
               <div
                 className=
-                  'rounded-full bg-amber-600 p-3.5 dark:bg-amber-700'
+                  'rounded-xl bg-amber-600 p-3.5 dark:bg-amber-700'
               >
                 <CodeIcon className='h-5 w-5 text-white' />
               </div>
