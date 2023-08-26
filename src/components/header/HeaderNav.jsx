@@ -1,15 +1,12 @@
 import { useState } from "react";
-import {
-  FiMenu,
-  FiMoon,
-  FiSun,
-  FiX,
-} from "react-icons/fi";
+import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import { useReadingProgress } from "../hooks/useReadingProgress";
 
 const HeaderNav = ({ darkMode, setDarkMode }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const completion = useReadingProgress();
 
   function toggleMenu() {
     if (!showMenu) {
@@ -27,6 +24,16 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
       className="sm:container sm:mx-auto"
     >
       <div className="fixed inset-x-0 block sm:flex sm:justify-between sm:items-center bg-white/70 text-gray-900 dark:bg-neutral-900/70 dark:text-white top-0 z-40 duration-700 ease-in-out backdrop-filter backdrop-blur-lg bg-opacity-30 md:justify-around lg:px-5 py-3 md:py-2 border-neutral-100 border-b dark:border-neutral-800">
+        
+        {/* Progressbar */}
+        <span
+          id="progress-bar"
+          style={{
+            transform: `translateX(${completion - 100}%)`,
+          }}
+          className={`absolute bottom-0 w-full transition-transform duration-300 h-[2px] bg-neutral-600/30 dark:bg-neutral-200/30`}
+        />
+
         {/* Header menu links and small screen hamburger menu */}
         <div className="flex justify-between items-center md:ml-5 px-4 sm:px-0">
           <Link to="hero" smooth={true} offset={-70} duration={800}>

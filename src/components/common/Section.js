@@ -12,7 +12,7 @@ const Section = ({ id, title, subtitle, children, className }) => {
         transition={{ duration: 0.9 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        className="py-3 text-5xl lg:text-5xl font-bold text-amber-500 uppercase tracking-[1px] ease-in-out"
+        className="py-3 text-4xl lg:text-5xl font-bold text-amber-500 uppercase tracking-[1px] ease-in-out"
       >
         {title}
       </motion.h3>
