@@ -100,7 +100,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           <Link
             to="about"
             smooth={true}
-            offset={-70}
+            offset={-40}
             duration={800}
             onClick={toggleMenu}
             className="block text-left text-lg text-neutral-600 dark:text-neutral-200 hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-neutral-200 dark:border-neutral-700 cursor-pointer"
@@ -111,7 +111,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           <Link
             to="skills"
             smooth={true}
-            offset={-70}
+            offset={-40}
             duration={800}
             onClick={toggleMenu}
             className="block text-left text-lg text-neutral-600 dark:text-neutral-200 hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-neutral-200 dark:border-neutral-700 cursor-pointer"
@@ -133,7 +133,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           <Link
             to="contact"
             smooth={true}
-            offset={-70}
+            offset={-40}
             duration={800}
             onClick={toggleMenu}
             className="block text-left text-lg text-neutral-600 dark:text-neutral-200 hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-neutral-200 dark:border-neutral-700 cursor-pointer"
