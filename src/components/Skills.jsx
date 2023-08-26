@@ -106,7 +106,7 @@ const Serivces = () => {
             />
 
             <div className="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-neutral-500 dark:bg-neutral-700 opacity-0 group-hover:h-full group-hover:opacity-90 duration-300 rounded-3xl  backdrop-filter backdrop-blur-lg">
-              <p className="uppercase text-sm font-bold opacity-0 group-hover:opacity-100 text-white">{title}</p>
+              <p className="px-2 uppercase text-xs md:text-sm font-bold opacity-0 group-hover:opacity-100 text-white">{title}</p>
             </div>
           </div>
         ))}
