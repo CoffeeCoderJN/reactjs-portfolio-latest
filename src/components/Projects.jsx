@@ -21,15 +21,16 @@ const Projects = () => {
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="flex flex-col rounded-3xl bg-gray-200 dark:bg-[#101111] shadow-lg shadow-gray-400/50 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/10"
+              className="flex flex-col group rounded-3xl bg-gray-200 dark:bg-[#101111] shadow-lg shadow-gray-400/50 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/10"
               key={i}
             >
-              <div className="relative p-5" key={i}>
+              <div className="relative p-5 overflow-hidden" key={i}>
                 <img
                   src={project.img}
                   alt={project.title}
-                  className="rounded-2xl"
+                  className="rounded-2xl grayscale object-contain transition-all group-hover:grayscale-0"
                 />
+                {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-amber-500/50 transition-all duration-300 cursor-pointer group-hover:opacity-0 rounded-2xl" /> */}
               </div>
 
               <p className="py-5 text-center text-2xl font-semibold px-2 text-black dark:text-white bg-white dark:bg-black">

@@ -13,6 +13,8 @@ import css from "../../assets/css.png";
 import css3 from "../../assets/css3.png";
 import nextjs from "../../assets/nextjs.png";
 import redux from "../../assets/redux.png";
+import movie from "../../assets/movie.jpg"
+import expense from "../../assets/expense.png"
 
 export const projects = [
   {
@@ -60,18 +62,20 @@ export const projects = [
     code: "https://github.com/themukuldharashivkar/personal-mukul-blog-website",
     skills: [python, mysql, css3],
   },
-  // {
-  //   img: movie,
-  //   title: "Movie Flix",
-  //   desc: "Movie Recommender Web App made using Python Streamlit Framework. Machine Learning project. Used bag-of-the-words model to recommend movies. ",
-  //   live: "https://github.com/themukuldharashivkar/Movie-Flix",
-  //   code: "https://github.com/themukuldharashivkar/Movie-Flix",
-  // },
-  // {
-  //   img: expense,
-  //   title: "Expense Tracker",
-  //   desc: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
-  //   live: "https://expense-tracker-react-9mffr44hp-themukuldharashivkar.vercel.app/",
-  //   code: "https://github.com/themukuldharashivkar/Expense-Tracker-ReactJS",
-  // },
+  {
+    id: 5,
+    img: movie,
+    title: "Movie Flix",
+    desc: "Movie Recommender Web App made using Python Streamlit Framework. Machine Learning project. Used bag-of-the-words model to recommend movies. ",
+    live: "https://github.com/themukuldharashivkar/Movie-Flix",
+    code: "https://github.com/themukuldharashivkar/Movie-Flix",
+  },
+  {
+    id: 6,
+    img: expense,
+    title: "Expense Tracker",
+    desc: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
+    live: "https://expense-tracker-react-9mffr44hp-themukuldharashivkar.vercel.app/",
+    code: "https://github.com/themukuldharashivkar/Expense-Tracker-ReactJS",
+  },
 ];

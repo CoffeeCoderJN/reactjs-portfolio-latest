@@ -4,34 +4,36 @@ import MukulImg from "../assets/mukul.jpg";
 import { motion } from "framer-motion";
 // import commerce from "../assets/commerce.png";
 // import research from "../assets/research.png";
-import web from "../assets/ux.png";
-import backend from "../assets/backend.png";
-import freelancing from "../assets/freelancing.png";
+// import web from "../assets/ux.png";
+// import backend from "../assets/backend.png";
+// import freelancing from "../assets/freelancing.png";
 import Quote from "./quote/Quote";
 import { FeaturedCardSection } from "./card/FeaturedCardSection";
+import FeaturedCard from "./card/FeaturedCard";
+import {FaGraduationCap} from "react-icons/fa";
 
-const services = [
-  {
-    id: 1,
-    image: web,
-    title: "Frontend Developer",
-  },
-  {
-    id: 2,
-    image: backend,
-    title: "Backend Developer",
-  },
-  {
-    id: 3,
-    image: freelancing,
-    title: "Freelancing",
-  },
-  // {
-  //   id: 4,
-  //   image: research,
-  //   title: "ECommerce Website",
-  // },
-];
+// const services = [
+//   {
+//     id: 1,
+//     image: web,
+//     title: "Frontend Developer",
+//   },
+//   {
+//     id: 2,
+//     image: backend,
+//     title: "Backend Developer",
+//   },
+//   {
+//     id: 3,
+//     image: freelancing,
+//     title: "Freelancing",
+//   },
+//   // {
+//   //   id: 4,
+//   //   image: research,
+//   //   title: "ECommerce Website",
+//   // },
+// ];
 
 const About = () => {
   return (
@@ -53,7 +55,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[350px] xl:h-[450px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
+          className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         />
         <motion.div
           initial={{ x: 200, opacity: 0 }}
@@ -63,7 +65,7 @@ const About = () => {
           className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10"
         >
           <h4 className="text-2xl font-light">Here's a Little Background.</h4>
-          <div className="bg-gray-200 dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10 ">
+          <div className="bg-white dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10 ">
             <p className="text-base font-light">
               Hi, I am Mukul Rajendra Dharashivkar and everyone calls me Mukul.
               I am a Full Stack Web Developer. I am proficient in ReactJS,
@@ -79,8 +81,8 @@ const About = () => {
             and increase my skills in software development and web development.
             In my spare time I play cricket and read blogs.
           </p> */}
-          <h4 className="text-2xl font-light">Here's what I do.</h4>
-          <div className="grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+          <h4 className="text-2xl font-light">Recent Education.</h4>
+          {/* <div className="grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
             {services.map(({ id, image, title }) => (
               <div
                 key={id}
@@ -96,7 +98,21 @@ const About = () => {
                 <h3 className="lg:mt-5 text-xs pt-5 lg:pt-0">{title}</h3>
               </div>
             ))}
-          </div>
+          </div> */}
+
+          <FeaturedCard
+            icon={
+              <div
+                className=
+                  'rounded-xl bg-amber-400 p-3.5 dark:bg-amber-400'
+              >
+                <FaGraduationCap className='h-5 w-5 text-white' />
+              </div>
+            }
+            title="05 August 2022"
+            desc="BE in Computer Engineering from PES Modern College of Engineering, Shivajinagar, Pune - 05."
+          />
+
         </motion.div>
       </motion.div>
 
