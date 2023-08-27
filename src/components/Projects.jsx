@@ -21,7 +21,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="flex flex-col group rounded-3xl bg-gray-200 dark:bg-[#101111] shadow-lg shadow-gray-400/50 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/10"
+              className="flex flex-col group rounded-3xl bg-gray-200 dark:bg-neutral-800 shadow-lg shadow-gray-400/50 dark:shadow-black/30 ml-5 mr-5 md:m-0 border dark:border-white/5 border-black/10"
               key={i}
             >
               <div className="relative p-5 overflow-hidden" key={i}>
@@ -33,7 +33,7 @@ const Projects = () => {
                 {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-amber-500/50 transition-all duration-300 cursor-pointer group-hover:opacity-0 rounded-2xl" /> */}
               </div>
 
-              <p className="py-5 text-center text-2xl font-semibold px-2 text-black dark:text-white bg-white dark:bg-black">
+              <p className="py-5 text-center text-2xl font-semibold px-2 text-black dark:text-white bg-white dark:bg-neutral-900">
                 {project.title}
               </p>
 
@@ -46,7 +46,7 @@ const Projects = () => {
               <div className="flex items-center justify-center space-x-3">
                 {project.skills.map((skill, i) => (
                   <div
-                    className="bg-white dark:bg-black p-2 rounded-lg border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30"
+                    className="bg-white dark:bg-neutral-900 p-2 rounded-lg border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30"
                     key={i}
                   >
                     <img
@@ -69,7 +69,7 @@ const Projects = () => {
                   href={project.live}
                   className="hover:text-indigo-600"
                 >
-                  <div className="flex gap-1 bg-white dark:bg-black px-4 py-2 rounded-lg items-center justify-center border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30">
+                  <div className="flex gap-1 bg-white dark:bg-neutral-900 px-4 py-2 rounded-lg items-center justify-center border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30">
                     <p className="text-xs md:text-sm lg:text-lg">Demo</p>
                     <BiLinkAlt className="text-sm lg:text-xl " />
                   </div>
@@ -82,7 +82,7 @@ const Projects = () => {
                   href={project.code}
                   className="hover:text-indigo-600"
                 >
-                  <div className="flex gap-1 bg-white dark:bg-black px-3 py-2 rounded-lg items-center justify-center border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30">
+                  <div className="flex gap-1 bg-white dark:bg-neutral-900 px-3 py-2 rounded-lg items-center justify-center border border-neutral-200 dark:border-neutral-900 shadow-md shadow-gray-400/30 dark:shadow-black/30">
                     <p className="text-xs md:text-sm lg:text-lg">Github</p>
                     <FaGithub className="text-sm lg:text-xl " />
                   </div>

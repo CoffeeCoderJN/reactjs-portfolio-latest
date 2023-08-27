@@ -97,13 +97,13 @@ const Serivces = () => {
       title="expertise"
       subtitle="I am proficient in performing tasks related to all of the listed skills below."
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:mx-20 px-3 md:px-10 lg:px-0">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:mx-20 px-5 md:px-10 lg:px-0">
         <motion.div
           initial={{ x: -200, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="grid gap-5 md:gap-10 grid-cols-3 lg:grid-cols-3 md:grid-cols-3 md:pt-8 md:pb-16 md:px-20 lg:px-0"
+          className="grid gap-5 md:gap-10 grid-cols-3 lg:grid-cols-3 place-items-center md:grid-cols-3 md:pt-8 md:pb-16 md:px-20 lg:px-0"
         >
           {services.map(({ id, image, title }) => (
             <div
