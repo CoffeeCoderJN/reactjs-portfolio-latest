@@ -33,7 +33,7 @@ const Projects = () => {
                 {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-amber-500/50 transition-all duration-300 cursor-pointer group-hover:opacity-0 rounded-2xl" /> */}
               </div>
 
-              <p className="py-5 text-center text-2xl font-semibold px-2 text-black dark:text-white bg-white dark:bg-neutral-900">
+              <p className="py-5 text-center text-2xl font-semibold px-2 text-amber-600 dark:text-amber-300 bg-white dark:bg-neutral-900">
                 {project.title}
               </p>
 

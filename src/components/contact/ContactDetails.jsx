@@ -17,7 +17,7 @@ const ContactDetails = () => {
           with me directly on my social media. I appreciate your understanding
           in using this responsibly.
         </p>
-        <h2 className="font-medium text-2xl text-neutral-600 dark:text-neutral-200 mt-5 mb-5">
+        <h2 className="font-medium text-2xl text-amber-600 dark:text-amber-300 mt-5 mb-5">
           Contact details
         </h2>
 
@@ -72,7 +72,7 @@ const ContactDetails = () => {
           do not hesitate to send me an email first.
         </p>
 
-        <h2 className="font-medium text-2xl text-primary-dark dark:text-primary-light mt-5 mb-5">
+        <h2 className="font-medium text-2xl text-amber-600 dark:text-amber-300 mt-5 mb-5">
           Important Links
         </h2>
 

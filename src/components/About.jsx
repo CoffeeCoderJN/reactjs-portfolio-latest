@@ -64,7 +64,7 @@ const About = () => {
           viewport={{ once: true }}
           className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10"
         >
-          <h4 className="text-2xl font-light">Here's a Little Background.</h4>
+          <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">Here's a Little Background.</h4>
           <div className="bg-white dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10 ">
             <p className="text-base font-light">
               Hi, I am Mukul Rajendra Dharashivkar and everyone calls me Mukul.
@@ -81,7 +81,7 @@ const About = () => {
             and increase my skills in software development and web development.
             In my spare time I play cricket and read blogs.
           </p> */}
-          <h4 className="text-2xl font-light">Recent Education.</h4>
+          <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">Recent Education.</h4>
           {/* <div className="grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
             {services.map(({ id, image, title }) => (
               <div
