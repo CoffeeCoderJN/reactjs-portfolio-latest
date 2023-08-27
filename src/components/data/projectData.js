@@ -4,15 +4,15 @@ import blog from "../../assets/blog.jpg";
 import freepics from "../../assets/freepics.png";
 import ecommerce from "../../assets/ecommerce.png";
 
-import spring from "../../assets/spring.png";
-import react from "../../assets/react.png";
-import javascript from "../../assets/js.png";
-import mysql from "../../assets/mysql.png";
-import python from "../../assets/python.png";
-import css from "../../assets/css.png";
-import css3 from "../../assets/css3.png";
-import nextjs from "../../assets/nextjs.png";
-import redux from "../../assets/redux.png";
+import spring from "../../assets/yellow/springy.png";
+import react from "../../assets/yellow/reacty.png";
+import javascript from "../../assets/yellow/javascripty.png";
+import mysql from "../../assets/yellow/mysqly.png";
+import python from "../../assets/yellow/pythony.png";
+import css from "../../assets/yellow/tailwindy.png";
+import css3 from "../../assets/yellow/css3y.png";
+import nextjs from "../../assets/yellow/nexty.png";
+import redux from "../../assets/yellow/reduxy.png";
 import movie from "../../assets/movie.jpg"
 import expense from "../../assets/expense.png"
 

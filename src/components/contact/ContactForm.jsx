@@ -69,7 +69,7 @@ const ContactForm = () => {
             <motion.a
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="flex w-40 items-center justify-center group mt-10 mb-0 bg-gradient-to-r border-2 border-amber-500 hover:border-transparent hover:from-amber-600 hover:to-amber-500 px-10 py-3 rounded-lg cursor-pointer font-normal tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40 bg-gray-200 dark:bg-[#101111]"
+              className="flex w-40 items-center justify-center group mt-10 mb-0 bg-gradient-to-r border-2 border-amber-500 hover:border-transparent hover:from-amber-600 hover:to-amber-500 px-10 py-2 rounded-lg cursor-pointer font-normal tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40 bg-gray-200 dark:bg-[#101111]"
             >
               Send
               <FiSend className="ml-2" />
