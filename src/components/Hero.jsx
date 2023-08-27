@@ -68,6 +68,7 @@ const Hero = () => {
         </motion.a>
       </motion.div>
 
+      
       <motion.h2
         initial={animation.hide}
         animate={animation.show}
