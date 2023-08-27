@@ -41,7 +41,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               initial={{ x: -500, opacity: 0, scale: 0.5 }}
               animate={{ x: 0, opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
-              className="text-3xl ml-3 text-neutral-600 dark:text-neutral-300 font-normal cursor-pointer"
+              className="text-3xl text-neutral-600 dark:text-neutral-300 font-normal cursor-pointer"
             >
               mukul<span className="font-extrabold text-amber-500">.dev</span>
             </motion.h1>
