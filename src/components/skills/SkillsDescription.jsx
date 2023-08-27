@@ -139,16 +139,17 @@ const SkillsDescription = () => {
 
       <div
         className="flex items-center justify-center"
-        onClick={() => setShowDetails(!showDetails)}
+        
       >
-        <motion.a
+        <motion.button
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          onClick={() => setShowDetails(!showDetails)}
           className="flex w-50 text-sm items-center justify-center group mt-10 mb-0 bg-gradient-to-r border-2 border-amber-500 hover:border-transparent hover:from-amber-600 hover:to-amber-500 px-5 py-2 rounded-lg cursor-pointer font-normal tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40 bg-white-200 dark:bg-neutral-900"
         >
           {showDetails ? "Hide Details" : "View Details"}
           <CgDetailsMore className="ml-2" />
-        </motion.a>
+        </motion.button>
       </div>
     </motion.div>
   );
