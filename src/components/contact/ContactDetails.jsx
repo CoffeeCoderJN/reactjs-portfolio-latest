@@ -35,7 +35,7 @@ const ContactDetails = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-gray-200 border-b dark:bg-[#101111]/30 dark:border-gray-700">
+              <tr className="bg-gray-100/30 border-b dark:bg-[#101111]/30 dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -95,7 +95,7 @@ const ContactDetails = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-gray-200 border-b dark:bg-[#101111]/30 dark:border-gray-700">
+              <tr className="bg-gray-100/30 border-b dark:bg-[#101111]/30 dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -135,7 +135,7 @@ const ContactDetails = () => {
                 </td>
               </tr>
 
-              <tr className="bg-gray-200 border-b dark:bg-[#101111]/30 dark:border-gray-700">
+              <tr className="bg-gray-100/30 border-b dark:bg-[#101111]/30 dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"

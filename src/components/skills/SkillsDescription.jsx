@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Label from "./Label";
 import { motion } from "framer-motion";
-import {CgDetailsMore} from "react-icons/cg";
+import { CgDetailsMore } from "react-icons/cg";
 
 const SkillsDescription = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -137,10 +137,7 @@ const SkillsDescription = () => {
         </div>
       )}
 
-      <div
-        className="flex items-center justify-center"
-        
-      >
+      <div className="flex items-center justify-center">
         <motion.button
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}

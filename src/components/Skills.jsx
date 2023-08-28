@@ -108,7 +108,7 @@ const Serivces = () => {
           {services.map(({ id, image, title }) => (
             <div
               key={id}
-              className="group relative flex flex-col items-center justify-center p-5 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-3xl md:rounded-3xl object-cover w-24 h-24 md:w-32 md:h-32 duration-300 ease-in-out dark:bg-neutral-800 bg-gray-200 border dark:border-white/10 border-black/10"
+              className="group relative flex flex-col items-center justify-center p-5 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-3xl md:rounded-3xl object-cover w-24 h-24 md:w-32 md:h-32 duration-300 ease-in-out dark:bg-neutral-800 bg-gray-100 border dark:border-white/10 border-black/10"
             >
               <img
                 src={image}

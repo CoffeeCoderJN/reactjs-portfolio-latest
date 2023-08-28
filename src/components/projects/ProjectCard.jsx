@@ -32,7 +32,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
         },
       }}
       {...motionStep}
-      className="col-span-12 sm:col-span-6 md:col-span-4 bg-gray-300 border border-gray-400/50 dark:border-neutral-600/50 dark:bg-neutral-800 rounded-xl p-4 group shadow-lg shadow-gray-400/50 dark:shadow-black/30"
+      className="col-span-12 sm:col-span-6 md:col-span-4 bg-white border border-gray-400/50 dark:border-neutral-600/50 dark:bg-neutral-800 rounded-xl p-4 group shadow-lg shadow-gray-400/50 dark:shadow-black/30"
     >
       <div>
         <a href={`${live}`}>

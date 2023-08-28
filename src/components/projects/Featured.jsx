@@ -44,7 +44,7 @@ const Featured = ({
             {title}{" "}
           </h1>
 
-          <div className="my-6 p-6 bg-gray-300 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 shadow-xl shadow-gray-400/50 dark:shadow-black/30 rounded-xl hidden sm:block border dark:border-white/5 border-black/10">
+          <div className="my-6 p-6 bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 shadow-xl shadow-gray-400/50 dark:shadow-black/30 rounded-xl hidden sm:block border dark:border-white/5 border-black/10">
             <p> {description && description} </p>
           </div>
 

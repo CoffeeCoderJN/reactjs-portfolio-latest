@@ -101,7 +101,7 @@ const Projects = () => {
       id="projects"
       title="Projects"
       subtitle="Recent projects upon which I have worked on."
-      className="bg-[#e2e8f0]/30 dark:bg-neutral-800/30"
+      className="bg-neutral-100 dark:bg-neutral-800/30"
     >
       <div className="space-y-5 lg:space-y-10 px-5 md:px-10 lg:px-20">
         {projectsData

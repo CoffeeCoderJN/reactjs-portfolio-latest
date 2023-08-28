@@ -41,7 +41,7 @@ const About = () => {
       id="about"
       title="Overview"
       subtitle="Full Stack Developer"
-      className="bg-gradient-to-b bg-[#e2e8f0]/30 dark:bg-neutral-800/30"
+      className="bg-gradient-to-b bg-neutral-100 dark:bg-neutral-800/30"
     >
       <motion.div
         initial={{ opacity: 0 }}
