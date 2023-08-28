@@ -99,7 +99,7 @@ const Serivces = () => {
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:mx-20 px-5 md:px-10 lg:px-0">
         <motion.div
-          initial={{ x: -200, opacity: 0 }}
+          initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}

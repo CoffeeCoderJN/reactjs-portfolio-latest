@@ -15,7 +15,7 @@ const ActiveComponent = () => {
       } else if (currentComponentIndex === 1) {
         setCurrentComponentIndex(2);
       }
-    }, 6000); // 4 seconds in milliseconds
+    }, 4000); // 4 seconds in milliseconds
 
     return () => clearTimeout(timeout);
   }, [currentComponentIndex]);
