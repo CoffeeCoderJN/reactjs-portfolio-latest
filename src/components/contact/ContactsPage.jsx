@@ -19,7 +19,7 @@ const Contact = () => {
           duration: 0.5,
           delay: 0.1,
         }}
-        className="container mx-auto flex justify-center flex-col-reverse lg:flex-row lg:mt-10 px-5 md:px-20 lg:px-20 lg:space-x-4"
+        className="container mx-auto flex justify-center flex-col-reverse lg:flex-row lg:mt-10 px-5 md:px-20 lg:space-x-4"
       >
         <ContactForm />
         <ContactDetails />

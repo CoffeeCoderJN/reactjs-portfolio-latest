@@ -97,7 +97,7 @@ const Serivces = () => {
       title="expertise"
       subtitle="I am proficient in performing tasks related to all of the listed skills below."
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:mx-20 px-5 md:px-10 lg:px-0">
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:mx-20 px-5 lg:px-0">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 1 }}

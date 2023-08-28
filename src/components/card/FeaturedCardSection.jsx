@@ -3,7 +3,7 @@ import FeaturedCard from "./FeaturedCard"
 
 export function FeaturedCardSection() {
     return (
-      <div className='pt-10 px-4  md:mx-32'>
+      <div className='pt-10 px-4 md:mx-20'>
         <div className='flex flex-col gap-4 lg:flex-row lg:gap-8'>
           <FeaturedCard
             icon={

@@ -23,7 +23,9 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
       id="nav"
       className="sm:container sm:mx-auto"
     >
-      <div className={`fixed inset-x-0 block sm:flex sm:justify-between sm:items-center  text-gray-900 dark:text-white top-0 z-40  md:justify-around py-3 md:py-2 bg-white/70 dark:bg-neutral-900/70 duration-700 ease-in-out backdrop-filter backdrop-blur-lg bg-opacity-30 border-neutral-100 border-b dark:border-neutral-800`}>
+      <div
+        className={`fixed inset-x-0 block sm:flex sm:justify-between sm:items-center  text-gray-900 dark:text-white top-0 z-40  md:justify-around py-3 md:py-2 bg-white/70 dark:bg-neutral-900/70 duration-700 ease-in-out backdrop-filter backdrop-blur-lg bg-opacity-30 border-neutral-100 border-b dark:border-neutral-800`}
+      >
         {/* Progressbar */}
         <span
           id="progress-bar"
@@ -128,7 +130,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           <Link
             to="projects"
             smooth={true}
-            offset={-200}
+            offset={-40}
             duration={800}
             onClick={toggleMenu}
             className="block text-left text-lg text-neutral-600 dark:text-neutral-200 hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-neutral-200 dark:border-neutral-700 cursor-pointer"
@@ -189,7 +191,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             <Link
               to="projects"
               smooth={true}
-              offset={-260}
+              offset={-60}
               duration={800}
               className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer hover:scale-105 dark:hover:bg-neutral-800 hover:bg-neutral-200 hover:px-1 duration-200 rounded-md"
               aria-label="Projects"

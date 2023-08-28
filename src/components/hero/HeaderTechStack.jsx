@@ -21,7 +21,7 @@ function HeaderTechStack() {
   return (
     <div>
       <motion.p
-        className="mb-2.5 text-sm text-slate-600 dark:text-slate-400"
+        className="mb-2.5 text-sm text-slate-500 dark:text-slate-400"
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.6 }}
@@ -29,7 +29,7 @@ function HeaderTechStack() {
         current favorite tech stack/tools:
       </motion.p>
       <motion.ul
-        className="flex items-center gap-3.5 text-slate-700 dark:text-slate-300"
+        className="flex items-center gap-3.5 text-slate-600 dark:text-slate-300"
         initial="hide"
         animate="show"
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}

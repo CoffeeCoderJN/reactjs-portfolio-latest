@@ -81,7 +81,7 @@ const Hero = () => {
         transition={{ delay: 0.5 }}
         className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0"
       >
-        <span className="text-slate-600 dark:text-slate-200">
+        <span className="text-slate-700 dark:text-slate-200">
           <TypeAnimation
             sequence={[
               "Welcome👋",

@@ -4,11 +4,11 @@ import About from "./components/About";
 import AppFooter from "./components/AppFooter";
 import Skills from "./components/Skills";
 import { motion } from "framer-motion";
-import Projects from "./components/Projects";
 import PreLoader from "./components/PreLoader";
 import HeaderNav from "./components/header/HeaderNav";
 import Contact from "./components/contact/ContactsPage"
 import Hero from "./components/hero/Hero";
+import Projects from "./components/projects/Projects";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -43,6 +43,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          {/* <Projects /> */}
           {/* <Contact /> */}
           <Contact />
           <AppFooter />
