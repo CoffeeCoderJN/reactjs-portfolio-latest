@@ -12,7 +12,7 @@ import nextjs from "../assets/yellow/nexty.png";
 import redux from "../assets/yellow/reduxy.png";
 import ubuntu from "../assets/yellow/ubuntuy.png";
 import css3 from "../assets/yellow/css3y.png";
-import boot from "../assets/yellow/bootstapy.png";
+import boot from "../assets/yellow/bootstrapy.png";
 import git from "../assets/yellow/gity.png";
 import postman from "../assets/yellow/postmany.png";
 import SkillsDescription from "./skills/SkillsDescription";

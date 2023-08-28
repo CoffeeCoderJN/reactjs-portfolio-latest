@@ -23,7 +23,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
       id="nav"
       className="sm:container sm:mx-auto"
     >
-      <div className="fixed inset-x-0 block sm:flex sm:justify-between sm:items-center bg-white/70 text-gray-900 dark:bg-neutral-900/70 dark:text-white top-0 z-40 duration-700 ease-in-out backdrop-filter backdrop-blur-lg bg-opacity-30 md:justify-around lg:px-5 py-3 md:py-2 border-neutral-100 border-b dark:border-neutral-800">
+      <div className="fixed inset-x-0 block sm:flex sm:justify-between sm:items-center bg-white/70 text-gray-900 dark:bg-neutral-900/70 dark:text-white top-0 z-40 duration-700 ease-in-out backdrop-filter backdrop-blur-lg bg-opacity-30 md:justify-around py-3 md:py-2 border-neutral-100 border-b dark:border-neutral-800">
         
         {/* Progressbar */}
         <span
