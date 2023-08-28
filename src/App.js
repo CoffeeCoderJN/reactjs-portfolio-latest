@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import About from "./components/About";
 // import Contact from "./components/Contact";
 import AppFooter from "./components/AppFooter";
-import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills";
 import { motion } from "framer-motion";
 import Projects from "./components/Projects";
 import PreLoader from "./components/PreLoader";
 import HeaderNav from "./components/header/HeaderNav";
 import Contact from "./components/contact/ContactsPage"
+import Hero from "./components/hero/Hero";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);

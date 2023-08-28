@@ -51,16 +51,26 @@ const About = () => {
       >
         <motion.img
           src={MukulImg}
-          initial={{ x: -200, opacity: 0 }}
-          transition={{ duration: 0.8 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{
+            duration: 3,
+            type: "spring",
+            stiffness: 150,
+            damping: 20,
+          }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         />
         <motion.div
-          initial={{ x: 200, opacity: 0 }}
-          transition={{ duration: 1.2 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ opacity: 0, x: 100 }}
+          transition={{
+            duration: 3,
+            type: "spring",
+            stiffness: 150,
+            damping: 20,
+          }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10"
         >
