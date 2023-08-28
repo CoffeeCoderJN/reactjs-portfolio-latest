@@ -81,7 +81,7 @@ export const projectsData = [
     live: "https://github.com/themukuldharashivkar/Movie-Flix",
     code: "https://github.com/themukuldharashivkar/Movie-Flix",
     featured: false,
-    tech: ["Python", "Streamlit", "Machine Learning"]
+    tech: ["Machine Learning", "Streamlit"]
   },
 //   {
 //     id: 6,

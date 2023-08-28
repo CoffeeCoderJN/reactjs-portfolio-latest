@@ -39,7 +39,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
           <div className="h-[200px] w-full relative rounded-xl overflow-hidden">
             <img
               src={thumbnail}
-              className="transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+              className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
               alt="loading..."
             />
 
