@@ -1,9 +1,16 @@
 import React from "react";
 import Label from "./Label";
+import { motion } from "framer-motion";
 
 const Details = () => {
   return (
-    <div className="flex flex-col text-left pt-5">
+    <motion.div
+      initial={{ x: -100, opacity: 0 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="flex flex-col text-left pt-5"
+    >
       {/* <div className="h-[1px] mb-5 bg-neutral-300 dark:bg-neutral-500" /> */}
       <h1 className="font-medium text-2xl text-amber-600 dark:text-amber-200">
         Detail and Summary
@@ -52,7 +59,7 @@ const Details = () => {
         <Label indicator={70}>Postman</Label>
         <Label indicator={90}>Pycharm</Label>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
