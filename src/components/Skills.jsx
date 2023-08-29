@@ -16,6 +16,7 @@ import boot from "../assets/yellow/bootstrapy.png";
 import git from "../assets/yellow/gity.png";
 import postman from "../assets/yellow/postmany.png";
 import SkillsDescription from "./skills/SkillsDescription";
+import Details from "./skills/Details";
 
 const services = [
   {
@@ -97,18 +98,18 @@ const Serivces = () => {
       title="expertise"
       subtitle="I am proficient in performing tasks related to all of the listed skills below."
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:mx-20 px-5 lg:px-0">
+      <div className="md:mx-20 px-5 lg:px-0">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="grid gap-5 md:gap-10 grid-cols-3 lg:grid-cols-3 place-items-center md:grid-cols-3 md:pt-8 md:pb-16 md:px-20 lg:px-0"
+          className="grid gap-5 md:gap-10 grid-cols-4 lg:grid-cols-9 place-items-center md:grid-cols-5 md:pt-8 md:pb-16 md:px-20 lg:px-0"
         >
           {services.map(({ id, image, title }) => (
             <div
               key={id}
-              className="group relative flex flex-col items-center justify-center p-5 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-3xl md:rounded-3xl object-cover w-24 h-24 md:w-32 md:h-32 duration-300 ease-in-out dark:bg-neutral-800 bg-gray-100 border dark:border-white/10 border-black/10"
+              className="group relative flex flex-col items-center justify-center p-3 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-xl object-cover w-20 h-20 duration-300 ease-in-out dark:bg-neutral-800 bg-gray-100 border dark:border-white/10 border-black/10"
             >
               <img
                 src={image}
@@ -116,15 +117,18 @@ const Serivces = () => {
                 className="w-36 h-36 md:h-44 md:w-44 object-contain group-hover:grayscale"
               />
 
-              <div className="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-neutral-500 dark:bg-neutral-700 opacity-0 group-hover:h-full group-hover:opacity-90 duration-300 rounded-3xl  backdrop-filter backdrop-blur-lg">
-                <p className="px-2 uppercase text-xs md:text-sm font-bold opacity-0 group-hover:opacity-100 text-white">
+              <div className="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-neutral-500 dark:bg-neutral-700 opacity-0 group-hover:h-full group-hover:opacity-90 duration-300 rounded-xl  backdrop-filter backdrop-blur-lg">
+                <p className="px-2 uppercase text-xs font-bold opacity-0 group-hover:opacity-100 text-white">
                   {title}
                 </p>
               </div>
             </div>
           ))}
         </motion.div>
+      </div>
 
+      <div className="md:mx-20 px-5 lg:px-0 grid grid-cols-1 md:grid-cols-2 md:space-x-5">
+        <Details />
         <SkillsDescription />
       </div>
     </Section>

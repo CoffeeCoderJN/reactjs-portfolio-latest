@@ -24,7 +24,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
       className="sm:container sm:mx-auto"
     >
       <div
-        className={`fixed inset-x-0 block sm:flex sm:justify-between sm:items-center  text-gray-900 dark:text-white top-0 z-40  md:justify-around py-3 md:py-2 bg-white/70 dark:bg-neutral-900/70 duration-700 ease-in-out backdrop-filter backdrop-blur-lg bg-opacity-30 border-neutral-100 border-b dark:border-neutral-800`}
+        className={`fixed inset-x-0 block sm:flex sm:justify-between sm:items-center  text-gray-900 dark:text-white top-0 z-40  md:justify-around py-3 md:py-2 bg-white/70 dark:bg-neutral-900/70 duration-700 ease-in-out backdrop-filter backdrop-blur-lg bg-opacity-30 `}
       >
         {/* Progressbar */}
         <span
@@ -32,7 +32,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           style={{
             transform: `translateX(${completion - 100}%)`,
           }}
-          className={`absolute bottom-0 w-full transition-transform duration-300 h-[2px] bg-neutral-600/30 dark:bg-neutral-200/30`}
+          className={`absolute top-0 w-full transition-transform duration-300 h-[2px] bg-amber-500 dark:bg-amber-500 rounded-xl`}
         />
 
         {/* Header menu links and small screen hamburger menu */}
@@ -163,7 +163,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           <div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 shadow-lg sm:shadow-none">
             <a
               href="https://mukuldharashivkar-blog.vercel.app/"
-              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer dark:hover:bg-neutral-800 hover:bg-neutral-200 hover:px-1 duration-200 rounded-md"
+              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer dark:hover:bg-amber-500 hover:bg-amber-200 hover:px-1 duration-200 rounded-md"
               aria-label="Blogs"
             >
               Blogs
@@ -173,7 +173,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               smooth={true}
               offset={-30}
               duration={800}
-              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer dark:hover:bg-neutral-800 hover:bg-neutral-200 hover:px-1 duration-200 rounded-md"
+              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer dark:hover:bg-amber-500 hover:bg-amber-200 hover:px-1 duration-200 rounded-md"
               aria-label="About Me"
             >
               Overview
@@ -183,7 +183,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               smooth={true}
               offset={-60}
               duration={800}
-              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer hover:scale-105 dark:hover:bg-neutral-800 hover:bg-neutral-200 hover:px-1 duration-200 rounded-md"
+              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer hover:scale-105 dark:hover:bg-amber-500 hover:bg-amber-200 hover:px-1 duration-200 rounded-md"
               aria-label="About Me"
             >
               Expertise
@@ -193,7 +193,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               smooth={true}
               offset={-60}
               duration={800}
-              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer hover:scale-105 dark:hover:bg-neutral-800 hover:bg-neutral-200 hover:px-1 duration-200 rounded-md"
+              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer hover:scale-105 dark:hover:bg-amber-500 hover:bg-amber-200 hover:px-1 duration-200 rounded-md"
               aria-label="Projects"
             >
               Projects
@@ -203,7 +203,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               smooth={true}
               offset={-60}
               duration={800}
-              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer hover:scale-105 dark:hover:bg-neutral-800 hover:bg-neutral-200 hover:px-1 duration-200 rounded-md"
+              className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer hover:scale-105 dark:hover:bg-amber-500 hover:bg-amber-200 hover:px-1 duration-200 rounded-md"
               aria-label="Contact"
             >
               Contact

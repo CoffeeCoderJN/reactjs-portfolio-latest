@@ -121,7 +121,7 @@ const Projects = () => {
           ))}
       </div>
 
-      <div className="grid grid-cols-8 2xl:grid-cols-12 gap-6 gap-y-8 my-20 px-5 md:px-10 lg:px-20">
+      <div className="grid grid-cols-8 2xl:grid-cols-12 gap-6 gap-y-8 my-10 px-5 md:px-10 lg:px-20">
         {projectsData
           .filter((e) => e.featured !== true)
           .map((e, i) => (
