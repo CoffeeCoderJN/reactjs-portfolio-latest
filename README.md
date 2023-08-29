@@ -3,7 +3,8 @@
 https://mukul-personal-site-fi4rg339h-themukuldharashivkar.vercel.app/
 
 ## Demo
-![image](https://user-images.githubusercontent.com/98680454/235476127-3ed6ee80-fd4f-4bd9-9e5c-1bf63634a45a.png)
+![Screenshot 2023-08-29 091501](https://github.com/themukuldharashivkar/reactjs-portfolio-latest/assets/98680454/c85eb11a-4d07-4c96-81cc-6f8348b51cd3)
+
 ## Tech Stack
 1) React JS
 2) Tailwind CSS
