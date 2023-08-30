@@ -32,7 +32,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
         },
       }}
       {...motionStep}
-      className="col-span-12 sm:col-span-6 md:col-span-4 bg-white border border-gray-400/50 dark:border-neutral-600/50 dark:bg-neutral-800 rounded-xl p-4 group shadow-lg shadow-gray-400/50 dark:shadow-black/30"
+      className="col-span-12 sm:col-span-6 md:col-span-4 bg-white border border-gray-400/50 dark:border-neutral-600/50 dark:bg-neutral-900 rounded-xl p-4 group shadow-lg shadow-gray-400/50 dark:shadow-black/30 z-20"
     >
       <div>
         <a href={`${live}`}>
@@ -50,7 +50,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
 
       <div>
         <div className="flex items-center justify-between my-5">
-          <BsFillBookmarkStarFill className="text-2xl text-indigo-600" />
+          <BsFillBookmarkStarFill className="text-2xl text-[#7000ff]" />
 
           <div
             className={
@@ -81,7 +81,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
           </div>
         </div>
 
-        <h1 className="text-xl font-medium mb-1 dark:text-neutral-300 text-neutral-700">
+        <h1 className="text-xl font-medium mb-1 dark:text-[#7000ff] text-[#7000ff]">
           {" "}
           {title}{" "}
         </h1>

@@ -6,11 +6,12 @@ import ecommerce from "../../assets/ecommerce.png";
 import freepics from "../../assets/freepics.png";
 import youtube from "../../assets/youtube.png";
 import weather from "../../assets/weather.png";
-import blog from "../../assets/blog.jpg";   
+import blog from "../../assets/blog.jpg";
 import movie from "../../assets/movie.jpg";
 
 import Section from "../common/Section";
 import ProjectCard from "./ProjectCard";
+import RightSvg from "../../assets/svg/right-pattern.svg";
 
 export const projectsData = [
   {
@@ -24,7 +25,7 @@ export const projectsData = [
     tech: [
       "React.js",
       "Spring Boot",
-    //   "Spring Security",
+      //   "Spring Security",
       "MySQL",
       "Tailwind CSS",
     ],
@@ -67,7 +68,8 @@ export const projectsData = [
     id: 4,
     thumbnail: blog,
     title: "Personal Blog",
-    description: "This is my personal blog website. I have used HTML and Bootstrap CSS for this project. I have used Flask for backend.",
+    description:
+      "This is my personal blog website. I have used HTML and Bootstrap CSS for this project. I have used Flask for backend.",
     live: "https://themukuldharashivkar-blog.onrender.com/",
     code: "https://github.com/themukuldharashivkar/personal-mukul-blog-website",
     tech: ["Python", "SQLite", "Flask"],
@@ -77,22 +79,23 @@ export const projectsData = [
     id: 5,
     thumbnail: movie,
     title: "Movie Flix",
-    description: "Movie Recommender Web App made using Streamlit Framework. Used bag-of-the-words model to recommend movies. ",
+    description:
+      "Movie Recommender Web App made using Streamlit Framework. Used bag-of-the-words model to recommend movies. ",
     live: "https://github.com/themukuldharashivkar/Movie-Flix",
     code: "https://github.com/themukuldharashivkar/Movie-Flix",
     featured: false,
-    tech: ["Machine Learning", "Streamlit"]
+    tech: ["Machine Learning", "Streamlit"],
   },
-//   {
-//     id: 6,
-//     thumbnail: expense,
-//     title: "Expense Tracker",
-//     description: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
-//     live: "https://expense-tracker-react-9mffr44hp-themukuldharashivkar.vercel.app/",
-//     code: "https://github.com/themukuldharashivkar/Expense-Tracker-ReactJS",
-//     featured: false,
-//     tech: ["React.js", "Context API", "CSS"]
-//   },
+  //   {
+  //     id: 6,
+  //     thumbnail: expense,
+  //     title: "Expense Tracker",
+  //     description: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
+  //     live: "https://expense-tracker-react-9mffr44hp-themukuldharashivkar.vercel.app/",
+  //     code: "https://github.com/themukuldharashivkar/Expense-Tracker-ReactJS",
+  //     featured: false,
+  //     tech: ["React.js", "Context API", "CSS"]
+  //   },
 ];
 
 const Projects = () => {
@@ -101,9 +104,17 @@ const Projects = () => {
       id="projects"
       title="Projects"
       subtitle="Recent projects upon which I have worked on."
-      className="bg-neutral-100 dark:bg-neutral-800/30"
+      className="relative"
     >
       <div className="space-y-5 lg:space-y-10 px-5 md:px-10 lg:px-20">
+        <img
+          src={RightSvg}
+          alt=""
+          className="absolute hidden right-0 bottom-2/3 w-2/12 max-w-xs md:block"
+          loading="lazy"
+          height={700}
+          width={320}
+        />
         {projectsData
           .filter((e) => e.featured === true)
           .map((e, i) => (

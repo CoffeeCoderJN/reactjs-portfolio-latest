@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import About from "./components/About";
-// import Contact from "./components/Contact";
 import AppFooter from "./components/AppFooter";
 import Skills from "./components/Skills";
 import { motion } from "framer-motion";
@@ -28,7 +27,7 @@ function App() {
       {loading ? (
         <PreLoader loading={loading} />
       ) : (
-        <main className="bg-white dark:bg-neutral-900 dark:text-white duration-700 ease-in-out">
+        <main className="bg-white dark:bg-[#0d0c0e] dark:text-white duration-700 ease-in-out">
           {/* <Header darkMode={darkMode} setDarkMode={setDarkMode} /> */}
           <HeaderNav darkMode={darkMode} setDarkMode={setDarkMode} />
 
@@ -43,8 +42,6 @@ function App() {
           <About />
           <Skills />
           <Projects />
-          {/* <Projects /> */}
-          {/* <Contact /> */}
           <Contact />
           <AppFooter />
         </main>

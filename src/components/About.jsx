@@ -11,6 +11,7 @@ import Quote from "./quote/Quote";
 import { FeaturedCardSection } from "./card/FeaturedCardSection";
 import FeaturedCard from "./card/FeaturedCard";
 import {FaGraduationCap} from "react-icons/fa";
+import RightSvg from "../assets/svg/right-pattern.svg";
 
 // const services = [
 //   {
@@ -41,8 +42,16 @@ const About = () => {
       id="about"
       title="Overview"
       subtitle="Full Stack Developer"
-      className="bg-gradient-to-b bg-neutral-100 dark:bg-neutral-800/30"
+      className="relative"
     >
+      <img
+          src={RightSvg}
+          alt=""
+          className="absolute hidden right-0 bottom-2/3 w-2/12 max-w-xs md:block"
+          loading="lazy"
+          height={700}
+          width={320}
+        />
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

@@ -3,10 +3,12 @@ import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useReadingProgress } from "../hooks/useReadingProgress";
+// import useOnScroll from "../hooks/useOnScroll";
 
 const HeaderNav = ({ darkMode, setDarkMode }) => {
   const [showMenu, setShowMenu] = useState(false);
   const completion = useReadingProgress();
+  // const isScrolled = useOnScroll(0);
 
   function toggleMenu() {
     if (!showMenu) {
@@ -24,7 +26,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
       className="sm:container sm:mx-auto"
     >
       <div
-        className={`fixed inset-x-0 block sm:flex sm:justify-between sm:items-center  text-gray-900 dark:text-white top-0 z-40  md:justify-around py-3 md:py-2 bg-white/70 dark:bg-neutral-900/70 duration-700 ease-in-out backdrop-filter backdrop-blur-lg bg-opacity-30 `}
+        className={`fixed inset-x-0 block sm:flex sm:justify-between sm:items-center  text-gray-900 dark:text-white top-0 z-40  md:justify-around py-3 md:py-2 bg-white/70 dark:bg-[#0d0c0e]/70  backdrop-filter backdrop-blur-lg bg-opacity-30`}
       >
         {/* Progressbar */}
         <span
@@ -47,7 +49,6 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               mukul<span className="font-extrabold text-amber-500">.dev</span>
             </motion.h1>
           </Link>
-
           {/* Small screen hamburger menu */}
           <motion.div
             initial={{ x: 500, opacity: 0, scale: 0.5 }}
@@ -56,6 +57,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             className="sm:hidden flex items-center gap-3"
           >
             {/* Theme switcher small screen */}
+            
             <div
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Theme Switcher"
