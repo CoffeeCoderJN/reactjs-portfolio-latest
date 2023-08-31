@@ -62,7 +62,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
                 href={`${live}`}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-indigo-600 p-2 rounded-md dark:bg-neutral-900 bg-neutral-100 transition-all duration-300 hover:scale-110 text-2xl"
+                className="hover:text-indigo-600 p-2 rounded-md dark:bg-neutral-800 bg-neutral-100 transition-all duration-300 hover:scale-110 text-2xl"
               >
                 <BiLinkAlt />
               </a>
@@ -73,7 +73,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
                 href={`${code}`}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-indigo-600 p-2 rounded-md dark:bg-neutral-900 bg-neutral-100 transition-all duration-300 hover:scale-90 text-2xl"
+                className="hover:text-indigo-600 p-2 rounded-md dark:bg-neutral-800 bg-neutral-100 transition-all duration-300 hover:scale-90 text-2xl"
               >
                 <FaGithub />
               </a>
@@ -93,7 +93,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
         <div className="flex justify-center dark:text-neutral-300 text-neutral-700 mt-7 gap-x-4 flex-wrap">
           {tech.map((e, i) => (
             <span
-              className="p-2 rounded-md dark:bg-neutral-900 bg-neutral-100 text-xs"
+              className="p-2 rounded-md dark:bg-neutral-800 bg-neutral-100 text-xs"
               key={i}
             >
               {e}

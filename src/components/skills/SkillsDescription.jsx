@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const SkillsDescription = () => {
-
   return (
     <motion.div
       initial={{ x: 100, opacity: 0 }}
@@ -17,10 +16,14 @@ const SkillsDescription = () => {
       </h2>
       <p className="text-sm font-light">
         In the expansive field of web development, I've acquired diverse
-        experience in programming languages and technology stacks for both
-        Back-End and Front-End development. I'm particularly drawn to creating
-        full stack applications, with a strong interest in utilizing the
-        React.js library alongside the Spring Boot framework.
+        experience in programming languages and technology stacks for both{" "}
+         <span className="font-semibold">
+           Back-End and Front-End development
+        </span>
+        . I'm particularly drawn to creating
+        <span className="font-semibold">full stack applications</span>, with a
+        strong interest in utilizing the React.js library alongside the Spring
+        Boot framework.
       </p>
 
       <h2 className="font-medium text-lg text-amber-600 dark:text-amber-200 mt-5">
