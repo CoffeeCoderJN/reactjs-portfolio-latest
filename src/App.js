@@ -5,7 +5,7 @@ import Skills from "./components/Skills";
 import { motion } from "framer-motion";
 import PreLoader from "./components/PreLoader";
 import HeaderNav from "./components/header/HeaderNav";
-import Contact from "./components/contact/ContactsPage"
+import Contact from "./components/contact/ContactsPage";
 import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";
 
@@ -30,7 +30,6 @@ function App() {
         <main className="bg-white dark:bg-[#0d0c0e] dark:text-white duration-700 ease-in-out">
           {/* <Header darkMode={darkMode} setDarkMode={setDarkMode} /> */}
           <HeaderNav darkMode={darkMode} setDarkMode={setDarkMode} />
-
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: [0.1, 0.2, 0.4, 0.8, 1] }}
@@ -38,7 +37,7 @@ function App() {
           >
             <Hero />
           </motion.div>
-          
+
           <About />
           <Skills />
           <Projects />

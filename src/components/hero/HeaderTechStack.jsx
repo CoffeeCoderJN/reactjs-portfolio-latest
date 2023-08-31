@@ -19,14 +19,14 @@ const animation = {
 
 function HeaderTechStack() {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
       <motion.p
-        className="mb-2.5 text-sm text-slate-500 dark:text-slate-400"
+        className="mb-2.5 text-sm md:text-xl font-semibold text-[#7000ff] dark:text-[#7000ff]"
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.6 }}
       >
-        current favorite tech stack/tools:
+        Current favorite tech stack/tools:
       </motion.p>
       <motion.ul
         className="flex items-center gap-3.5 text-slate-600 dark:text-slate-300"
@@ -36,35 +36,35 @@ function HeaderTechStack() {
       >
         <motion.li variants={animation}>
           <div className="transition duration-200 hover:text-[#61DAFB]">
-            <ReactIcon className="h-6 w-6" />
+            <ReactIcon className="h-6 w-6 md:h-8 md:w-8" />
           </div>
         </motion.li>
         <motion.li variants={animation}>
           <div className="transition duration-200 hover:text-[#06B6D4]">
-            <TailwindCssIcon className="h-6 w-6" />
+            <TailwindCssIcon className="h-6 w-6 md:h-8 md:w-8" />
           </div>
         </motion.li>
         <motion.li variants={animation}>
           <div className="transition duration-200 hover:text-[#3e9c3e]">
-            <SiSpring className="h-6 w-6" />
+            <SiSpring className="h-6 w-6 md:h-8 md:w-8" />
           </div>
         </motion.li>
         <motion.li variants={animation}>
           <div className="transition duration-200 hover:text-[#000000] dark:hover:text-[#FFFFFF]">
-            <NextJsIcon className="h-6 w-6" />
+            <NextJsIcon className="h-6 w-6 md:h-8 md:w-8" />
           </div>
         </motion.li>
         <motion.li variants={animation}>
-          <div className="h-3 w-[1px] bg-slate-300 dark:bg-slate-700" />
+          <div className="h-3 md:h-5 w-[1px] bg-slate-400 dark:bg-neutral-700" />
         </motion.li>
         <motion.li variants={animation}>
           <div className="transition duration-200 hover:text-[#007ACC]">
-            <VSCodeIcon className="h-6 w-6" />
+            <VSCodeIcon className="h-6 w-6 md:h-8 md:w-8" />
           </div>
         </motion.li>
         <motion.li variants={animation}>
           <div className="transition duration-200 hover:text-[#6e50c2]">
-            <SiEclipseide className="h-6 w-6" />
+            <SiEclipseide className="h-6 w-6 md:h-8 md:w-8" />
           </div>
         </motion.li>
       </motion.ul>

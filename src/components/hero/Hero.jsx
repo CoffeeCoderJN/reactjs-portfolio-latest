@@ -15,7 +15,6 @@ const animation = {
 };
 
 const Hero = () => {
-  
   window.addEventListener("scroll", function () {
     const downArrow = this.document.querySelector(".down-arrow");
 
@@ -65,12 +64,11 @@ const Hero = () => {
         </motion.a>
       </motion.div>
 
-      
       <motion.h2
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.5 }}
-        className="text-sm pt-3 md:text-xl text-amber-500 uppercase font-bold z-0"
+        className="text-sm pt-3 md:text-xl text-amber-500 font-bold z-0"
       >
         Full Stack Developer
       </motion.h2>
