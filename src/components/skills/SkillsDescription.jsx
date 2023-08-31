@@ -20,7 +20,7 @@ const SkillsDescription = () => {
          <span className="font-semibold">
            Back-End and Front-End development
         </span>
-        . I'm particularly drawn to creating
+        . I'm particularly drawn to creating{" "}
         <span className="font-semibold">full stack applications</span>, with a
         strong interest in utilizing the React.js library alongside the Spring
         Boot framework.
