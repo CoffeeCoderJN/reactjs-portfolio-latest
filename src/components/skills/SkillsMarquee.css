@@ -100,8 +100,8 @@
         font-size: 3.2rem;
     }
     .skill--box {
-        width: 65px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
         margin: 1.2rem;
         padding: 2rem 1rem;
     }
@@ -137,8 +137,8 @@
 
 @media screen and (max-width: 600px) {
     .skill--box {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         margin: 1.2rem;
         padding: 2rem 1rem;
     }

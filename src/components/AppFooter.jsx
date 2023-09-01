@@ -37,7 +37,7 @@ const AppFooter = () => {
       <div className="pt-20 sm:pt-30 pb-8 border-t-2 dark:border-neutral-600 border-neutral-300">
         {/* Footer social links */}
         <div className="flex flex-col justify-center items-center mb-12 sm:mb-28">
-          <p className="text-3xl sm:text-4xl text-amber-600 dark:text-amber-200 mb-5">
+          <p className="text-3xl sm:text-4xl text-amber-500 dark:text-amber-500 mb-5">
             Follow me
           </p>
           <ul className="flex gap-4 sm:gap-8">
