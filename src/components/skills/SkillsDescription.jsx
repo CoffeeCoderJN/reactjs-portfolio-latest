@@ -10,7 +10,7 @@ const SkillsDescription = () => {
       viewport={{ once: true }}
       className="text-left lg:pt-0"
     >
-      <h2 className="font-medium text-2xl text-amber-600 dark:text-amber-200 mt-5 mb-5">
+      <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-200 mt-5 mb-5">
         A look at all the programming languages, libraries, and tools I've
         worked with.
       </h2>
@@ -26,7 +26,7 @@ const SkillsDescription = () => {
         Boot framework.
       </p>
 
-      <h2 className="font-medium text-lg text-amber-600 dark:text-amber-200 mt-5">
+      <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5">
         Front-End
       </h2>
       <p className="text-sm font-light">
@@ -63,7 +63,7 @@ const SkillsDescription = () => {
         </div>
       </div>
 
-      <h2 className="font-medium text-lg text-amber-600 dark:text-amber-200 mt-5">
+      <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5">
         Back-End
       </h2>
       <p className="text-sm font-light">

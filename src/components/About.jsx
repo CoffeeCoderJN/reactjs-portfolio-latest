@@ -10,8 +10,9 @@ import { motion } from "framer-motion";
 import Quote from "./quote/Quote";
 import { FeaturedCardSection } from "./card/FeaturedCardSection";
 import FeaturedCard from "./card/FeaturedCard";
-import {FaGraduationCap} from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
 import RightSvg from "../assets/svg/right-pattern.svg";
+import BlurCircles from "./blurCircles/BlurCircles";
 
 // const services = [
 //   {
@@ -45,13 +46,13 @@ const About = () => {
       className="relative"
     >
       <img
-          src={RightSvg}
-          alt=""
-          className="absolute hidden right-0 bottom-2/3 w-2/12 max-w-xs md:block"
-          loading="lazy"
-          height={700}
-          width={320}
-        />
+        src={RightSvg}
+        alt=""
+        className="absolute hidden right-0 bottom-2/3 w-2/12 max-w-xs md:block"
+        loading="lazy"
+        height={700}
+        width={320}
+      />
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -73,14 +74,19 @@ const About = () => {
           viewport={{ once: true }}
           className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10"
         >
-          <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">Here's a Little Background.</h4>
+          <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">
+            Here's a Little Background.
+          </h4>
           <div className="bg-white dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10 ">
             <p className="text-base font-light">
-              Hi, I am <span className="font-semibold">Mukul Rajendra Dharashivkar</span> and everyone calls me Mukul.
-              I am a <span className="font-semibold">Full Stack Web Developer</span>. I am proficient in ReactJS,
-              Spring, Spring Boot, Bootstrap, Tailwind CSS and many more. I am
-              looking for new opportunities to implement and increase my skills
-              in software development and web development.
+              Hi, I am{" "}
+              <span className="font-semibold">Mukul Rajendra Dharashivkar</span>{" "}
+              and everyone calls me Mukul. I am a{" "}
+              <span className="font-semibold">Full Stack Web Developer</span>. I
+              am proficient in ReactJS, Spring, Spring Boot, Bootstrap, Tailwind
+              CSS and many more. I am looking for new opportunities to implement
+              and increase my skills in software development and web
+              development.
             </p>
           </div>
           {/* <p className="text-base font-extralight">
@@ -90,7 +96,9 @@ const About = () => {
             and increase my skills in software development and web development.
             In my spare time I play cricket and read blogs.
           </p> */}
-          <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">Recent Education.</h4>
+          <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">
+            Recent Education.
+          </h4>
           {/* <div className="grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
             {services.map(({ id, image, title }) => (
               <div
@@ -111,30 +119,34 @@ const About = () => {
 
           <FeaturedCard
             icon={
-              <div
-                className=
-                  'rounded-xl bg-amber-400 p-3.5 dark:bg-amber-400'
-              >
-                <FaGraduationCap className='h-5 w-5 text-white' />
+              <div className="rounded-xl bg-amber-400 p-3.5 dark:bg-amber-400">
+                <FaGraduationCap className="h-5 w-5 text-white" />
               </div>
             }
             title="05 August 2022"
             desc="BE in Computer Engineering from PES Modern College of Engineering, Shivajinagar, Pune - 05."
           />
-
         </motion.div>
       </motion.div>
 
       {/* Quote */}
-      <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        className="pt-10 md:pt-5 lg:pt-0"
-      >
-        <Quote />
-      </motion.div>
+      <div className="relative">
+        <motion.div initial={{ opacity: 0 }}
+          transition={{ duration: 2 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}>
+          <BlurCircles />
+        </motion.div>
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          className="relative pt-10 md:pt-5 lg:pt-0"
+        >
+          <Quote />
+        </motion.div>
+      </div>
 
       {/* Featured Card Section */}
       <motion.div

@@ -1,22 +1,22 @@
-import { useState } from "react";
-import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import { FiMoon, FiSun } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useReadingProgress } from "../hooks/useReadingProgress";
 // import useOnScroll from "../hooks/useOnScroll";
+import ProfileMenu from "./ProfileMenu";
 
 const HeaderNav = ({ darkMode, setDarkMode }) => {
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
   const completion = useReadingProgress();
   // const isScrolled = useOnScroll(0);
 
-  function toggleMenu() {
-    if (!showMenu) {
-      setShowMenu(true);
-    } else {
-      setShowMenu(false);
-    }
-  }
+  // function toggleMenu() {
+  //   if (!showMenu) {
+  //     setShowMenu(true);
+  //   } else {
+  //     setShowMenu(false);
+  //   }
+  // }
 
   return (
     <motion.nav
@@ -26,7 +26,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
       className="sm:container sm:mx-auto"
     >
       <div
-        className={`fixed inset-x-0 block sm:flex sm:justify-between sm:items-center  text-gray-900 dark:text-white top-0 z-40  md:justify-around py-3 md:py-2 bg-white/70 dark:bg-[#0d0c0e]/70  backdrop-filter backdrop-blur-lg bg-opacity-30`}
+        className={`fixed inset-x-0 block sm:flex sm:justify-between sm:items-center  text-gray-900 dark:text-white top-0 z-40  md:justify-around py-3 md:py-2 bg-white/70 dark:bg-[#0d0c0e]/70  backdrop-filter backdrop-blur-lg bg-opacity-30 duration-700 ease-in-out`}
       >
         {/* Progressbar */}
         <span
@@ -57,7 +57,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             className="sm:hidden flex items-center gap-3"
           >
             {/* Theme switcher small screen */}
-            
+
             <div
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Theme Switcher"
@@ -70,7 +70,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               )}
             </div>
 
-            <button
+            {/* <button
               onClick={toggleMenu}
               type="button"
               className="focus:outline-none dark:bg-[#101111] bg-gray-100 p-1 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5"
@@ -87,12 +87,13 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
                   <FiMenu className="text-2xl" />
                 )}
               </svg>
-            </button>
+            </button> */}
+            <ProfileMenu />
           </motion.div>
         </div>
 
         {/* Header links small screen */}
-        <div
+        {/* <div
           className={
             showMenu
               ? "block m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center sm:shadow-none"
@@ -151,7 +152,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           >
             Contact
           </Link>
-        </div>
+        </div> */}
 
         {/* Header links large screen */}
 
@@ -162,7 +163,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           transition={{ duration: 1 }}
           className="hidden sm:flex justify-between items-center flex-row px-5"
         >
-          <div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 shadow-lg sm:shadow-none">
+          {/* <div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 shadow-lg sm:shadow-none">
             <a
               href="https://mukuldharashivkar-blog.vercel.app/"
               className="block text-left text-sm text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-2 mb-2 sm:py-2 cursor-pointer dark:hover:bg-amber-500 hover:bg-amber-200 hover:px-1 duration-200 rounded-md"
@@ -210,7 +211,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             >
               Contact
             </Link>
-          </div>
+          </div> */}
 
           <div
             onClick={() => setDarkMode(!darkMode)}
@@ -222,6 +223,10 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             ) : (
               <FiMoon className="text-xl md:text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
             )}
+          </div>
+
+          <div className="ml-5">
+            <ProfileMenu />
           </div>
         </motion.div>
       </div>

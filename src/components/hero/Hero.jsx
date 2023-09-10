@@ -5,6 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import ActiveComponent from "./ActiveComponent";
 import BackgroundCircles from "../BackgroundCircles";
+// import BlurCircles from "../blurCircles/BlurCircles";
 
 const animation = {
   hide: { x: -32, opacity: 0 },
@@ -25,9 +26,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center p-5 text-center pt-32 z-40 overflow-y-hidden overflow-x-hidden"
+      className="relative min-h-screen flex flex-col justify-center items-center p-5 text-center pt-32 z-30 overflow-y-hidden overflow-x-hidden"
     >
       <BackgroundCircles />
+      {/* <div className="z-0">
+        <BlurCircles />
+      </div> */}
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 0.6 }}
@@ -55,7 +59,7 @@ const Hero = () => {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           href="/Mukul_Dharashivkar_Resume.pdf"
           download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r border-2 hover:border-transparent border-amber-500 bg-transparent transition-colors hover:from-amber-600 hover:to-amber-500 py-2 rounded-xl z-0 font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/30"
+          className="group flex items-center justify-center mt-10 bg-gradient-to-r border-2 hover:border-transparent border-amber-500 bg-transparent transition-colors hover:from-amber-600 hover:to-amber-500 py-2 rounded-xl font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         >
           <span>
             <HiDocumentText className="text-xl group-hover:text-black z-0 font-semibold" />

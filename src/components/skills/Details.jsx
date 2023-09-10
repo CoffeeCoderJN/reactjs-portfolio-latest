@@ -12,7 +12,7 @@ const Details = () => {
       className="flex flex-col text-left pt-5"
     >
       {/* <div className="h-[1px] mb-5 bg-neutral-300 dark:bg-neutral-500" /> */}
-      <h1 className="font-medium text-2xl text-amber-600 dark:text-amber-200">
+      <h1 className="font-medium text-2xl text-amber-500 dark:text-amber-200">
         Detail and Summary
       </h1>
       <p className="text-sm font-light pt-1">
@@ -25,7 +25,7 @@ const Details = () => {
         <Label indicator={20}>Occasionally</Label>
       </div>
 
-      <h2 className="font-medium text-lg text-amber-600 dark:text-amber-200 mt-5 mb-1">
+      <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5 mb-1">
         Programming Languages
       </h2>
       <div className="flex gap-2">
@@ -34,7 +34,7 @@ const Details = () => {
         <Label indicator={80}>Javascript</Label>
       </div>
 
-      <h2 className="font-medium text-lg text-amber-600 dark:text-amber-200 mt-5 mb-1">
+      <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5 mb-1">
         Technologies
       </h2>
       <div className="flex flex-wrap gap-2">
@@ -47,7 +47,7 @@ const Details = () => {
         <Label indicator={50}>MySQL</Label>
       </div>
 
-      <h2 className="font-medium text-lg text-amber-600 dark:text-amber-200 mt-5 mb-1">
+      <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5 mb-1">
         Softwares and Tools
       </h2>
       <div className="flex flex-wrap gap-2">
