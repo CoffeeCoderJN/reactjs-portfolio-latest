@@ -110,7 +110,7 @@ const Projects = () => {
         <img
           src={RightSvg}
           alt=""
-          className="absolute hidden right-0 bottom-2/3 w-2/12 max-w-xs md:block"
+          className="absolute hidden right-0 bottom-2/4 w-2/12 max-w-xs md:block"
           loading="lazy"
           height={700}
           width={320}

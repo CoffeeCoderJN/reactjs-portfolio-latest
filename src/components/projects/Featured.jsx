@@ -49,7 +49,7 @@ const Featured = ({
           </div>
 
           <div
-            className={`flex text-amber-500 dark:text-amber-300 gap-x-4 justify-end flex-wrap ${
+            className={`flex text-[#7000ff] font-extrabold gap-x-4 justify-end flex-wrap ${
               secondary && "!justify-start ml-0"
             }
             `}
