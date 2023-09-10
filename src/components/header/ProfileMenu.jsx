@@ -30,11 +30,11 @@ export default function ProfileMenu() {
           <AiOutlineCaretDown className="w-4 h-4" />
         </button>
         <ul
-          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg z-40 shadow-lg bg-gray-100 dark:bg-[#0d0c0e] backdrop-blur-xl duration-700 ease-in-out border dark:border-white/5 border-black/5 ${
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg z-40 shadow-lg bg-gray-50 dark:bg-neutral-900 backdrop-blur-xl duration-700 ease-in-out border dark:border-white/5 border-black/5 ${
             open ? "block" : "hidden"
           }`}
         >
-          <li>
+          <li className="border-b dark:border-white/5 border-black/5">
             <a
               onClick={() => setOpen(!open)}
               className="cursor-pointer flex w-full items-center px-3 py-2 text-sm hover:bg-white dark:hover:bg-neutral-800"
@@ -43,7 +43,7 @@ export default function ProfileMenu() {
               Blogs
             </a>
           </li>
-          <li className="">
+          <li className="border-b dark:border-white/5 border-black/5">
             <Link
               to="about"
               smooth={true}
@@ -55,7 +55,7 @@ export default function ProfileMenu() {
               Overview
             </Link>
           </li>
-          <li>
+          <li className="border-b dark:border-white/5 border-black/5">
             <Link
               to="skills"
               smooth={true}
@@ -67,7 +67,7 @@ export default function ProfileMenu() {
               Expertise
             </Link>
           </li>
-          <li>
+          <li className="border-b dark:border-white/5 border-black/5">
             <Link
               to="projects"
               smooth={true}
