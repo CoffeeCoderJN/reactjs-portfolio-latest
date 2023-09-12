@@ -22,7 +22,7 @@ const ContactDetails = () => {
         </h2>
 
         {/* Address table */}
-        <div className="relative overflow-x-auto rounded-xl border border-gray-300 dark:border-gray-600 mb-5">
+        <div className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-5">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-neutral-100 dark:bg-neutral-800 dark:text-gray-400">
               <tr>
@@ -44,7 +44,7 @@ const ContactDetails = () => {
                 </th>
                 <td className="px-6 py-4">Pune, Maharashtra, India</td>
               </tr>
-              <tr className="bg-white border-b dark:bg-neutral-800 dark:border-gray-700">
+              <tr className="bg-white dark:bg-neutral-800">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -82,7 +82,7 @@ const ContactDetails = () => {
         </p>
 
         {/* Address table */}
-        <div className="relative overflow-x-auto rounded-xl border border-gray-300 dark:border-gray-600 mb-8">
+        <div className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-8">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-neutral-100 dark:bg-neutral-800 dark:text-gray-400">
               <tr>
@@ -135,7 +135,7 @@ const ContactDetails = () => {
                 </td>
               </tr>
 
-              <tr className="bg-gray-100/30 border-b dark:bg-[#101111]/30 dark:border-gray-700">
+              <tr className="bg-gray-100/30 dark:bg-[#101111]/30">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"

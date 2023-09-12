@@ -1,6 +1,6 @@
 function FeaturedCard({ icon, title, desc }) {
   return (
-    <div className="dark:border-white/5 border-black/10 relative z-10 flex-1 rounded-2xl border bg-white dark:bg-[#101111]  shadow-lg shadow-gray-400/50 dark:shadow-black/30">
+    <div className="dark:border-[#101111] border-white relative z-10 flex-1 rounded-2xl border bg-white dark:bg-[#101111]  shadow-lg shadow-gray-400/50 dark:shadow-black/30">
       <div className="border-black/20 absolute inset-x-0 inset-y-8 z-[-1] border-t dark:border-white/20" />
       <div className="border-black/20 absolute inset-y-0 inset-x-8 z-[-1] border-l dark:border-white/20" />
       <div className="-mt-0.5">

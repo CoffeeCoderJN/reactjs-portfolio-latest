@@ -61,7 +61,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             <div
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Theme Switcher"
-              className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark cursor-pointer dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 group"
+              className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark cursor-pointer dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 group"
             >
               {darkMode ? (
                 <FiSun className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
@@ -216,7 +216,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           <div
             onClick={() => setDarkMode(!darkMode)}
             aria-label="Theme Switcher"
-            className="ml-4 bg-primary-light dark:bg-ternary-dark cursor-pointer dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 border dark:border-white/5 border-black/5 group"
+            className="ml-4 bg-primary-light dark:bg-ternary-dark cursor-pointer dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 group"
           >
             {darkMode ? (
               <FiSun className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />

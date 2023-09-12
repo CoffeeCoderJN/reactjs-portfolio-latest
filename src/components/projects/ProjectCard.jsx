@@ -32,7 +32,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
         },
       }}
       {...motionStep}
-      className="col-span-12 sm:col-span-6 md:col-span-4 bg-white border border-gray-400/50 dark:border-neutral-600/50 dark:bg-neutral-900 rounded-xl p-4 group shadow-lg shadow-gray-400/50 dark:shadow-black/30 z-20"
+      className="col-span-12 sm:col-span-6 md:col-span-4 bg-gray-50 dark:bg-neutral-900 rounded-xl p-4 group shadow-lg shadow-gray-400/50 dark:shadow-black/30 z-20"
     >
       <div>
         <a href={`${live}`}>
@@ -93,7 +93,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
         <div className="flex justify-center dark:text-neutral-300 text-neutral-700 mt-7 gap-x-4 flex-wrap">
           {tech.map((e, i) => (
             <span
-              className="p-2 rounded-md dark:bg-neutral-800 bg-neutral-100 text-xs"
+              className="p-2 rounded-md dark:bg-neutral-800 bg-neutral-200 text-xs"
               key={i}
             >
               {e}

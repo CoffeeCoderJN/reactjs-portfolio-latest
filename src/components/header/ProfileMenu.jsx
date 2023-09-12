@@ -10,7 +10,7 @@ export default function ProfileMenu() {
       <div onClick={() => setOpen(!open)} className="relative">
         <button
           //   onClick={() => setOpen(true)}
-          className="flex items-center p-2 md:p-3 dark:bg-[#101111] bg-gray-100 border dark:border-white/5 border-black/5 rounded-xl"
+          className="flex items-center p-2 md:p-3 dark:bg-[#101111] bg-gray-100 rounded-xl"
         >
           <span className="mr-2 text-sm md:text-base">Menu</span>
           {/* <svg
@@ -30,7 +30,7 @@ export default function ProfileMenu() {
           <AiOutlineCaretDown className="w-4 h-4" />
         </button>
         <ul
-          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg z-40 shadow-lg bg-gray-50 dark:bg-neutral-900 backdrop-blur-xl duration-700 ease-in-out border dark:border-white/5 border-black/5 ${
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg z-40 shadow-lg bg-gray-50 dark:bg-neutral-900 backdrop-blur-xl duration-700 ease-in-out ${
             open ? "block" : "hidden"
           }`}
         >

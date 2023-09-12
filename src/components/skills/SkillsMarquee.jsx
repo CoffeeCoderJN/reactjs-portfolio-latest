@@ -126,7 +126,7 @@ function SkillsMarquee() {
         {skillsData.map(({ id, image, title }) => (
           <div
             key={id}
-            className="skill--box flex justify-start p-3 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-xl object-cover w-[4.5rem] h-[4.5rem] md:w-20 md:h-20 dark:bg-neutral-900 bg-gray-100 border dark:border-white/10 border-black/10"
+            className="skill--box flex justify-start p-3 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-xl object-cover w-[4.5rem] h-[4.5rem] md:w-20 md:h-20 dark:bg-neutral-900 bg-gray-100"
           >
             <img
               src={image}
@@ -141,7 +141,7 @@ function SkillsMarquee() {
       {skillsData.map(({ id, image, title }) => (
           <div
             key={id}
-            className="skill--box flex justify-start p-3 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-xl object-cover w-[4.5rem] h-[4.5rem] md:w-20 md:h-20 dark:bg-neutral-900 bg-gray-100 border dark:border-white/10 border-black/10"
+            className="skill--box flex justify-start p-3 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-xl object-cover w-[4.5rem] h-[4.5rem] md:w-20 md:h-20 dark:bg-neutral-900 bg-gray-100"
           >
             <img
               src={image}

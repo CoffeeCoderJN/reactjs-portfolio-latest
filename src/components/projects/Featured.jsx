@@ -38,13 +38,13 @@ const Featured = ({
         }`}
       >
         <div>
-          <p className="text-[#7000ff] dark:text-[#7000ff]"> Highlight </p>
+          <p className="text-amber-500 dark:text-amber-500"> Highlight </p>
           <h1 className="text-3xl font-medium text-neutral-700 dark:text-neutral-300">
             {" "}
             {title}{" "}
           </h1>
 
-          <div className="my-6 p-6 bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 shadow-xl shadow-gray-400/50 dark:shadow-black/30 rounded-xl hidden sm:block border dark:border-white/5 border-black/10">
+          <div className="my-6 p-6 bg-gray-50 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-300 shadow-xl shadow-gray-400/50 dark:shadow-black/30 rounded-xl hidden sm:block">
             <p> {description && description} </p>
           </div>
 

@@ -77,7 +77,8 @@ const About = () => {
           <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">
             Here's a Little Background.
           </h4>
-          <div className="bg-white dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 border dark:border-white/5 border-black/10 ">
+          <div className="bg-white dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 ">
+            {/* border dark:border-white/5 border-black/10 */}
             <p className="text-base font-light">
               Hi, I am{" "}
               <span className="font-semibold">Mukul Rajendra Dharashivkar</span>{" "}
