@@ -66,14 +66,17 @@ const ContactForm = () => {
           </div>
 
           <div className="flex items-center justify-center">
-            <motion.a
+            <motion.div
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="flex w-40 items-center justify-center group mt-10 mb-0 bg-gradient-to-r border-2 border-amber-500 hover:border-transparent hover:from-amber-600 hover:to-amber-500 px-10 py-2 rounded-lg cursor-pointer font-normal tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40 bg-gray-200 dark:bg-[#101111]"
+              className="relative group"
             >
-              Send
-              <FiSend className="ml-2" />
-            </motion.a>
+              <div className="absolute mt-10 -inset-0.5 bg-gradient-to-r from-amber-600 to-amber-500 rounded-lg blur opacity-50 group-hover:scale-105 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt z-0"></div>
+              <button className="group relative flex items-center justify-center mt-10 bg-white dark:bg-[#0d0c0e] bg-transparent hover:bg-amber-500 dark:hover:bg-amber-500 py-2 rounded-xl font-semibold tracking-[1px] hover:text-black duration-300 px-7 cursor-pointer">
+                Send
+                <FiSend className="ml-2" />
+              </button>
+            </motion.div>
           </div>
 
           {/* <div className="flex items-center w-40 justify-center group mt-5 mb-0 bg-gradient-to-r border-2 border-amber-500 hover:border-transparent hover:from-amber-600 hover:to-amber-500 px-5 py-2 rounded-lg cursor-pointer font-normal tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/40 bg-gray-200 dark:bg-[#101111]">

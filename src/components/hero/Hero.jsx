@@ -54,18 +54,23 @@ const Hero = () => {
           alt="avatar"
           className="w-48 h-48 md:w-52 md:h-52 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         />
-        <motion.a
+        <motion.div
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          href="/Mukul_Dharashivkar_Resume.pdf"
-          download={true}
-          className="group flex items-center justify-center mt-10 bg-gradient-to-r border-2 hover:border-transparent border-amber-500 bg-transparent transition-colors hover:from-amber-600 hover:to-amber-500 py-2 rounded-xl font-semibold tracking-[1px] hover:text-black shadow-lg shadow-gray-400/30 dark:shadow-black/30"
+          className="relative group"
         >
-          <span>
-            <HiDocumentText className="text-xl group-hover:text-black z-0 font-semibold" />
-          </span>
-          <p className="text-sm md:text-lg mx-2 font-light">Download CV</p>
-        </motion.a>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-600 to-amber-500 rounded-lg blur opacity-50 group-hover:opacity-100 group-hover:scale-105 transition duration-1000 group-hover:duration-200 animate-tilt z-0"></div>
+          <motion.a
+            href="/Mukul_Dharashivkar_Resume.pdf"
+            download={true}
+            className="group relative flex items-center justify-center mt-10 bg-white dark:bg-[#0d0c0e] bg-transparent hover:bg-amber-500 dark:hover:bg-amber-500 py-2 rounded-xl font-semibold tracking-[1px] hover:text-black duration-300"
+          >
+            <span>
+              <HiDocumentText className="text-xl group-hover:text-black z-0 font-semibold" />
+            </span>
+            <p className="text-sm md:text-lg mx-2 font-light">Download CV</p>
+          </motion.a>
+        </motion.div>
       </motion.div>
 
       <motion.h2

@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineCaretDown } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 export default function ProfileMenu() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-center z-30 ">
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      className="flex justify-center z-30 "
+    >
       <div onClick={() => setOpen(!open)} className="relative">
         <button
           //   onClick={() => setOpen(true)}
@@ -93,6 +98,6 @@ export default function ProfileMenu() {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
