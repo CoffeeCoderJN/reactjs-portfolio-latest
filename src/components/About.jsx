@@ -13,6 +13,7 @@ import FeaturedCard from "./card/FeaturedCard";
 import { FaGraduationCap } from "react-icons/fa";
 import RightSvg from "../assets/svg/right-pattern.svg";
 import BlurCircles from "./blurCircles/BlurCircles";
+import { Reveal } from "./utils/Reveal";
 
 // const services = [
 //   {
@@ -68,14 +69,14 @@ const About = () => {
           className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         />
         <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          // initial={{ x: 100, opacity: 0 }}
+          // transition={{ duration: 1 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // viewport={{ once: true }}
           className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10"
         >
           <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">
-            Here's a Little Background.
+            <Reveal width="100%">Here's a Little Background.</Reveal>
           </h4>
           <div className="bg-white dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 ">
             {/* border dark:border-white/5 border-black/10 */}
@@ -98,7 +99,7 @@ const About = () => {
             In my spare time I play cricket and read blogs.
           </p> */}
           <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">
-            Recent Education.
+            <Reveal width="100%">Recent Education.</Reveal>
           </h4>
           {/* <div className="grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
             {services.map(({ id, image, title }) => (
@@ -132,10 +133,12 @@ const About = () => {
 
       {/* Quote */}
       <div className="relative">
-        <motion.div initial={{ opacity: 0 }}
+        <motion.div
+          initial={{ opacity: 0 }}
           transition={{ duration: 2 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}>
+          viewport={{ once: true }}
+        >
           <BlurCircles />
         </motion.div>
         <motion.div

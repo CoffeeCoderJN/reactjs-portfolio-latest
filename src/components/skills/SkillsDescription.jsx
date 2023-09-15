@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Reveal } from "../utils/Reveal";
 
 const SkillsDescription = () => {
   return (
@@ -11,14 +12,16 @@ const SkillsDescription = () => {
       className="text-left lg:pt-0"
     >
       <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-200 mt-5 mb-5">
-        A look at all the programming languages, libraries, and tools I've
-        worked with.
+        <Reveal width="100%">
+          A look at all the programming languages, libraries, and tools I've
+          worked with.
+        </Reveal>
       </h2>
       <p className="text-sm font-light">
         In the expansive field of web development, I've acquired diverse
         experience in programming languages and technology stacks for both{" "}
-         <span className="font-semibold">
-           Back-End and Front-End development
+        <span className="font-semibold">
+          Back-End and Front-End development
         </span>
         . I'm particularly drawn to creating{" "}
         <span className="font-semibold">full stack applications</span>, with a
@@ -27,7 +30,7 @@ const SkillsDescription = () => {
       </p>
 
       <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5">
-        Front-End
+        <Reveal width="100%">Front-End</Reveal>
       </h2>
       <p className="text-sm font-light">
         I love creating something that is clean and minimalistic, attractive and
@@ -64,8 +67,9 @@ const SkillsDescription = () => {
       </div>
 
       <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5">
-        Back-End
+        <Reveal width="100%">Back-End</Reveal>
       </h2>
+
       <p className="text-sm font-light">
         I possess a penchant for crafting scalable Back-End code, meticulously
         adhering to established coding standards and best practices.

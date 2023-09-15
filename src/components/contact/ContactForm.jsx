@@ -1,6 +1,7 @@
 import { FiSend } from "react-icons/fi";
 import FormInput from "../reusable/FormInput";
 import { motion } from "framer-motion";
+import { Reveal } from "../utils/Reveal";
 
 const ContactForm = () => {
   return (
@@ -17,9 +18,9 @@ const ContactForm = () => {
           method="POST"
           className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl text-left"
         >
-          <p className="font-medium text-neutral-600 dark:text-neutral-200 text-2xl mb-8">
-            Leave a Message
-          </p>
+          <h4 className="font-medium text-neutral-600 dark:text-neutral-200 text-2xl mb-8">
+            <Reveal width="100%">Leave a Message</Reveal>
+          </h4>
           <FormInput
             inputLabel="Full Name"
             labelFor="name"
