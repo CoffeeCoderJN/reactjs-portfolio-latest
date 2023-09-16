@@ -107,6 +107,7 @@ const Projects = () => {
       className="relative"
     >
       <div className="space-y-5 lg:space-y-10 px-5 md:px-10 lg:px-20">
+        {/* Right SVG */}
         <img
           src={RightSvg}
           alt=""
