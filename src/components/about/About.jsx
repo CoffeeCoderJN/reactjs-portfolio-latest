@@ -7,7 +7,7 @@ import { FeaturedCardSection } from "../card/FeaturedCardSection";
 import FeaturedCard from "../card/FeaturedCard";
 import { FaGraduationCap } from "react-icons/fa";
 import RightSvg from "../../assets/svg/right-pattern.svg";
-import BlurCircles from "../BlurCircles/BlurCircles";
+import BlurCircles from "../BlurCirclesBG/BlurCircles";
 import { Reveal } from "../utils/Reveal";
 
 const About = () => {
