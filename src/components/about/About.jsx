@@ -29,6 +29,7 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 1.5 }}
         className="flex flex-col min-h-fit text-center xl:text-left xl:flex-row max-w-7xl px-4 mx-auto items-center md:pt-0 md:pb-16 md:mx-20 z-10"
       >
