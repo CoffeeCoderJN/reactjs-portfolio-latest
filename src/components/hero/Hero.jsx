@@ -4,7 +4,7 @@ import avatar from "../../assets/programmer.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import ActiveComponent from "./ActiveComponent";
-import BackgroundCircles from "../BackgroundCircles";
+import BackgroundCircles from "../BackgroundCirclesHero/BackgroundCircles";
 // import BlurCircles from "../blurCircles/BlurCircles";
 
 const animation = {
@@ -59,7 +59,7 @@ const Hero = () => {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="relative group"
         >
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-600 to-amber-500 rounded-lg blur opacity-50 group-hover:opacity-100 group-hover:scale-105 transition duration-1000 group-hover:duration-200 animate-tilt z-0"></div>
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-amber-500 rounded-lg blur opacity-50 group-hover:opacity-100 group-hover:scale-105 transition duration-1000 group-hover:duration-200 animate-tilt z-0"></div>
           <motion.a
             href="/Mukul_Dharashivkar_Resume.pdf"
             download={true}

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import About from "./components/About";
-import AppFooter from "./components/AppFooter";
-import Skills from "./components/Skills";
+import About from "./components/about/About";
+import AppFooter from "./components/footer/AppFooter";
+import SkillsPage from "./components/skills/SkillsPage";
 import { motion } from "framer-motion";
-import PreLoader from "./components/PreLoader";
+import PreLoader from "./components/PreLoader/PreLoader";
 import HeaderNav from "./components/header/HeaderNav";
 import Contact from "./components/contact/ContactsPage";
 import Hero from "./components/hero/Hero";
@@ -28,7 +28,6 @@ function App() {
         <PreLoader loading={loading} />
       ) : (
         <main className="bg-white dark:bg-[#0d0c0e] dark:text-white duration-700 ease-in-out">
-          {/* <Header darkMode={darkMode} setDarkMode={setDarkMode} /> */}
           <HeaderNav darkMode={darkMode} setDarkMode={setDarkMode} />
           <motion.div
             initial={{ opacity: 0 }}
@@ -37,9 +36,8 @@ function App() {
           >
             <Hero />
           </motion.div>
-
           <About />
-          <Skills />
+          <SkillsPage />
           <Projects />
           <Contact />
           <AppFooter />
