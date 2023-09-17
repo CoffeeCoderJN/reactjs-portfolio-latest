@@ -106,7 +106,7 @@ const Projects = () => {
       subtitle="Recent projects upon which I have worked on."
       className="relative"
     >
-      <div className="space-y-5 lg:space-y-10 px-5 md:px-10 lg:px-20 2xl:px-96">
+      <div className="space-y-5 lg:space-y-10 px-5 md:px-10 lg:px-20 2xl:px-40">
         {/* Right SVG */}
         <img
           src={RightSvg}
@@ -133,7 +133,7 @@ const Projects = () => {
           ))}
       </div>
 
-      <div className="grid grid-cols-8 2xl:grid-cols-12 gap-6 gap-y-8 my-10 px-5 md:px-10 lg:px-20 2xl:px-96">
+      <div className="grid grid-cols-8 2xl:grid-cols-12 gap-6 gap-y-8 my-10 px-5 md:px-10 lg:px-20 2xl:px-40">
         {projectsData
           .filter((e) => e.featured !== true)
           .map((e, i) => (

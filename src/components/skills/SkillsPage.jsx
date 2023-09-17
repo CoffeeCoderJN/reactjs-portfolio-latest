@@ -29,7 +29,7 @@ const SkillsPage = () => {
         <SkillsMarquee />
       </div>
 
-      <div className="md:mx-10 lg:px-20 2xl:px-96 px-5 grid grid-cols-1 md:grid-cols-2 md:space-x-5">
+      <div className="md:mx-10 lg:px-20 2xl:px-40 px-5 grid grid-cols-1 md:grid-cols-2 md:space-x-5">
         {/* Left Description */}
         <Details />
 
