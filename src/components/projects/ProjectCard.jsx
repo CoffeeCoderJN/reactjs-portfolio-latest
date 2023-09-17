@@ -50,7 +50,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
 
       <div>
         <div className="flex items-center justify-between my-5">
-          <BsFillBookmarkStarFill className="text-2xl text-[#7000ff]" />
+          <BsFillBookmarkStarFill className="text-2xl" />
 
           <div
             className={
@@ -62,7 +62,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
                 href={`${live}`}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-indigo-600 p-2 rounded-md dark:bg-neutral-800 bg-neutral-100 transition-all duration-300 hover:scale-110 text-2xl"
+                className="hover:text-indigo-600 p-2 rounded-md dark:bg-neutral-800 bg-neutral-200 transition-all duration-300 hover:scale-110 text-2xl"
               >
                 <BiLinkAlt />
               </a>
@@ -73,7 +73,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
                 href={`${code}`}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-indigo-600 p-2 rounded-md dark:bg-neutral-800 bg-neutral-100 transition-all duration-300 hover:scale-90 text-2xl"
+                className="hover:text-indigo-600 p-2 rounded-md dark:bg-neutral-800 bg-neutral-200 transition-all duration-300 hover:scale-90 text-2xl"
               >
                 <FaGithub />
               </a>
@@ -81,7 +81,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
           </div>
         </div>
 
-        <h1 className="text-xl font-medium mb-1 dark:text-[#7000ff] text-[#7000ff]">
+        <h1 className="text-xl font-medium mb-1">
           {" "}
           {title}{" "}
         </h1>
