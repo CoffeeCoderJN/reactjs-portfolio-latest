@@ -109,6 +109,7 @@ const About = () => {
         transition={{ duration: 1 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
+        className="2xl:px-80"
       >
         <FeaturedCardSection />
       </motion.div>
