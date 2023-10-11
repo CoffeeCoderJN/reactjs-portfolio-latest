@@ -8,6 +8,7 @@ import HeaderNav from "./components/header/HeaderNav";
 import Contact from "./components/contact/ContactsPage";
 import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";
+import Parallax from "./Parallax/Parallax";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -36,6 +37,7 @@ function App() {
           >
             <Hero />
           </motion.div>
+          <Parallax type="Who Am I?" />
           <About />
           <SkillsPage />
           <Projects />

@@ -16,7 +16,7 @@ const About = () => {
       id="about"
       title="Overview"
       subtitle="Full Stack Developer"
-      className="relative"
+      className="relative pt-20"
     >
       <img
         src={RightSvg}
