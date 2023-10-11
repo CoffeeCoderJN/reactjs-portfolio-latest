@@ -41,9 +41,9 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
         <div className="flex justify-between items-center md:ml-5 px-4 sm:px-0">
           <Link to="hero" smooth={true} offset={-70} duration={800}>
             <motion.h1
-              initial={{ x: -500, opacity: 0, scale: 0.5 }}
+              initial={{ x: -50, opacity: 0, scale: 0.5 }}
               animate={{ x: 0, opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               className="text-3xl text-neutral-600 dark:text-neutral-300 font-normal cursor-pointer"
             >
               mukul<span className="font-extrabold text-amber-500">.dev</span>
@@ -51,9 +51,9 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           </Link>
 
           <motion.div
-            initial={{ x: 500, opacity: 0, scale: 0.5 }}
+            initial={{ x: 50, opacity: 0, scale: 0.5 }}
             animate={{ x: 0, opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
             className="sm:hidden flex items-center gap-3"
           >
             <motion.div
@@ -76,9 +76,9 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
         </div>
 
         <motion.div
-          initial={{ x: 500, opacity: 0, scale: 0.5 }}
+          initial={{ x: 50, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           className="hidden sm:flex justify-between items-center flex-row px-5"
         >
           <motion.div

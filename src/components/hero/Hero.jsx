@@ -5,6 +5,8 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import ActiveComponent from "./ActiveComponent";
 import BackgroundCircles from "../BackgroundCirclesHero/BackgroundCircles";
+import SliderText from "../HeroMarquee/SliderText";
+import { useState } from "react";
 // import BlurCircles from "../blurCircles/BlurCircles";
 
 const animation = {
@@ -23,12 +25,27 @@ const Hero = () => {
     else downArrow.classList.remove("hide-down-arrow");
   });
 
+  const [sliderTextLoader, setSliderTextLoader] = useState(false);
+
+  setInterval(() => {
+    setSliderTextLoader(true);
+  }, 3500);
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex flex-col justify-center items-center p-5 text-center pt-32 z-30 overflow-y-hidden overflow-x-hidden"
     >
-      <BackgroundCircles />
+      {!sliderTextLoader && <BackgroundCircles />}
+      {sliderTextLoader && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.6 }}
+          whileInView={{ opacity: 1 }}
+        >
+          <SliderText />
+        </motion.div>
+      )}
       {/* <div className="z-0">
         <BlurCircles />
       </div> */}
@@ -52,7 +69,7 @@ const Hero = () => {
           viewport={{ once: true }}
           src={avatar}
           alt="avatar"
-          className="w-48 h-48 md:w-52 md:h-52 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30"
+          className="w-48 h-48 md:w-52 md:h-52 xl:w-52 xl:h-52 object-cover bg-gradient-to-b from-amber-500 to-amber-700 rounded-3xl shadow-lg shadow-gray-400/30 dark:shadow-black/30 pointer-events-none"
         />
         <motion.div
           whileHover={{ scale: 1.1 }}
@@ -77,7 +94,7 @@ const Hero = () => {
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.5 }}
-        className="text-sm pt-3 md:text-xl text-amber-500 font-bold z-0"
+        className="text-sm pt-3 md:text-xl text-amber-500 font-bold z-0 pointer-events-none"
       >
         Full Stack Developer
       </motion.h2>
@@ -86,7 +103,7 @@ const Hero = () => {
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.5 }}
-        className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0"
+        className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0 pointer-events-none"
       >
         <span className="text-slate-700 dark:text-slate-200">
           <TypeAnimation
@@ -112,7 +129,7 @@ const Hero = () => {
         // transition={{ duration: 1 }}
         // whileInView={{ x: 0, opacity: 1 }}
         // viewport={{ once: true }}
-        className="z-10"
+        className="z-10 pointer-events-none"
       >
         <ActiveComponent />
       </motion.div>

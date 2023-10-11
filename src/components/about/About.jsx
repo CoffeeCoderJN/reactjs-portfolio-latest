@@ -35,14 +35,14 @@ const About = () => {
       >
         <motion.img
           src={MukulImg}
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -50, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
         />
         <motion.div
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: 50, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -94,7 +94,7 @@ const About = () => {
 
         {/* Quote */}
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -50, opacity: 0 }}
           transition={{ duration: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -106,7 +106,7 @@ const About = () => {
 
       {/* Featured Card Section */}
       <motion.div
-        initial={{ x: 100, opacity: 0 }}
+        initial={{ x: 50, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
