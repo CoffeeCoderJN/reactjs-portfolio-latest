@@ -42,6 +42,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           transition={{ duration: 0.6 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
         >
           <SliderText />
         </motion.div>
