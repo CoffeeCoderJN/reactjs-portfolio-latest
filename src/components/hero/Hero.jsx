@@ -95,7 +95,7 @@ const Hero = () => {
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.5 }}
-        className="text-sm pt-3 md:text-xl text-amber-500 font-bold z-0 pointer-events-none"
+        className="text-sm pt-3 md:text-xl text-amber-500 font-bold z-0"
       >
         Full Stack Developer
       </motion.h2>
@@ -104,7 +104,7 @@ const Hero = () => {
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.5 }}
-        className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0 pointer-events-none"
+        className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0"
       >
         <span className="text-slate-700 dark:text-slate-200">
           <TypeAnimation
@@ -130,7 +130,7 @@ const Hero = () => {
         // transition={{ duration: 1 }}
         // whileInView={{ x: 0, opacity: 1 }}
         // viewport={{ once: true }}
-        className="z-10 pointer-events-none"
+        className="z-10"
       >
         <ActiveComponent />
       </motion.div>
