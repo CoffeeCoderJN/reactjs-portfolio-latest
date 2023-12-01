@@ -8,6 +8,7 @@ import HeaderNav from "./components/header/HeaderNav";
 import Contact from "./components/contact/ContactsPage";
 import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -28,6 +29,7 @@ function App() {
         <PreLoader loading={loading} />
       ) : (
         <main className="bg-white dark:bg-[#0d0c0e] dark:text-white duration-700 ease-in-out">
+          <Toaster position="top-center" reverseOrder={false} />
           <HeaderNav darkMode={darkMode} setDarkMode={setDarkMode} />
           <motion.div
             initial={{ opacity: 0 }}

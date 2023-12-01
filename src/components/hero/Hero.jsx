@@ -7,6 +7,8 @@ import ActiveComponent from "./ActiveComponent";
 import BackgroundCircles from "../BackgroundCirclesHero/BackgroundCircles";
 import SliderText from "../HeroMarquee/SliderText";
 import { useState } from "react";
+import { toast } from "react-hot-toast";
+import MukulImg from "../../assets/mukul.jpg";
 // import BlurCircles from "../blurCircles/BlurCircles";
 
 const animation = {
@@ -30,6 +32,45 @@ const Hero = () => {
   setInterval(() => {
     setSliderTextLoader(true);
   }, 3500);
+
+  const downloadToasterHandler = () => {
+    // toast.success("Thankyou for downloading!");
+    toast.custom((t) => (
+      <div
+        className={`${
+          t.visible ? 'animate-enter' : 'animate-leave'
+        } max-w-md w-full bg-white dark:bg-neutral-800 shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+      >
+        <div className="flex-1 w-0 p-4">
+          <div className="flex items-start">
+            <div className="flex-shrink-0 pt-0.5">
+              <img
+                className="h-10 w-10 rounded-full"
+                src={MukulImg}
+                alt=""
+              />
+            </div>
+            <div className="ml-3 flex-1">
+              <p className="text-sm font-medium text-gray-900 dark:text-white">
+                Mukul Dharashivkar
+              </p>
+              <p className="mt-1 text-sm text-gray-500 dark:text-gray-200">
+                Thankyou for downloading my cv!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex border-l border-gray-500 bg-red-600 rounded-r-lg">
+          <button
+            onClick={() => toast.dismiss(t.id)}
+            className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    ))
+  };
 
   return (
     <section
@@ -82,6 +123,7 @@ const Hero = () => {
             href="/Mukul_Dharashivkar_Resume.pdf"
             download={true}
             className="group relative flex items-center justify-center mt-10 bg-white dark:bg-[#0d0c0e] bg-transparent hover:bg-amber-500 dark:hover:bg-amber-500 py-2 rounded-xl font-semibold tracking-[1px] hover:text-black duration-300"
+            onClick={downloadToasterHandler}
           >
             <span>
               <HiDocumentText className="text-xl group-hover:text-black z-0 font-semibold" />
