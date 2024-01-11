@@ -1,11 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-//
 import { BsFillBookmarkStarFill } from "react-icons/bs";
 import { motionStep } from "./motion";
 import { BiLinkAlt } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
-//
 
 const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
   return (
@@ -81,19 +79,16 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
           </div>
         </div>
 
-        <h1 className="text-xl font-medium mb-1">
-          {" "}
-          {title}{" "}
-        </h1>
+        <h1 className="text-xl font-medium mb-1"> {title} </h1>
         <p className="dark:text-neutral-200 text-neutral-600 text-sm">
           {" "}
           {description}{" "}
         </p>
 
-        <div className="flex justify-center dark:text-neutral-300 text-neutral-700 mt-7 gap-x-4 flex-wrap">
+        <div className="flex justify-center dark:text-amber-500 text-amber-600 mt-7 gap-x-4 flex-wrap">
           {tech.map((e, i) => (
             <span
-              className="p-2 rounded-md dark:bg-neutral-800 bg-neutral-200 text-xs"
+              className="p-2 rounded-md dark:bg-amber-600/20 bg-amber-200/70 text-xs"
               key={i}
             >
               {e}

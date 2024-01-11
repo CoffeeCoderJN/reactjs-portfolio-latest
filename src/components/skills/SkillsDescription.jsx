@@ -22,17 +22,20 @@ const SkillsDescription = () => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        className="text-sm font-light"
+        className="text-sm font-light text-gray-800 dark:text-gray-300"
       >
         In the expansive field of web development, I've acquired diverse
-        experience in programming languages and technology stacks for both{" "}
-        <span className="font-semibold">
+        hands-on experience in programming languages and technology stacks for
+        both{" "}
+        <span className="font-semibold text-black dark:text-white">
           Back-End and Front-End development
         </span>
         . I'm particularly drawn to creating{" "}
-        <span className="font-semibold">full stack applications</span>, with a
-        strong interest in utilizing the React.js library alongside the Spring
-        Boot framework.
+        <span className="font-semibold text-black dark:text-white">
+          full stack applications
+        </span>
+        , with a strong interest in utilizing the React.js library alongside the
+        Spring Boot framework.
       </motion.p>
 
       <motion.h2
@@ -40,7 +43,7 @@ const SkillsDescription = () => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5"
+        className="font-semibold text-lg text-amber-500 dark:text-amber-200 mt-5"
       >
         <Reveal width="100%">Front-End</Reveal>
       </motion.h2>
@@ -63,7 +66,7 @@ const SkillsDescription = () => {
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="font-medium text-lg text-neutral-600 dark:text-neutral-200 mt-5"
+            className="font-semibold text-lg mt-5"
           >
             React
           </motion.h3>
@@ -82,7 +85,7 @@ const SkillsDescription = () => {
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="font-medium text-lg text-neutral-600 dark:text-neutral-200 mt-5"
+            className="font-semibold text-lg mt-5"
           >
             Next.js
           </motion.h3>
@@ -136,7 +139,7 @@ const SkillsDescription = () => {
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="font-medium text-lg text-neutral-600 dark:text-neutral-200 mt-5"
+            className="font-semibold text-lg mt-5"
           >
             Spring Boot
           </motion.h3>

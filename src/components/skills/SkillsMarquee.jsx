@@ -1,4 +1,3 @@
-
 import "./SkillsMarquee.css";
 
 // import { ThemeContext } from '../../contexts/ThemeContext';
@@ -94,33 +93,6 @@ const skillsData = [
 
 function SkillsMarquee() {
   return (
-    // <div className="skills ml-20">
-    //   <div className="">
-    //     <div className="skill--scroll px-20 relative">
-    //       <Marquee
-    //         gradient={false}
-    //         speed={70}
-    //         delay={0}
-    //         play={true}
-    //         direction="left"
-    //         loop={10}
-    //       >
-    //         {skillsData.map(({ id, image, title }) => (
-    //           <div
-    //             key={id}
-    //             className="skill--box flex justify-start p-3 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-xl object-cover w-[4.5rem] h-[4.5rem] md:w-20 md:h-20 dark:bg-neutral-900 bg-gray-100 border dark:border-white/10 border-black/10"
-    //           >
-    //             <img
-    //               src={image}
-    //               alt={title}
-    //               className="w-36 h-36 md:h-44 md:w-44 object-contain group-hover:grayscale"
-    //             />
-    //           </div>
-    //         ))}
-    //       </Marquee>
-    //     </div>
-    //   </div>
-    // </div>
     <div className="relative flex overflow-x-hidden">
       <div className="py-5 flex animate-marquee whitespace-nowrap">
         {skillsData.map(({ id, image, title }) => (
@@ -138,7 +110,7 @@ function SkillsMarquee() {
       </div>
 
       <div className="absolute flex top-0 py-5 animate-marquee2 whitespace-nowrap">
-      {skillsData.map(({ id, image, title }) => (
+        {skillsData.map(({ id, image, title }) => (
           <div
             key={id}
             className="skill--box flex justify-start p-3 shadow-lg shadow-gray-400/50 dark:shadow-black/30 rounded-xl object-cover w-[4.5rem] h-[4.5rem] md:w-20 md:h-20 dark:bg-neutral-900 bg-gray-100"

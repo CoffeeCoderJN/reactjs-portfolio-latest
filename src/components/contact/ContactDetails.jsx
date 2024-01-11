@@ -37,18 +37,24 @@ const ContactDetails = () => {
           className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-5"
         >
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-neutral-100 dark:bg-neutral-800 dark:text-gray-400">
+            <thead className="text-xs text-gray-700 uppercase bg-neutral-100 dark:bg-neutral-900 dark:text-gray-400">
               <tr>
-                <th scope="col" className="px-6 py-3">
+                <th
+                  scope="col"
+                  className="px-6 py-3 text-amber-600 dark:text-amber-500"
+                >
                   Contact
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th
+                  scope="col"
+                  className="px-6 py-3 text-amber-600 dark:text-amber-500"
+                >
                   Detail
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-gray-100/30 border-b dark:bg-[#101111]/30 dark:border-gray-700">
+              <tr className="bg-white dark:bg-[#101111]/30">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -57,7 +63,7 @@ const ContactDetails = () => {
                 </th>
                 <td className="px-6 py-4">Pune, Maharashtra, India</td>
               </tr>
-              <tr className="bg-white dark:bg-neutral-800">
+              <tr className="bg-neutral-100 dark:bg-neutral-900">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -121,18 +127,24 @@ const ContactDetails = () => {
           className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-8"
         >
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-neutral-100 dark:bg-neutral-800 dark:text-gray-400">
+            <thead className="text-xs text-gray-700 uppercase bg-neutral-100 dark:bg-neutral-900 dark:text-gray-400">
               <tr>
-                <th scope="col" className="px-6 py-3">
+                <th
+                  scope="col"
+                  className="px-6 py-3 text-amber-600 dark:text-amber-500"
+                >
                   Social Media
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th
+                  scope="col"
+                  className="px-6 py-3 text-amber-600 dark:text-amber-500"
+                >
                   Profile URL
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-gray-100/30 border-b dark:bg-[#101111]/30 dark:border-gray-700">
+              <tr className="bg-white dark:bg-[#101111]/30">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -152,7 +164,7 @@ const ContactDetails = () => {
                 </td>
               </tr>
 
-              <tr className="bg-white border-b dark:bg-neutral-800 dark:border-gray-700">
+              <tr className="bg-neutral-100 dark:bg-neutral-900">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -172,7 +184,7 @@ const ContactDetails = () => {
                 </td>
               </tr>
 
-              <tr className="bg-gray-100/30 dark:bg-[#101111]/30">
+              <tr className="bg-white dark:bg-[#101111]/30">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"

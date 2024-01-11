@@ -76,10 +76,13 @@ const Details = () => {
         className="flex flex-wrap gap-2"
       >
         <Label indicator={95}>React.js</Label>
+        <Label indicator={95}>React Hooks</Label>
         <Label indicator={60}>Next.js</Label>
         <Label indicator={70}>React Redux</Label>
-        <Label indicator={80}>Tailwind</Label>
+        <Label indicator={80}>Tailwind CSS</Label>
         <Label indicator={80}>Spring Boot</Label>
+        <Label indicator={40}>Spring AOP</Label>
+        <Label indicator={60}>Spring Data JPA</Label>
         <Label indicator={50}>Hibernate</Label>
         <Label indicator={50}>MySQL</Label>
       </motion.div>
@@ -101,12 +104,36 @@ const Details = () => {
         className="flex flex-wrap gap-2"
       >
         <Label indicator={80}>Git</Label>
+        <Label indicator={70}>Maven</Label>
         <Label indicator={50}>Linux</Label>
         <Label indicator={90}>GitHub</Label>
         <Label indicator={100}>Eclipse</Label>
         <Label indicator={100}>VS Code</Label>
         <Label indicator={70}>Postman</Label>
         <Label indicator={90}>Pycharm</Label>
+        <Label indicator={90}>RESTful API</Label>
+      </motion.div>
+
+      <motion.h2
+        initial={{ x: -50, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5 mb-1"
+      >
+        <Reveal width="100%">Soft Skills</Reveal>
+      </motion.h2>
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="flex flex-wrap gap-2"
+      >
+        <Label indicator={100}>Effective Communication</Label>
+        <Label indicator={100}>Problem Solving</Label>
+        <Label indicator={100}>Creativity</Label>
+        <Label indicator={100}>Team Work</Label>
       </motion.div>
     </div>
   );
