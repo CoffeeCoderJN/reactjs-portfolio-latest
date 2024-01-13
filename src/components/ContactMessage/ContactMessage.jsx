@@ -1,10 +1,17 @@
 import { BsStars } from "react-icons/bs";
 import MukulImg from "../../assets/mukulblck.jpg";
 import { MdDoubleArrow } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const ContactMessage = () => {
   return (
-    <section className="min-h-fit flex flex-col justify-start items-center py-16 px-2 2xl:px-32 md:px-5 text-center bg-gradient-to-br from-white to-neutral-100 dark:from-neutral-900 dark:to-[#0d0c0e]">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5 }}
+      className="min-h-fit flex flex-col justify-start items-center py-16 px-2 2xl:px-32 md:px-5 text-center bg-gradient-to-br from-white to-neutral-100 dark:from-neutral-900 dark:to-[#0d0c0e]"
+    >
       <div className="text-3xl md:text-4xl lg:text-5xl font-normal text-neutral-700 dark:text-neutral-200 pb-10">
         <h1>Good Design is</h1>
         <h1>Noticeable & Great Design</h1>
@@ -36,7 +43,7 @@ const ContactMessage = () => {
           </span>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 export default ContactMessage;
