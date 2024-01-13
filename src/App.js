@@ -10,6 +10,7 @@ import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";
 import { Toaster } from "react-hot-toast";
 import ContactMessage from "./components/ContactMessage/ContactMessage";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -45,6 +46,7 @@ function App() {
           <ContactMessage />
           <Contact />
           <AppFooter />
+          <ScrollToTopButton />
         </main>
       )}
     </div>

@@ -37,23 +37,23 @@ const AboutDetailsSection = () => {
               Mukul Dharashivkar
             </span>
             , I am 23 years old. Even from a young age, I liked computer
-            technology, I was always Interested in the news and trends of IT
-            technologies with great pleasure. Then I realized that I really want
-            to develop myself in the IT direction because this field is
-            developing very dynamically and i wanted to keep up with the times.
+            technology; I was always interested in the news and trends of IT
+            technologies with great pleasure. Then I realized that I really
+            wanted to develop myself in the IT direction because this field is
+            developing very dynamically, and I wanted to keep up with the times.
             The further I went, the more inspiration and the desire to study
             programming in more depth came to me. <br />
             <br /> I am an{" "}
             <span className="font-semibold text-black dark:text-white">
               open-minded and determined person
             </span>
-            . I learn quickly, I like to learn new things. My hobbies are
-            coding, playing cricket, and drawing. I believe that working for
-            you, I will be able to bring something new and useful to your teams,
-            in turn, I will apply all my knowledge so that the company becomes
-            even more promising, and the team becomes even more productive and
-            friendly, since I am a person who will always bring with a good mood
-            and motivation to work. <br />
+            . I learn quickly, and I enjoy acquiring new knowledge. My hobbies
+            include coding, playing cricket, and drawing. I believe that by
+            working for you, I will be able to contribute something new and
+            valuable to your teams. In turn, I will apply all my knowledge to
+            make the company even more promising, and the team more productive
+            and friendly. I am a person who will always bring a good mood and
+            motivation to work. <br />
             <br />{" "}
             <span className="font-semibold text-black dark:text-white">
               I'm a team player.

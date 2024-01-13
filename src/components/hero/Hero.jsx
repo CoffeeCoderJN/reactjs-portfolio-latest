@@ -1,4 +1,3 @@
-import { FaArrowDown } from "react-icons/fa";
 import avatar from "../../assets/programmer.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";

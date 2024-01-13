@@ -30,7 +30,7 @@ export function FeaturedCards() {
             </div>
           }
           title="Pretty & Optimized"
-          desc="Writing clean code is a top priority while keeping it as optimized as possible."
+          desc="Writing clean code is a top priority while keeping it optimized."
         />
       </div>
     </div>

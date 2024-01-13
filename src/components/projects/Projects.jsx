@@ -56,7 +56,7 @@ export const projectsData = [
   {
     id: 3,
     thumbnail: weather,
-    title: "Daily Weather App",
+    title: "Daily Weather",
     description:
       "Daily Weather App powered by OpenWeatherMap API. Made using NextJS 13.",
     live: "https://weather-app-nextjs-blue.vercel.app/",
