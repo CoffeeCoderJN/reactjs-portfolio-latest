@@ -25,7 +25,7 @@ const Contact = () => {
         animate={{ opacity: 1 }}
         transition={{
           ease: "easeInOut",
-          duration: 0.5,
+          duration: 1,
           delay: 0.1,
         }}
         className="container flex justify-center flex-col lg:flex-row lg:mt-10 px-5 md:px-20 lg:space-x-4"

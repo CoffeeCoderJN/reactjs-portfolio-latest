@@ -52,7 +52,7 @@ export const Reveal = ({ children, width }) => {
           right: 0,
           background: "#f59e0b",
           zIndex: 20,
-          borderRadius: 10
+          borderRadius: 8,
         }}
       />
     </div>

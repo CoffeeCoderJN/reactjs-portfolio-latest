@@ -1,8 +1,5 @@
 import "./SkillsMarquee.css";
 
-// import { ThemeContext } from '../../contexts/ThemeContext';
-// import { skillsImage } from '../../utils/skillsImage'
-
 import java from "../../assets/yellow/javay.png";
 import spring from "../../assets/yellow/springy.png";
 import react from "../../assets/yellow/reacty.png";
@@ -15,8 +12,8 @@ import redux from "../../assets/yellow/reduxy.png";
 import ubuntu from "../../assets/yellow/ubuntuy.png";
 import css3 from "../../assets/yellow/css3y.png";
 import postman from "../../assets/yellow/postmany.png";
-import boot from "../../assets/yellow/bootstrapy.png";
 import git from "../../assets/yellow/gity.png";
+import { motion } from "framer-motion";
 
 const skillsData = [
   {
@@ -71,21 +68,16 @@ const skillsData = [
   },
   {
     id: 11,
-    image: boot,
-    title: "Bootstrap CSS",
-  },
-  {
-    id: 12,
     image: ubuntu,
     title: "Ubuntu",
   },
   {
-    id: 13,
+    id: 12,
     image: postman,
     title: "Postman",
   },
   {
-    id: 14,
+    id: 13,
     image: git,
     title: "Git",
   },
@@ -93,7 +85,13 @@ const skillsData = [
 
 function SkillsMarquee() {
   return (
-    <div className="relative flex overflow-x-hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      className="relative flex overflow-x-hidden"
+    >
       <div className="py-5 flex animate-marquee whitespace-nowrap">
         {skillsData.map(({ id, image, title }) => (
           <div
@@ -123,7 +121,7 @@ function SkillsMarquee() {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

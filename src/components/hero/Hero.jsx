@@ -1,5 +1,4 @@
 import { FaArrowDown } from "react-icons/fa";
-import { HiDocumentText } from "react-icons/hi";
 import avatar from "../../assets/programmer.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -9,6 +8,7 @@ import SliderText from "../HeroMarquee/SliderText";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import MukulImg from "../../assets/mukul.jpg";
+import { MdFileDownload } from "react-icons/md";
 // import BlurCircles from "../blurCircles/BlurCircles";
 
 const animation = {
@@ -38,17 +38,13 @@ const Hero = () => {
     toast.custom((t) => (
       <div
         className={`${
-          t.visible ? 'animate-enter' : 'animate-leave'
+          t.visible ? "animate-enter" : "animate-leave"
         } max-w-md w-full bg-gray-100 dark:bg-neutral-800 shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
       >
         <div className="flex-1 w-0 pl-3 pr-3 pb-2 pt-2">
           <div className="flex items-start">
             <div className="flex-shrink-0 pt-0.5">
-              <img
-                className="h-10 w-10 rounded-full"
-                src={MukulImg}
-                alt=""
-              />
+              <img className="h-10 w-10 rounded-full" src={MukulImg} alt="" />
             </div>
             <div className="ml-3 flex-1">
               <p className="text-sm font-medium text-gray-900 dark:text-white">
@@ -60,16 +56,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex border-l border-gray-500 bg-red-600 rounded-r-lg">
-          <button
-            onClick={() => toast.dismiss(t.id)}
-            className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            Close
-          </button>
-        </div> */}
       </div>
-    ))
+    ));
   };
 
   return (
@@ -126,7 +114,7 @@ const Hero = () => {
             onClick={downloadToasterHandler}
           >
             <span>
-              <HiDocumentText className="text-xl group-hover:text-black z-0 font-semibold" />
+              <MdFileDownload className="text-xl group-hover:text-black z-0 font-semibold" />
             </span>
             <p className="text-sm md:text-lg mx-2 font-light">Download CV</p>
           </motion.a>

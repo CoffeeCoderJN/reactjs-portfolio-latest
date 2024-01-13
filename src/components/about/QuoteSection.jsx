@@ -16,15 +16,9 @@ const QuoteSection = () => {
       </motion.div>
 
       {/* Quote */}
-      <motion.div
-        initial={{ x: -50, opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        className="relative pt-10 md:pt-5 lg:pt-0"
-      >
+      <div className="relative pt-10 md:pt-5 lg:pt-0">
         <Quote />
-      </motion.div>
+      </div>
     </div>
   );
 };

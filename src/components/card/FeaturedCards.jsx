@@ -7,7 +7,7 @@ export function FeaturedCards() {
       <div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
         <FeaturedCard
           icon={
-            <div className="rounded-xl bg-amber-400 p-3.5 dark:bg-amber-500">
+            <div className="rounded-full bg-amber-400 p-3.5 dark:bg-amber-500">
               <SparklesIcon className="h-5 w-5 text-white" />
             </div>
           }
@@ -16,7 +16,7 @@ export function FeaturedCards() {
         />
         <FeaturedCard
           icon={
-            <div className="rounded-xl bg-amber-500 p-3.5 dark:bg-amber-600">
+            <div className="rounded-full bg-amber-500 p-3.5 dark:bg-amber-600">
               <HeartIcon className="h-5 w-5 text-white" />
             </div>
           }
@@ -25,12 +25,12 @@ export function FeaturedCards() {
         />
         <FeaturedCard
           icon={
-            <div className="rounded-xl bg-amber-600 p-3.5 dark:bg-amber-700">
+            <div className="rounded-full bg-amber-600 p-3.5 dark:bg-amber-700">
               <CodeIcon className="h-5 w-5 text-white" />
             </div>
           }
           title="Pretty & Optimized"
-          desc="Writing clean code is a top priority while keeping it as optimized as possible, both frontend and backend."
+          desc="Writing clean code is a top priority while keeping it as optimized as possible."
         />
       </div>
     </div>

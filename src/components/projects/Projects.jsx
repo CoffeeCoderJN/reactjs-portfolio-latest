@@ -19,7 +19,7 @@ export const projectsData = [
     thumbnail: ecommerce,
     title: "UrbanWear",
     description:
-      "Fashion and Lifestyle Ecommerce Website, implemented features like cart, checkout, payment gateway, etc.",
+      "Fashion and Lifestyle Full Stack E-commerce Website, implemented features like cart, checkout, payment gateway, order tracking, secured JWT based SignIn and SignUp, Order Tracking and many more.",
     live: "https://github.com/themukuldharashivkar/Full-Stack-Ecommerce-WebApp",
     code: "https://github.com/themukuldharashivkar/Full-Stack-Ecommerce-WebApp",
     tech: [
@@ -36,7 +36,7 @@ export const projectsData = [
     thumbnail: freepics,
     title: "FreePics",
     description:
-      "Royalty free image and media sharing website. React JS, Tailwind CSS, Sanity CMS v3",
+      "Royalty free image and media sharing website. Implemented necessary features such as uploading/deleting/saving and downloading media.",
     live: "https://yt-pixabayclone-6d274.web.app",
     code: "https://github.com/themukuldharashivkar/Pixabay2.0",
     tech: ["React.js", "Tailwind CSS", "Sanity CMS V3", "Firebase"],

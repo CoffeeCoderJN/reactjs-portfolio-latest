@@ -2,21 +2,10 @@ import { FiMoon, FiSun } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useReadingProgress } from "../hooks/useReadingProgress";
-// import useOnScroll from "../hooks/useOnScroll";
 import ProfileMenu from "./ProfileMenu";
 
 const HeaderNav = ({ darkMode, setDarkMode }) => {
-  // const [showMenu, setShowMenu] = useState(false);
   const completion = useReadingProgress();
-  // const isScrolled = useOnScroll(0);
-
-  // function toggleMenu() {
-  //   if (!showMenu) {
-  //     setShowMenu(true);
-  //   } else {
-  //     setShowMenu(false);
-  //   }
-  // }
 
   return (
     <motion.nav

@@ -1,41 +1,22 @@
 import { BiLinkExternal } from "react-icons/bi";
-import { motion } from "framer-motion";
 import { Reveal } from "../utils/Reveal";
 
 const ContactDetails = () => {
   return (
     <div className="w-full lg:w-1/2">
       <div className="text-left max-w-xl px-2 md:px-6">
-        <motion.p
-          initial={{ x: -50, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="font-extralight text-sm"
-        >
+        <p className="font-extralight text-sm">
           Just a friendly reminder that the information provided here is for
           business purposes only. If you have any questions, feel free to chat
           with me directly on my social media. I appreciate your understanding
           in using this responsibly.
-        </motion.p>
-        <motion.h2
-          initial={{ x: -50, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5"
-        >
+        </p>
+        <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5">
           <Reveal width="100%">Contact details</Reveal>
-        </motion.h2>
+        </h2>
 
         {/* Address table */}
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-5"
-        >
+        <div className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-5">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-neutral-100 dark:bg-neutral-900 dark:text-gray-400">
               <tr>
@@ -84,48 +65,24 @@ const ContactDetails = () => {
               </tr>
             </tbody>
           </table>
-        </motion.div>
+        </div>
 
-        <motion.p
-          initial={{ x: -50, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="font-extralight text-sm mb-5"
-        >
+        <p className="font-extralight text-sm mb-5">
           If you need any further information, such as my phone number, please
           do not hesitate to send me an email first.
-        </motion.p>
+        </p>
 
-        <motion.h2
-          initial={{ x: -50, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5"
-        >
+        <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5">
           <Reveal width="100%">Important Links</Reveal>
-        </motion.h2>
+        </h2>
 
-        <motion.p
-          initial={{ x: -50, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="font-extralight text-sm mb-5"
-        >
+        <p className="font-extralight text-sm mb-5">
           Leaving some important links to my Socials here, feel free to contact
           me on any of them.
-        </motion.p>
+        </p>
 
         {/* Address table */}
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-8"
-        >
+        <div className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-8">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-neutral-100 dark:bg-neutral-900 dark:text-gray-400">
               <tr>
@@ -205,20 +162,7 @@ const ContactDetails = () => {
               </tr>
             </tbody>
           </table>
-        </motion.div>
-
-        {/* <ul className="font-general-regular">
-          {contacts.map((contact) => (
-            <li className="flex " key={contact.id}>
-              <i className="text-2xl text-gray-500 dark:text-gray-400 mr-4">
-                {contact.icon}
-              </i>
-              <span className="text-lg mb-4 text-ternary-dark dark:text-ternary-light">
-                {contact.name}
-              </span>
-            </li>
-          ))}
-        </ul> */}
+        </div>
       </div>
     </div>
   );
