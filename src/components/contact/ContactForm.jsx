@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 const ContactForm = () => {
   return (
     <motion.div
-      initial={{ x: 200, opacity: 0 }}
-      transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
+      transition={{ duration: 1 }}
       className="flex flex-col 2xl:px-12 w-full lg:w-1/2 bg-gray-100 dark:bg-[#101111] rounded-xl shadow-lg shadow-gray-400/30 dark:shadow-black/30"
     >
       <div className="leading-loose">
