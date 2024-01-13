@@ -9,6 +9,7 @@ import Contact from "./components/contact/ContactsPage";
 import Hero from "./components/hero/Hero";
 import Projects from "./components/projects/Projects";
 import { Toaster } from "react-hot-toast";
+import ContactMessage from "./components/ContactMessage/ContactMessage";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -41,6 +42,7 @@ function App() {
           <About />
           <Projects />
           <SkillsPage />
+          <ContactMessage />
           <Contact />
           <AppFooter />
         </main>

@@ -9,7 +9,7 @@ import { useState } from "react";
 import { toast } from "react-hot-toast";
 import MukulImg from "../../assets/mukul.jpg";
 import { MdFileDownload } from "react-icons/md";
-// import BlurCircles from "../blurCircles/BlurCircles";
+import { LuMouse } from "react-icons/lu";
 
 const animation = {
   hide: { x: -32, opacity: 0 },
@@ -155,19 +155,14 @@ const Hero = () => {
         </span>
       </motion.div>
 
-      <motion.div
-        // initial={{ x: -200, opacity: 0 }}
-        // transition={{ duration: 1 }}
-        // whileInView={{ x: 0, opacity: 1 }}
-        // viewport={{ once: true }}
-        className="z-10"
-      >
+      <div className="z-10">
         <ActiveComponent />
-      </motion.div>
+      </div>
 
       {/* {arrow down animation} */}
       <div className="mt-20 mb-0 down-arrow z-0">
-        <FaArrowDown className="text-amber-500 text-3xl animate-bounce " />
+        {/* <FaArrowDown className="text-amber-500 text-3xl animate-bounce " /> */}
+        <LuMouse className="text-neutral-500 text-3xl " />
       </div>
     </section>
   );

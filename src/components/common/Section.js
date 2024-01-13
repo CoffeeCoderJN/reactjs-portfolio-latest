@@ -20,7 +20,7 @@ const Section = ({ id, title, subtitle, children, className }) => {
         whileInView={animation.show}
         transition={{ delay: 0.5 }}
         viewport={{ once: true }}
-        className="py-3 text-4xl lg:text-5xl font-bold text-amber-500 uppercase tracking-[1px] ease-in-out mb-10 "
+        className="py-3 text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-neutral-700 to-neutral-400 dark:from-neutral-300 dark:to-neutral-600 uppercase tracking-[1px] ease-in-out mb-10 "
       >
         {title}
         {/* <Reveal width="100%">{title}</Reveal> */}
