@@ -1,19 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { animation } from "../common/Section";
 
 const SkillsDescription = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1 }}
-      className="text-left lg:pt-0"
-    >
-      <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-200 mt-5 mb-5">
+    <div className="text-left lg:pt-0">
+      <motion.h2
+        initial={animation.hide}
+        whileInView={animation.show}
+        transition={{ delay: 0.5 }}
+        viewport={{ once: true }}
+        className="font-medium text-2xl text-amber-500 dark:text-amber-200 mt-5 mb-5"
+      >
         A look at all the programming languages, libraries, and tools I've
         worked with.
-      </h2>
+      </motion.h2>
       <p className="text-sm font-light text-gray-800 dark:text-gray-300">
         In the expansive field of web development, I've acquired diverse
         hands-on experience in programming languages and technology stacks for
@@ -81,7 +82,7 @@ const SkillsDescription = () => {
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

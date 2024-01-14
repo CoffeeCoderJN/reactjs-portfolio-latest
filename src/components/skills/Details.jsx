@@ -1,13 +1,21 @@
 import React from "react";
 import Label from "./Label";
+import { motion } from "framer-motion";
+import { animation } from "../common/Section";
 
 const Details = () => {
   return (
     <div className="flex flex-col text-left pt-5">
       {/* <div className="h-[1px] mb-5 bg-neutral-300 dark:bg-neutral-500" /> */}
-      <h1 className="font-medium text-2xl text-amber-500 dark:text-amber-200">
+      <motion.h1
+        initial={animation.hide}
+        whileInView={animation.show}
+        transition={{ delay: 0.5 }}
+        viewport={{ once: true }}
+        className="font-medium text-2xl text-amber-500 dark:text-amber-200"
+      >
         Detail and Summary
-      </h1>
+      </motion.h1>
       <p className="text-sm font-light pt-1">
         I represent all data in labels to make it easier to read. The underline
         indicator shows how often I used the related item, e.g.:

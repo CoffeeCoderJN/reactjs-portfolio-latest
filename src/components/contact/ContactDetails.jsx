@@ -1,4 +1,6 @@
 import { BiLinkExternal } from "react-icons/bi";
+import { motion } from "framer-motion";
+import { animation } from "../common/Section";
 
 const ContactDetails = () => {
   return (
@@ -10,9 +12,15 @@ const ContactDetails = () => {
           with me directly on my social media. I appreciate your understanding
           in using this responsibly.
         </p>
-        <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5">
+        <motion.h2
+          initial={animation.hide}
+          whileInView={animation.show}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
+          className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5"
+        >
           Contact details
-        </h2>
+        </motion.h2>
 
         {/* Address table */}
         <div className="relative overflow-x-auto rounded-xl  shadow-lg shadow-gray-400/50 dark:shadow-black/30  mb-5">
@@ -71,9 +79,15 @@ const ContactDetails = () => {
           do not hesitate to send me an email first.
         </p>
 
-        <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5">
+        <motion.h2
+          initial={animation.hide}
+          whileInView={animation.show}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
+          className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5"
+        >
           Important Links
-        </h2>
+        </motion.h2>
 
         <p className="font-extralight text-sm mb-5">
           Leaving some important links to my Socials here, feel free to contact

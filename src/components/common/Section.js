@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const animation = {
+export const animation = {
   hide: { x: -32, opacity: 0 },
   show: {
     x: 0,

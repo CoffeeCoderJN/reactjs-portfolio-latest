@@ -1,5 +1,6 @@
 import MukulImg from "../../assets/mukul.jpg";
 import { motion } from "framer-motion";
+import { animation } from "../common/Section";
 
 const AboutDetailsSection = () => {
   return (
@@ -16,9 +17,15 @@ const AboutDetailsSection = () => {
         className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
       />
       <div className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10">
-        <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">
+        <motion.h4
+          initial={animation.hide}
+          whileInView={animation.show}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true }}
+          className="text-2xl font-medium text-amber-600 dark:text-amber-300"
+        >
           Here's a Little Background.
-        </h4>
+        </motion.h4>
         {/* <div className="bg-white dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 text-gray-800 dark:text-gray-300 "> */}
         <div className="bg-white/70 dark:bg-[#101111]/70 p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 text-gray-800 dark:text-gray-300 backdrop-filter backdrop-blur-lg bg-opacity-30 ease-in-out">
           {/* border dark:border-white/5 border-black/10 */}
