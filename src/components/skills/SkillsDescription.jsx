@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Reveal } from "../utils/Reveal";
 
 const SkillsDescription = () => {
   return (
@@ -12,10 +11,8 @@ const SkillsDescription = () => {
       className="text-left lg:pt-0"
     >
       <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-200 mt-5 mb-5">
-        <Reveal width="100%">
-          A look at all the programming languages, libraries, and tools I've
-          worked with.
-        </Reveal>
+        A look at all the programming languages, libraries, and tools I've
+        worked with.
       </h2>
       <p className="text-sm font-light text-gray-800 dark:text-gray-300">
         In the expansive field of web development, I've acquired diverse
@@ -33,7 +30,7 @@ const SkillsDescription = () => {
       </p>
 
       <h2 className="font-semibold text-lg text-amber-500 dark:text-amber-200 mt-5">
-        <Reveal width="100%">Front-End</Reveal>
+        Front-End
       </h2>
       <p className="text-sm font-light">
         I love creating something that is clean and minimalistic, attractive and
@@ -66,7 +63,7 @@ const SkillsDescription = () => {
       </div>
 
       <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5">
-        <Reveal width="100%">Back-End</Reveal>
+        Back-End
       </h2>
 
       <p className="text-sm font-light">

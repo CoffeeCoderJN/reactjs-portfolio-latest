@@ -38,7 +38,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
           <div className="h-4 w-4 bg-green-600 rounded-full" />
         </div>
 
-        <h1 className="text-lg md:text-xl font-normal mb-1 dark:text-neutral-200 text-neutral-600">
+        <h1 className="text-base md:text-xl font-normal mb-1 dark:text-neutral-200 text-neutral-600">
           {" "}
           {title}{" "}
         </h1>

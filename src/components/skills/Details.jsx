@@ -1,13 +1,12 @@
 import React from "react";
 import Label from "./Label";
-import { Reveal } from "../utils/Reveal";
 
 const Details = () => {
   return (
     <div className="flex flex-col text-left pt-5">
       {/* <div className="h-[1px] mb-5 bg-neutral-300 dark:bg-neutral-500" /> */}
       <h1 className="font-medium text-2xl text-amber-500 dark:text-amber-200">
-        <Reveal width="100%">Detail and Summary</Reveal>
+        Detail and Summary
       </h1>
       <p className="text-sm font-light pt-1">
         I represent all data in labels to make it easier to read. The underline
@@ -20,7 +19,7 @@ const Details = () => {
       </div>
 
       <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5 mb-1">
-        <Reveal width="100%">Programming Languages</Reveal>
+        Programming Languages
       </h2>
       <div className="flex gap-2">
         <Label indicator={95}>Java</Label>
@@ -29,7 +28,7 @@ const Details = () => {
       </div>
 
       <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5 mb-1">
-        <Reveal width="100%">Technologies</Reveal>
+        Technologies
       </h2>
       <div className="flex flex-wrap gap-2">
         <Label indicator={95}>React.js</Label>
@@ -45,7 +44,7 @@ const Details = () => {
       </div>
 
       <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5 mb-1">
-        <Reveal width="100%">Softwares and Tools</Reveal>
+        Softwares and Tools
       </h2>
       <div className="flex flex-wrap gap-2">
         <Label indicator={80}>Git</Label>
@@ -60,7 +59,7 @@ const Details = () => {
       </div>
 
       <h2 className="font-medium text-lg text-amber-500 dark:text-amber-200 mt-5 mb-1">
-        <Reveal width="100%">Soft Skills</Reveal>
+        Soft Skills
       </h2>
       <div className="flex flex-wrap gap-2">
         <Label indicator={100}>Effective Communication</Label>

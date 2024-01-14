@@ -1,5 +1,4 @@
 import { BiLinkExternal } from "react-icons/bi";
-import { Reveal } from "../utils/Reveal";
 
 const ContactDetails = () => {
   return (
@@ -12,7 +11,7 @@ const ContactDetails = () => {
           in using this responsibly.
         </p>
         <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5">
-          <Reveal width="100%">Contact details</Reveal>
+          Contact details
         </h2>
 
         {/* Address table */}
@@ -73,7 +72,7 @@ const ContactDetails = () => {
         </p>
 
         <h2 className="font-medium text-2xl text-amber-500 dark:text-amber-300 mt-5 mb-5">
-          <Reveal width="100%">Important Links</Reveal>
+          Important Links
         </h2>
 
         <p className="font-extralight text-sm mb-5">

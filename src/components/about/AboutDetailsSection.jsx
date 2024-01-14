@@ -1,6 +1,5 @@
 import MukulImg from "../../assets/mukul.jpg";
 import { motion } from "framer-motion";
-import { Reveal } from "../utils/Reveal";
 
 const AboutDetailsSection = () => {
   return (
@@ -18,7 +17,7 @@ const AboutDetailsSection = () => {
       />
       <div className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10">
         <h4 className="text-2xl font-medium text-amber-600 dark:text-amber-300">
-          <Reveal width="100%">Here's a Little Background.</Reveal>
+          Here's a Little Background.
         </h4>
         {/* <div className="bg-white dark:bg-[#101111] p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 text-gray-800 dark:text-gray-300 "> */}
         <div className="bg-white/70 dark:bg-[#101111]/70 p-5 rounded-3xl shadow-lg shadow-gray-400/50 dark:shadow-black/30 text-gray-800 dark:text-gray-300 backdrop-filter backdrop-blur-lg bg-opacity-30 ease-in-out">
