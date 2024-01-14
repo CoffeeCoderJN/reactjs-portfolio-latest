@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animation } from "../common/Section";
+import { NextJsIcon, ReactIcon } from "../icon/Icons";
+import { SiSpring } from "react-icons/si";
 
 const SkillsDescription = () => {
   return (
@@ -41,13 +43,21 @@ const SkillsDescription = () => {
       <div className="flex">
         {/* <div className="inline-block h-[200px] md:h-[240px] min-h-[1em] w-0.5 self-stretch bg-neutral-300 opacity-100 dark:opacity-50 mt-5" /> */}
         <div className="">
-          <h3 className="font-semibold text-lg mt-5">React</h3>
-          <p className="text-sm font-light">
+          <div className="flex items-center gap-2 mt-5">
+            <div className="h-2 w-2 bg-neutral-400 dark:bg-neutral-700 rounded-full" />
+            <h3 className="font-semibold text-lg">React.js</h3>
+            <ReactIcon className="h-5 w-5 text-blue-600" />
+          </div>
+          <p className="text-sm font-light ml-4">
             I really enjoy building web applications and React is my go-to
             library.
           </p>
-          <h3 className="font-semibold text-lg mt-5">Next.js</h3>
-          <p className="text-sm font-light">
+          <div className="flex items-center gap-2 mt-5">
+            <div className="h-2 w-2 bg-neutral-400 dark:bg-neutral-700 rounded-full" />
+            <h3 className="font-semibold text-lg">Next.js</h3>
+            <NextJsIcon className="h-5 w-5 text-black dark:text-white" />
+          </div>
+          <p className="text-sm font-light ml-4">
             Although I'm still relatively new to Next.js, I find it to be a
             highly valuable tool with impressive capabilities. Its quality is
             truly commendable.
@@ -74,8 +84,12 @@ const SkillsDescription = () => {
       <div className="flex">
         {/* <div className="inline-block h-[115px] md:h-[120px] min-h-[1em] w-0.5 self-stretch bg-neutral-300 opacity-100 dark:opacity-50 mt-5" /> */}
         <div className="">
-          <h3 className="font-semibold text-lg mt-5">Spring Boot</h3>
-          <p className="text-sm font-light">
+          <div className="flex items-center gap-2 mt-5">
+            <div className="h-2 w-2 bg-neutral-400 dark:bg-neutral-700 rounded-full" />
+            <h3 className="font-semibold text-lg">Spring Boot</h3>
+            <SiSpring className="h-5 w-5 text-green-600" />
+          </div>
+          <p className="text-sm font-light ml-4">
             I'm interested in creating various types of applications using
             Spring Boot, including things like online stores and note-taking
             apps.
