@@ -2,8 +2,8 @@ import { FiMoon } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useReadingProgress } from "../hooks/useReadingProgress";
-import ProfileMenu from "./ProfileMenu";
 import { TbSunFilled } from "react-icons/tb";
+import AnimatedDropDown from "./AnimatedDropDown";
 
 const HeaderNav = ({ darkMode, setDarkMode }) => {
   const completion = useReadingProgress();
@@ -61,7 +61,8 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             </motion.div>
 
             {/* Dropdown */}
-            <ProfileMenu />
+            {/* <ProfileMenu /> */}
+            <AnimatedDropDown />
           </motion.div>
         </div>
 
@@ -69,7 +70,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           initial={{ x: 50, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="hidden sm:flex justify-between items-center flex-row px-5"
+          className="hidden sm:flex justify-between items-center flex-row px-5 gap-5"
         >
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -85,8 +86,9 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             )}
           </motion.div>
 
-          <div className="ml-5">
-            <ProfileMenu />
+          <div className="">
+            {/* <ProfileMenu /> */}
+            <AnimatedDropDown />
           </div>
         </motion.div>
       </div>

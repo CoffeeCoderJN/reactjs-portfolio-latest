@@ -1,0 +1,18 @@
+.loader-container {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    place-content: center;
+    overflow: hidden;
+    background: rgba(10, 10, 10, 1);
+    border-radius: 30px;
+}
+
+.loader-item {
+    width: 56%;
+    overflow: visible;
+    stroke: #f59e0b;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
