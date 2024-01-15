@@ -183,7 +183,7 @@ const SwitchableSection = () => {
             src={College}
             alt=""
             loading="lazy"
-            className="rounded-xl w-80 h-64 md:w-[32rem] md:h-[32rem] object-cover "
+            className="rounded-xl w-80 h-64 md:w-[30rem] md:h-[30rem] object-cover "
           />
         )}
         {activeLink === "Courses" && (
@@ -191,7 +191,7 @@ const SwitchableSection = () => {
             src={Certificate}
             alt=""
             loading="lazy"
-            className="rounded-xl w-80 h-64 md:w-[32rem] md:h-[32rem] object-contain bg-neutral-100 "
+            className="rounded-xl w-80 h-64 md:w-[30rem] md:h-[30rem] object-contain bg-neutral-100 "
           />
         )}
       </div>
