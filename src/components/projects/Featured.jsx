@@ -21,6 +21,7 @@ const Featured = ({
               layout="fill"
               className="w-full h-full transition-all object-cover duration-300 group-hover:scale-110 group-hover:rotate-3"
               alt="loading..."
+              loading="lazy"
             />
 
             <div className="absolute top-0 bottom-0 left-0 right-0 bg-neutral-900/50 transition-all duration-300 cursor-pointer hover:opacity-0" />

@@ -4,13 +4,7 @@ import { motion } from "framer-motion";
 
 const ContactForm = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1 }}
-      className="flex flex-col 2xl:px-12 w-full lg:w-1/2 bg-gray-100 dark:bg-[#101111] rounded-xl shadow-lg shadow-gray-400/30 dark:shadow-black/30"
-    >
+    <div className="flex flex-col 2xl:px-12 w-full lg:w-1/2 bg-gray-100 dark:bg-[#101111] rounded-xl shadow-lg shadow-gray-400/30 dark:shadow-black/30">
       <div className="leading-loose">
         <form
           action="https://getform.io/f/e05b6bc9-032c-4a2c-a5af-ff2107822d78"
@@ -81,7 +75,7 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

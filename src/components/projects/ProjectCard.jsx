@@ -78,6 +78,7 @@ const ProjectCard = ({ live, thumbnail, code, title, description, tech }) => {
               src={thumbnail}
               className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
               alt="loading..."
+              loading="lazy"
             />
 
             <div className="absolute top-0 bottom-0 left-0 right-0 bg-neutral-900/50 transition-all duration-300 cursor-pointer group-hover:opacity-0" />

@@ -15,6 +15,7 @@ const AboutDetailsSection = () => {
         src={MukulImg}
         alt="Mukul Avatar"
         className="mb-10 md:mb-0 flex-shrink-0 rounded-3xl w-64 h-64 object-cover md:rounded-3xl md:w-64 md:h-95 xl:w-[300px] xl:h-[350px] shadow-lg shadow-gray-400/30 dark:shadow-black/30"
+        loading="lazy"
       />
       <div className="space-y-5 ml-0  xl:pt-0 xl:ml-20 md:pt-10">
         <motion.h4

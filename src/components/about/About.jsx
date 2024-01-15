@@ -1,9 +1,9 @@
 import React from "react";
 import Section from "../common/Section";
 import RightSvg from "../../assets/svg/right-pattern.svg";
-import AboutDetailsSection from "./AboutDetailsSection";
 import QuoteSection from "./QuoteSection";
 import FeaturedCardSection from "./FeaturedCardSection";
+import SwitchableSection from "./SwitchableSection";
 
 const About = () => {
   return (
@@ -21,7 +21,8 @@ const About = () => {
         height={700}
         width={320}
       />
-      <AboutDetailsSection />
+      {/* <AboutDetailsSection /> */}
+      <SwitchableSection />
       {/* <EducationSection /> */}
       <QuoteSection />
       {/* Featured Card Section */}
