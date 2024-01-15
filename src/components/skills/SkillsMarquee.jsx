@@ -101,6 +101,7 @@ function SkillsMarquee() {
             <img
               src={image}
               alt={title}
+              loading="lazy"
               className="w-36 h-36 md:h-44 md:w-44 object-contain group-hover:grayscale"
             />
           </div>
@@ -116,6 +117,7 @@ function SkillsMarquee() {
             <img
               src={image}
               alt={title}
+              loading="lazy"
               className="w-36 h-36 md:h-44 md:w-44 object-contain group-hover:grayscale"
             />
           </div>
