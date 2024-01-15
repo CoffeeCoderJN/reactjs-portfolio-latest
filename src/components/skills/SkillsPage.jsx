@@ -3,7 +3,6 @@ import Section from "../common/Section";
 import SkillsDescription from "./SkillsDescription";
 import Details from "./Details";
 
-import LeftSvg from "../../assets/svg/left-pattern.svg";
 import SkillsMarquee from "./SkillsMarquee";
 
 const SkillsPage = () => {
@@ -15,14 +14,14 @@ const SkillsPage = () => {
       className="relative"
     >
       {/* Left BG SVG */}
-      <img
+      {/* <img
         src={LeftSvg}
         className="absolute hidden left-0 -top-1/4 w-1/12 max-w-xs md:block"
         loading="lazy"
         height={700}
         width={320}
         alt=""
-      />
+      /> */}
 
       {/* Horizontal Skills Marque */}
       <div className="md:px-20 px-5 overflow-x-hidden max-w-[24rem] md:max-w-[50rem] lg:max-w-[75rem] xl:max-w-[80rem] 2xl:max-w-[100rem]">

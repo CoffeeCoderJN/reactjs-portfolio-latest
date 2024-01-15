@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import ContactDetails from "./ContactDetails";
 import ContactForm from "./ContactForm";
 import Section from "../common/Section";
-import LeftSvg from "../../assets/svg/left-pattern.svg";
 
 const Contact = () => {
   return (
@@ -12,14 +11,14 @@ const Contact = () => {
       subtitle="Get in touch with me anytime, through social media, e-mail."
       className="relative"
     >
-      <img
+      {/* <img
         src={LeftSvg}
         className="absolute hidden left-0 -top-1/4 w-1/12 max-w-xs md:block"
         loading="lazy"
         height={700}
         width={320}
         alt=""
-      />
+      /> */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

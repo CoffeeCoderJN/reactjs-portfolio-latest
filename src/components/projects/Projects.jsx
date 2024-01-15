@@ -11,7 +11,6 @@ import movie from "../../assets/movie.jpg";
 
 import Section from "../common/Section";
 import ProjectCard from "./ProjectCard";
-import RightSvg from "../../assets/svg/right-pattern.svg";
 
 export const projectsData = [
   {
@@ -108,14 +107,14 @@ const Projects = () => {
     >
       <div className="space-y-5 lg:space-y-10 px-5 md:px-10 lg:px-20 2xl:px-40">
         {/* Right SVG */}
-        <img
+        {/* <img
           src={RightSvg}
           alt=""
           className="absolute hidden right-0 bottom-2/4 w-2/12 max-w-xs md:block"
           loading="lazy"
           height={700}
           width={320}
-        />
+        /> */}
         {projectsData
           .filter((e) => e.featured === true)
           .map((e, i) => (

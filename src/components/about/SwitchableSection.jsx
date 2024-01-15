@@ -66,7 +66,12 @@ const SwitchableSection = () => {
         <div className="pt-10">
           {/* Display information based on the active link */}
           {activeLink === "Overview" && (
-            <p className="text-sm font-light text-gray-800 dark:text-gray-300">
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="text-sm font-light text-gray-800 dark:text-gray-300"
+            >
               Hi there, my name is{" "}
               <span className="font-semibold text-black dark:text-white">
                 Mukul Dharashivkar
@@ -91,10 +96,15 @@ const SwitchableSection = () => {
               <span className="font-semibold text-black dark:text-white">
                 I'm a team player.
               </span>
-            </p>
+            </motion.p>
           )}
           {activeLink === "Education" && (
-            <ul className="text-sm font-light text-gray-800 dark:text-gray-300 space-y-5">
+            <motion.ul
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="text-sm font-light text-gray-800 dark:text-gray-300 space-y-5"
+            >
               <li>
                 <div className="flex items-center gap-2">
                   <FaCalendarAlt className="" />
@@ -130,10 +140,15 @@ const SwitchableSection = () => {
                   From PVG's Muktangan English School and Jr. College, Pune
                 </h4>
               </li>
-            </ul>
+            </motion.ul>
           )}
           {activeLink === "Courses" && (
-            <ul className="text-sm font-light text-gray-800 dark:text-gray-300 space-y-5">
+            <motion.ul
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="text-sm font-light text-gray-800 dark:text-gray-300 space-y-5"
+            >
               <li>
                 <div className="flex items-center gap-2">
                   <FaCalendarAlt className="" />
@@ -164,14 +179,17 @@ const SwitchableSection = () => {
                 </h3>
                 <h4>Udemy</h4>
               </li>
-            </ul>
+            </motion.ul>
           )}
         </div>
       </div>
 
       <div className="m-5">
         {activeLink === "Overview" && (
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             src={Mukul}
             alt=""
             loading="lazy"
@@ -179,7 +197,10 @@ const SwitchableSection = () => {
           />
         )}
         {activeLink === "Education" && (
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             src={College}
             alt=""
             loading="lazy"
@@ -187,7 +208,10 @@ const SwitchableSection = () => {
           />
         )}
         {activeLink === "Courses" && (
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             src={Certificate}
             alt=""
             loading="lazy"
