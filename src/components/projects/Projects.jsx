@@ -19,7 +19,7 @@ export const projectsData = [
     title: "UrbanWear",
     description:
       "Fashion and Lifestyle Full Stack E-commerce Website, implemented features like cart, checkout, payment gateway, order tracking, secured JWT based SignIn and SignUp, Order Tracking and many more.",
-    live: "https://github.com/themukuldharashivkar/Full-Stack-Ecommerce-WebApp",
+    live: "https://urbanwear-nu.vercel.app/",
     code: "https://github.com/themukuldharashivkar/Full-Stack-Ecommerce-WebApp",
     tech: [
       "React.js",
