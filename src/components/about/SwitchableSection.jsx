@@ -16,8 +16,8 @@ const SwitchableSection = () => {
   return (
     <div className="mx-4 md:mx-20 w-[86%] flex flex-col items-center lg:flex-row h-1/2 rounded-xl bg-white/70 dark:bg-[#101111]/70 backdrop-filter backdrop-blur-lg bg-opacity-30 ease-in-out text-neutral-500 shadow-xl shadow-gray-400/50 dark:shadow-black/30 text-left z-30 md:mb-10">
       {/* Vertical Navbar */}
-      <div className="w-full md:w-[70%] p-5 md:px-3 lg:px-20">
-        <ul className="text-3xl md:text-5xl font-light pt-5 md:pt-10 lg:pt-0">
+      <div className="w-full md:w-[70%] p-5 md:px-3 lg:px-7">
+        <ul className="text-3xl md:text-5xl font-bold pt-5 md:pt-10 lg:pt-0">
           <motion.li
             initial={animation.hide}
             whileInView={animation.show}
