@@ -33,7 +33,7 @@ const socialLinks = [
 
 const AppFooter = () => {
   return (
-    <div className="container mx-auto">
+    <div className="">
       <div className="pt-20 sm:pt-30 pb-8 border-t-2 dark:border-neutral-600 border-neutral-300">
         {/* Footer social links */}
         <div className="flex flex-col justify-center items-center mb-12 sm:mb-28">

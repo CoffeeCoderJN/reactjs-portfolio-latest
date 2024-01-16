@@ -65,12 +65,32 @@
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:900px) {
 
     #heroshape {
-        width: 86vw;
-        height: 76vw;
+        width: 76vw;
+        height: 66vw;
+        right: 0;
+        top: 10vh;
+    }
+}
+
+@media (max-width:500px) {
+
+    #heroshape {
+        width: 76vw;
+        height: 66vw;
         right: 0;
         top: 15vh;
+    }
+
+    #hero2 {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    #hero3 {
+        height: 35vw;
+        width: 35vw;
     }
 }
