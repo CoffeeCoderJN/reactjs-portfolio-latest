@@ -14,7 +14,7 @@ const SwitchableSection = () => {
   };
 
   return (
-    <div className="mx-4 md:mx-20 w-[86%] flex flex-col items-center lg:flex-row h-1/2 rounded-xl bg-white/70 dark:bg-[#101111]/70 backdrop-filter backdrop-blur-lg bg-opacity-30 ease-in-out text-neutral-500 shadow-xl shadow-gray-400/50 dark:shadow-black/30 text-left z-30 md:mb-10">
+    <div className="mx-4 md:mx-20 w-[90%] md:w-[86%] flex flex-col items-center lg:flex-row h-1/2 rounded-xl bg-white/70 dark:bg-[#101111]/70 backdrop-filter backdrop-blur-lg bg-opacity-30 ease-in-out text-neutral-500 shadow-xl shadow-gray-400/50 dark:shadow-black/30 text-left z-30 md:mb-10">
       {/* Vertical Navbar */}
       <div className="w-full md:w-[70%] p-5 md:px-3 lg:px-7">
         <ul className="text-3xl md:text-5xl font-bold pt-5 md:pt-10 lg:pt-0">
@@ -193,7 +193,7 @@ const SwitchableSection = () => {
             src={Mukul}
             alt=""
             loading="lazy"
-            className="rounded-xl w-80 h-64 md:w-[30rem] md:h-[30rem] object-contain bg-gradient-to-br from-[#4ED0FD] to-[#121DD2] "
+            className="rounded-xl w-80 h-64 md:w-[30rem] md:h-[30rem] object-cover bg-gradient-to-br from-[#4ED0FD] to-[#121DD2] "
           />
         )}
         {activeLink === "Education" && (

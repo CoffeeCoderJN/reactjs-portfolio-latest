@@ -133,7 +133,7 @@ const Hero = () => {
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.5 }}
-        className="py-3 text-xl md:text-3xl lg:text-5xl text-center font-bold leading-[1] z-0"
+        className="py-3 text-xl md:text-3xl lg:text-6xl text-center font-bold leading-[1] z-0"
       >
         <span className="text-slate-700 dark:text-slate-200">
           <TypeAnimation

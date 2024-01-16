@@ -27,7 +27,9 @@ const Contact = () => {
       <div className="w-full">
         <ContactMessage />
         <SpotlightButton />
-        <HoverImageLinks />
+        <div className="pt-14">
+          <HoverImageLinks />
+        </div>
       </div>
     </Section>
   );
