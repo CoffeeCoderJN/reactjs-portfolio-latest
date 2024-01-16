@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import ContactDetails from "./ContactDetails";
-import ContactForm from "./ContactForm";
 import Section from "../common/Section";
+import { HoverImageLinks } from "../HoverImageLinks/HoverImageLinks";
+import ContactMessage from "../ContactMessage/ContactMessage";
+import SpotlightButton from "../reusable/SpotlightButton";
 
 const Contact = () => {
   return (
@@ -9,17 +9,9 @@ const Contact = () => {
       id="contact"
       title="Contact"
       subtitle="Get in touch with me anytime, through social media, e-mail."
-      className="relative"
+      className=""
     >
-      {/* <img
-        src={LeftSvg}
-        className="absolute hidden left-0 -top-1/4 w-1/12 max-w-xs md:block"
-        loading="lazy"
-        height={700}
-        width={320}
-        alt=""
-      /> */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
@@ -31,7 +23,12 @@ const Contact = () => {
       >
         <ContactDetails />
         <ContactForm />
-      </motion.div>
+      </motion.div> */}
+      <div className="w-full">
+        <ContactMessage />
+        <SpotlightButton />
+        <HoverImageLinks />
+      </div>
     </Section>
   );
 };

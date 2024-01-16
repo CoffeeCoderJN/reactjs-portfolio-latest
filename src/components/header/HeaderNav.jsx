@@ -51,12 +51,12 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Theme Switcher"
-              className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark cursor-pointer dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 group"
+              className="block sm:hidden ml-0 cursor-pointer bg-[#101111] dark:bg-gray-100 p-2 md:p-3 rounded-full duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 group"
             >
               {darkMode ? (
-                <TbSunFilled className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
+                <TbSunFilled className="text-xl md:text-2xl cursor-pointer text-gray-600  group-hover:text-amber-400 duration-150" />
               ) : (
-                <FiMoon className="text-xl md:text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
+                <FiMoon className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-indigo-500 duration-150" />
               )}
             </motion.div>
 
@@ -77,12 +77,12 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             onClick={() => setDarkMode(!darkMode)}
             aria-label="Theme Switcher"
-            className="ml-4 bg-primary-light dark:bg-ternary-dark cursor-pointer dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 group"
+            className="ml-4 cursor-pointer bg-[#101111] dark:bg-gray-100 p-2 md:p-3 rounded-full shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 group"
           >
             {darkMode ? (
-              <TbSunFilled className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
+              <TbSunFilled className="text-xl md:text-2xl cursor-pointer text-gray-600 group-hover:text-amber-400 duration-150" />
             ) : (
-              <FiMoon className="text-xl md:text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
+              <FiMoon className="text-xl md:text-2xl cursor-pointer  text-gray-200 group-hover:text-indigo-500 duration-150" />
             )}
           </motion.div>
 

@@ -11,7 +11,7 @@ const ContactMessage = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1.5 }}
-      className="relative min-h-fit flex flex-col justify-start items-center py-16 px-2 2xl:px-32 md:px-5 text-center"
+      className="relative min-h-fit flex flex-col justify-start items-center pt-10 pb-5 px-2 2xl:px-32 md:px-5 text-center"
     >
       <div className="text-3xl md:text-4xl lg:text-5xl font-normal text-neutral-700 dark:text-neutral-100 pb-10 z-20">
         <h1>Good Design is</h1>
@@ -32,13 +32,13 @@ const ContactMessage = () => {
           alt=""
           className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full border-2 border-neutral-400 dark:border-neutral-500"
         />
-        <p className="text-xs md:text-sm opacity-80 font-extralight">
+        <p className="text-xs md:text-sm font-light">
           Mukul Rajendra Dharashivkar
         </p>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-2 z-20">
-        <h3 className="font-medium text-sm md:text-xl pt-10 opacity-80 text-neutral-800 dark:text-neutral-100">
+        <h3 className="font-medium text-sm md:text-lg pt-10 opacity-80 text-neutral-800 dark:text-neutral-100">
           Let's shape the projects of your future together.
         </h3>
         <div className="flex items-center justify-center gap-3 text-neutral-800 dark:text-neutral-100">

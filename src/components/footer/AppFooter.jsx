@@ -1,42 +1,11 @@
-import { FiGithub, FiTwitter, FiLinkedin, FiGlobe } from "react-icons/fi";
-import { MdEmail } from "react-icons/md";
 import AppFooterCopyright from "./AppFooterCopyright";
-import { motion } from "framer-motion";
-
-const socialLinks = [
-  {
-    id: 1,
-    icon: <FiGlobe />,
-    url: "https://mukul-personal-site.vercel.app/",
-  },
-  {
-    id: 2,
-    icon: <FiGithub />,
-    url: "https://www.github.com/themukuldharashivkar",
-  },
-  {
-    id: 3,
-    icon: <FiTwitter />,
-    url: "https://www.twitter.com/themukul_99",
-  },
-  {
-    id: 4,
-    icon: <FiLinkedin />,
-    url: "https://www.linkedin.com/in/themukuldharashivkar",
-  },
-  {
-    id: 5,
-    icon: <MdEmail />,
-    url: "mailto:mukul.dharashivkar99@gmail.com",
-  },
-];
 
 const AppFooter = () => {
   return (
     <div className="">
-      <div className="pt-20 sm:pt-30 pb-8 border-t-2 dark:border-neutral-600 border-neutral-300">
+      <div className="pt-5 sm:pt-10 pb-8">
         {/* Footer social links */}
-        <div className="flex flex-col justify-center items-center mb-12 sm:mb-28">
+        {/* <div className="flex flex-col justify-center items-center mb-12 sm:mb-28">
           <p className="text-3xl sm:text-4xl text-amber-500 dark:text-amber-500 mb-5">
             Follow me
           </p>
@@ -54,7 +23,8 @@ const AppFooter = () => {
               </motion.a>
             ))}
           </ul>
-        </div>
+        </div> */}
+        {/* <HoverImageLinks /> */}
 
         <AppFooterCopyright />
       </div>
